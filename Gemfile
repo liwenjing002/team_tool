@@ -1,5 +1,4 @@
 source :rubygems
-
 group :rails do
   gem 'rails', '~> 3.0.9'
   gem 'builder', '~> 2.1.2'
