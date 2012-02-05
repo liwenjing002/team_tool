@@ -1,0 +1,17 @@
+.new_sessions .custom_html, .create_sessions .custom_html, .new_sites .custom_html, .create_sites .custom_html, .show_sites .custom_html {
+  margin: 30px 20px 30px 0; }
+  .new_sessions .custom_html li, .create_sessions .custom_html li, .new_sites .custom_html li, .create_sites .custom_html li, .show_sites .custom_html li {
+    margin: 10px 0; }
+.new_sessions .signup_or_forgot_links, .create_sessions .signup_or_forgot_links, .new_sites .signup_or_forgot_links, .create_sites .signup_or_forgot_links, .show_sites .signup_or_forgot_links {
+  margin: 50px 0;
+  font-size: 12px; }
+.new_sessions .flash, .create_sessions .flash, .new_sites .flash, .create_sites .flash, .show_sites .flash {
+  padding: 3px 10px;
+  font-size: 14px;
+  background: #ffffc8;
+  border: 1px solid #c8c896;
+  color: #323200;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; }
+.new_sessions form, .create_sessions form, .new_sites form, .create_sites form, .show_sites form {
+  margin-top: 60px; }
