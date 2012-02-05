@@ -1,5 +1,5 @@
-# require File.expand_path("../../lib/rvm_cap", __FILE__)
-require 'bundler/capistrano'
+ require File.expand_path("../../lib/rvm_cap", __FILE__)
+#require 'bundler/capistrano'
 #set :rvm_ruby_string, '1.8.7'
 set :rvm_ruby_string, 'ree-1.8.7-2011.03'
 set :rvm_bin_path, "$HOME/.rvm/bin"
