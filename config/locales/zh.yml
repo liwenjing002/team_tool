@@ -2,6 +2,12 @@
 zh: 
   activerecord: 
     attributes: 
+      address: 
+        city: City
+        country: Country
+        state: State
+        street: Street
+        zip: ZIP
       card: 
         city: 城市
         country: 国家
@@ -85,10 +91,21 @@ zh:
         too_short: "过短（最短为 %{count} 个字符）"
         wrong_length: "长度非法（必须为 %{count} 个字符）"
       models: 
+        comment: 
+          attributes: 
+            body: 
+              blank: "Can't post an empty comment."
+              duplicate: "Duplicate comment"
         conversation: 
           attributes: 
+            comments: 
+              must_have_one: "The conversation cannot start with an empty comment."
             name: 
               no_title: 请为这个话题指定一个标题。
+        task: 
+          attributes: 
+            assigned: 
+              doesnt_belong: "Assigned user doesn't belong to the project"
     models: 
       address: 地址
       card: Card
@@ -99,6 +116,7 @@ zh:
       im: 即时通信
       invitation: 邀请
       note: 备注
+      organization: Organization
       page: 页面
       phone_number: 电话
       project: 项目
@@ -108,21 +126,111 @@ zh:
       upload: 上传
       website: 网址
   activities: 
+    create_comment: 
+      create_comment: "created the comment"
+      title: "%{user} commented on %{target}"
+    create_comment_conversation: 
+      title: "%{user} followed up on conversation %{target}"
+    create_comment_project: 
+      title: "%{user} updated status on %{target}"
+    create_comment_task: 
+      title: "%{user} updated task %{target}"
     create_conversation: 
       create_conversation: 开始新的话题
+      title: "%{user} started a conversation: %{conversation}"
+    create_note: 
+      create_note: "added note"
+      title: "%{user} created note \"%{note}\" in %{page}"
     create_page: 
       create_page: 创建新页面
+      title: "%{user} created page %{page}"
     create_person: 
       by: 由
       create_person: 已经被邀请加入此项目
+      title: "%{person} joined the project %{project}"
+    create_project: 
+      left: "created the project"
+      title: "%{person} created the project %{project}"
     create_task: 
       create_task: 创建新任务
+      title: "%{user} created task %{task} in %{task_list}"
     create_task_list: 
       create_task_list: 创建新的任务列表
+      title: "%{user} created task list %{task_list}"
+    create_teambox_data: 
+      title: "%{person} imported the project %{project}"
+    create_upload: 
+      title: "%{user} uploaded a file: %{file}"
+      title_with_page: "%{user} uploaded a file to %{page}:"
     delete_person: 
       by: 由
       delete_person: 已经被从此项目移除
       left: 离开此项目
+      title: "%{person} left the project %{project}"
+    edit_note: 
+      edit_note: "edited note"
+      title: "%{user} edited the note \"%{note}\" in %{page}"
+    edit_page: 
+      edit_page: "edited the page"
+      title: "%{user} edited the page %{page}"
+    thread: 
+      conversation_with_title_html: "%{conversation} on %{project} project"
+      conversation_without_title_html: "<a href='%{conversation_url}'>Conversation</a> on %{project} project"
+      created: 
+        conversation: "created the conversation"
+        task: "created a task"
+      more_comments: 
+        one: "Show one previous comment"
+        other: "Show %{count} previous comments"
+      task_on_task_list_html: "%{task} on %{task_list} task list"
+  affiliate: 
+    area: "Affiliate Area"
+    index: 
+      addresses: addresses
+      credits_earned: "Credit you've earned"
+      desc_1_html: "With our partner tools, you can get <strong>free months</strong> using Teambox or make <strong>real money</strong> by referring others."
+      desc_2_html: "Bring new users to Teambox, and get <strong>%{percent}% of the income</strong> your referred users generate, <strong>forever</strong>."
+      facebook: Facebook
+      get_in_touch: "get in touch with us"
+      idea1: "Create a site about how to use Teambox, with guides for beginners."
+      idea2: "Post a link to Teambox on your blog and talk about how it helped you."
+      idea3: "Run an event about Project Collaboration and refer your attendees."
+      idea4: "Simply email invitations to new users."
+      ideas: "Some ideas to make the most out of Teambox"
+      learn_more: "Learn more..."
+      no_referred_users: "You don't have any referred users yet."
+      option_1: "Option 1: Share this link"
+      option_2: "Option 2: Invite your contacts by entering their email"
+      option_3: "Option 3: Invite your contacts by importing contacts from a CSV file"
+      over_100: "Whenever you have over $100,"
+      plan_for: "plan for"
+      premium_plan: "premium account"
+      refer_info: "Refer %{users} users on %{plan} accounts, get $%{credit} every month."
+      referred_users: "Your referred users "
+      send_invites: "Invite to Teambox"
+      send_money: "and we will send you the money you've earned."
+      sent_invites_to: "The invitation email will be sent to the following addresses:"
+      sent_number_of_invites: "The invitation email will be sent to"
+      tracking1: "When you refer users to Teambox, they must sign up at a page with a special parameter."
+      tracking2: "This parameter is unique for you, and it allows us to track your users."
+      tracking3: "Once a user follows this link, they will be marked as coming from you."
+      tracking4: "Even if they navigate away from the page and come later, we store this data in their session so when they sign up we still remember they came from you."
+      tracking5: "Your special page for signup is"
+      tracking6: "Post this link on Facebook, Twitter, on your own site, or send it by email to a friend. After they sign up you will receive an email confirmation."
+      twitter: Twitter
+      twitter_link: "Try%20Teambox%20to%20collaborate%20with%20your%20team,%20sign%20up%20for%20free%20at%20%{link}"
+      use_money: "You can use this money to get a"
+      use_money_cash: "or to earn real cash."
+      use_tracking_code: "You must use a tracking code so we can know which users are coming from you."
+      website: "Share it on your website,"
+    notification: 
+      accepted_subscription: "%{name} (%{email}) just signed up on Teambox using your referral code."
+      check_your_earnings: "Go check your earnings from referrals on Teambox"
+      check_your_referrals: "Go check your referred users on Teambox"
+      new_signup: "A user signed up on Teambox using your referral code!"
+      new_subscription: "A user upgraded his account on Teambox using your referral code!"
+      upgraded_subscription: "%{name} (%{email}) just upgraded his account on Teambox, and you are earning $%{price} in credit"
+      wait: "The transaction has been just processed, but may take a while to be reflected on your Teambox Partner area"
   avatars: 
     edit: 
       upload: 上传头像
@@ -132,6 +240,19 @@ zh:
       upload: 上传
     show: 
       save: 保存变更
+  calendar: 
+    abbr_weekdays: 
+      - S
+      - M
+      - T
+      - W
+      - T
+      - F
+      - S
+    clear: Clear
+    now: Now
+    ok: OK
+    today: Today
   cards: 
     card: 
       addresses: 地址
@@ -141,6 +262,14 @@ zh:
       social_networks: 社会网络
       vcard: 下载vCard
       websites: 网址
+    card_types: 
+      business: Business
+      fax: Fax
+      home: Home
+      mobile: Mobile
+      other: Other
+      personal: Personal
+      work: Work
     field: 
       add_addresses: 添加地址
       add_email_addresses: 添加Email
@@ -151,25 +280,64 @@ zh:
   comments: 
     actions: 
       confirm_delete: 您确认要删除此评论？
+      convert_task: "Convert to task"
+      edit: "Edit comment"
+      post_by_email: "Reply via email"
+    attach: 
+      tooltip: Attach
     comment: 
+      cannot_edit: "Comment cannot be edited after 15 minutes"
       commented_on: "-"
       commented_on_a_task_list: "-"
       confirm_delete: 您确信要删除这条评论？
+      hours: "%{hours}h"
+      hours_with_minutes: "%{hours}h %{minutes}m"
+      loading: Loading...
+    conversations: 
+      convert_to_task: "Convert to task"
+      task_name: "eg. Upload Logo Proposal"
+    convert_form: 
+      destination: "Select the destination task list"
+      name: "Enter a name for this task"
+      submit: Convert
     edit: 
       submit: 保存
     errors: 
       cannot_update: 您没有权限更新此评论
+    fields: 
+      attach: Attach
+    hours: 
+      add_hours: Hours
+      hours: "How many hours did you put into this task?"
+      time_tracking_docs: "Learn how to use time-tracking"
+      tooltip: "Add hours to this task"
     new: 
       assigned_to: "分配给:"
       assigned_to_nobody: 未分配
+      comment_on_project: "Comment on:"
       conversation: 发送消息给群里其他成员。
       project: 您在做什么？分享想法，链接，更新。
+      sending: Sending…
       submit: 保存
       task: 通过注释定义需要做什么，分配此任务给某人，发布更新，附加结果。
       task_list: 分享这个任务列表的想法。需要创建和分配任务，请使用侧务条。
+    preview: 
+      close: "Hide preview"
+      preview: Preview
+    private: 
+      all: All
+      private: "This element is only visible to people you specify..."
+      private_foreveralone: "This element is only visible to you"
+      private_global: "This element is only visible to the following people..."
+      public: "This element is visible to everybody in this project"
+      readonly_warning: "Only %{user} is able to change privacy settings."
+    watchers: 
+      explain: "Click on users to @mention them in your comment. Mentioned users will receive email notifications for your message and others after it."
+      popup_note_html: "Select <b>Notify people</b> to send notifications for this conversation."
   common: 
     accept: 接受
     and: 和
+    calendar: Calendar
     cancel: 取消
     close: 关闭
     comment: 
@@ -177,15 +345,30 @@ zh:
       other: "%{count}条评价"
     decline: 拒绝
     delete: 删除
+    download: Download
+    download_as_csv: "Download as CSV"
     edit: 编辑
+    format_name: "%{first_name} %{last_name}"
+    format_name_short: "%{first_name_first_character}. %{last_name}"
+    gantt_chart: "Gantt Chart"
+    in_project: in
+    loading: Loading...
+    logged_out: "You were logged out"
+    move: Move
     next: 下一个
     not_allowed: 您不允许操作此操作！
     or: 或者
+    pagination: "Showing results from: "
     prev: 上一个
     print: 打印此页
+    rename: Rename
     save: 保存
+    saving: Saving
     show_more: 显示更多
+    signup: "Sign up"
   confirm: 
+    delete_folder: "Are you sure you want to delete this folder?"
+    delete_group: "Are you sure you want to delete this group?"
     delete_page: 您确信要删除此页面？
     delete_task: 您确信要删除此任务？
     delete_task_list: 您确信要删除这个任务列表？
@@ -194,10 +377,15 @@ zh:
     actions: 
       confirm_delete: 您确信要删除此评论？
     column: 
+      cant_create: "You don't have permission to create conversations in this project"
       new_conversation: 新的话题
       subscribe: 订阅动态反馈
     conversation_with_extract: 
       posted_by: 发表者：
+    convert_form: 
+      name: "Name this task"
+      status: Status
+      task_list: "Create task in"
     edit: 
       submit: 更新话题
     fields: 
@@ -207,8 +395,13 @@ zh:
         body: 提出问题，告诉您的团队成员最新动态，开始一个讨论
         name: 尽量简短，这些内容将作为提醒邮件的标题
     index: 
+      cant_create: "You don't have permissions to create a conversation in this project"
+      new_conversation: "New Conversation"
       rss: 
         description: "%{name}项目的话题"
+        title: "%{name} conversations"
+      title: "Conversations in %{project}"
+      view_single: "Read more"
     link: 
       edit: 编辑
     new: 
@@ -234,6 +427,7 @@ zh:
       started_by: 开始于
     watcher_fields: 
       add_suscribers: 哪些人将关注这个话题？
+      cant_notify: "This is a public project. To avoid unwanted emails, we're not showing the list of users that you can notify."
       invite_users: 您是这个项目的唯一成员！
       no_users_yet_html: "话题因分享而更有用。现在就<a href='%{invite_link}'>邀请某人</a>加入此项目，以便他们可以读取这个话题，解答问题或收到更新提示。"
       people_all: 所有项目成员
@@ -530,6 +724,8 @@ zh:
     formats: 
       default: "%Y-%m-%d"
       long: "%Y-%m-%d"
+      month_and_day: "%B %d"
+      month_and_year: "%B %Y"
       short: "%m-%d"
     month_names: 
       - ~
@@ -550,6 +746,12 @@ zh:
       - !ruby/symbol month
       - !ruby/symbol day
     yesterday: 昨天
+  date_picker: 
+    no_date_assigned: "No date assigned"
+    urgent: 
+      info: "Will show up on \"tasks due for today\" for the assigned user"
+      long: "Urgent, to be done as soon as possible"
+      short: Urgent
   datetime: 
     distance_in_words: 
       about_x_hours: 
@@ -568,6 +770,7 @@ zh:
       less_than_x_seconds: 
         one: 少于1秒
         other: "少于%{count}秒"
+      now: now
       over_x_years: 
         one: 超过1年
         other: "超过%{count}年"
@@ -593,10 +796,14 @@ zh:
     time_ago: "%{time_ago_in_words}以前"
   deleted: 
     conversation: "已删除<b>%{name}</b>话题"
+    failed_left_project: "You cannot leave this project"
+    failed_person: "%{name} could not be removed from the project"
+    folder: "Deleted %{name} folder"
     left_project: 您不再属于此项目
     page: "已删除<b>%{name}</b>页面"
     person: "%{name}不再属于此项目"
     task: "已删除<b>%{name}</b>任务"
+    task_list: "Deleted %{name} task list"
     upload: "已删除<b>%{name}</b>文件"
   dividers: 
     actions: 
@@ -605,16 +812,53 @@ zh:
       submit: 更新
     new: 
       submit: 新增
+  downloadable: 
+    email: 
+      not_sent: "Email has not been sent. %{error}"
+      sent: "We just sent a link to the %{downloadable} to %{email}"
+      submit: "Send link"
+    enter_an_email: "Enter an Email address to send a link to this %{downloadable}:"
+    security_clarification: "Anybody with this link will be able to access %{downloadable_ext}. They will not be granted access to your projects or files."
+    security_clarification_ext: 
+      file: "this file and only this file"
+      folder: "this folder and its child folders and files"
+    sending: Sending...
+    share_link: "Alternatively, you can share the following link to this %{downloadable}:"
+    share_outside_your_team: "You can share this %{downloadable} with people outside your team."
+    type: 
+      folder: folder
+      upload: file
   emailer: 
+    accepted_invitation: 
+      go_to_project: "Go to %{project} now, and collaborate with %{user}"
+      subject: "%{user} accepted your invitation to [%{project}]"
+      user_has_accepted: "%{user} has accepted your invitation to %{project}"
+      you_can_now_collaborate: "How can you get started? Post conversations or create some tasks on the project!"
+    bounce: 
+      not_delivered: "Your email couldn't be processed by Teambox. View our documentation to learn which types of email we accept: %{link}"
+      not_project_member_error: "You are not a member of the specified Teambox project."
+      project_not_found_error: "There is no project on Teambox corresponding to this email address."
+      subject: "Error sending email to Teambox"
+      target_not_found_error: "We couldn't find the item where you are trying to post your comment."
+      user_not_found_error: "This email address is not associated with any Teambox account."
     common: 
       answer_above_this_line: 回复此行以发表回复
       do_not_answer: 请不要回复此邮件。
     confirm: 
+      complete: "complete your signup"
+      follow_this_link: "In order to %{complete} for Teambox, we need you to log in by clicking here:"
       hey: "您好, %{user_name}!"
       log_in: 现在就登录Teambox！
       plaintext_link: 如果出现问题，复制并粘贴以下链接到您的浏览器地址栏：
       problems_html: "如果您有任何问题，请通过%{support}联系我们"
       report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Teambox帐号"
+      subject: "Get started with Teambox"
+    digest: 
+      title: 
+        daily: "[%{project}] Daily digest"
+        weekly: "[%{project}] Weekly digest"
+    forgot_password: 
+      subject: "Password retrieval for Teambox"
     invitation: 
       accept_the_invitation: 接受邀请开始协作
       collaborate_with: "%{name}希望通过Teambox与您协作："
@@ -622,30 +866,90 @@ zh:
       plaintext_link: 如果以上链接不能工作，复制并粘贴以下代码到您的浏览器地址栏：
       plan_share_and_collaborate: 计划，分享和跟踪需要做的工作。足够简单。
       report_abuse: 此邮件应您的朋友要求而发送给您。如有滥用请及时报告。
+      subject: "%{user} shared [%{project}] with you"
+      subject_without_project: "%{name} invited you to Teambox"
       teambox_is_a_pm_platform: Teambox是一个用于真实世界协作的项目管理平台。
       you_have_been_invited_to: "您已经被邀请加入项目<b>%{project}</b>"
     notify: 
+      activity: 
+        create_note: 
+          body: "%{name} created a note on the page %{page}."
+          subject: "%{name} created a note"
+        create_page: 
+          body: "%{name} created the page %{page}."
+          subject: "%{name} created a page"
+        edit_note: 
+          body: "%{name} edited a note on the page %{page}."
+          subject: "%{name} edited a note"
+        edit_page: 
+          body: "%{name} edited the page %{page}."
+          subject: "%{name} edited a page"
+        title: "Activity on %{project}"
       are_watching: 已经订阅了此话题，将能够收到回复的提醒。
+      are_watching_task: 
+        one: " is subscribed to this task, and will be notified of future replies."
+        other: " are subscribed to this task, and will be notified of future replies."
       assigned_to: "分配给<b>%{user}</b>"
       comment: 在项目公告板上评论：
       comments: "%{number}评论"
       conversation: "话题:"
+      digest_reply_text: "Go to %{reply_online}."
+      digest_title_html: "Activity digest for %{project_link}"
       due_on: "截止日期：%{date}"
       my_tasks: "分配给您的更多%{project}中的任务"
       notification_settings: "您可以通过<a href='%{url}'>提醒设置</a>修改更多邮件相关设置。"
+      notification_settings_link_html: "You can change your %{settings_link} for further emails."
       project: "Teambox项目:"
       reply: 您也可以通过回复此邮件来发表您对这个话题的答复。
+      reply_by_email: "Reply by email"
+      reply_online: "Reply online"
+      settings_link: "notification settings"
       status: "状态: %{status}"
+      stop_watch: "Stop watching"
       stop_watching: "<a href='%{stop_watching_url}'>停止订阅</a>这一话题将中止收到邮件提醒。"
+      stop_watching_link_html: "%{stop_watch} this thread to stop receiving email notifications."
       task: "任务:"
+      task_commands: "Write #resolve, #reject or #hold on the top of your reply to change the task status. Write #%{username} to assign it to @%{username}, etc."
+      task_link: "view this task online"
       task_list: "任务列表:"
+      view_conversation_online: "view this conversation online"
       view_online: "您可以<a href='%{link}'>在线查看这个话题</a>，进行答复，也可以附加文件。"
+      view_this_conversation_online_html: "You can %{conversation} to answer and attach files."
+      view_this_task_online_html: "You can %{link} to comment and attach files."
+    project_membership_notification: 
+      project_link: "Click on the link below to start collaborating on %{project} now"
+      subject: "%{user} shared [%{project}] with you"
+      you_have_been_added_to: "You are now a member of the project %{project}"
+    public_download: 
+      folder: 
+        go_to_download_page: "Download files from this folder"
+        subject: "%{user} wants to share a folder with you on Teambox"
+        user_sent_you_a_link: "%{user} sent you a link to download a files from %{name}"
+      plaintext_link: "If the above link doesn't work, copy and paste the following url into your browser bar: "
+      upload: 
+        go_to_download_page: "Download this file"
+        subject: "%{user} wants to share a file with you on Teambox"
+        user_sent_you_a_link: "%{user} sent you a link to download %{name}"
     reset_password: 
+      follow_this_link: "In order to %{new_password} for Teambox, we need you to log in with the following link:"
       hey: "您好, %{user_name}!"
       log_in: 现在就登录Teambox！
+      new_password: "set a new password"
       plaintext_link: 如果出现问题，复制并粘贴以下链接到您的浏览器地址栏：
       problems_html: "如果您有任何问题，请通过%{support}联系我们"
       report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Teambox帐号"
+      subject: "Your password has successfully been reset"
+      successfully_reset: "Your password has been successfully reset."
+    teamboxdata: 
+      data_export_failed: "Your data could not be exported from Teambox. To try again, please visit the following link:"
+      data_exported: "Your data has been exported from Teambox, and is available as a download from the following link:"
+      data_import_failed: "Your data could not be imported into Teambox. Please check that the data you uploaded is valid. To try again, visit the following link:"
+      data_imported: "Your data has been successfully imported into Teambox. To view details, please visit the following link:"
+      export_failed: "Your data could not be exported"
+      exported: "Your data is ready for download"
+      hey: "Hey, %{user_name}!"
+      import_failed: "Your data could not be imported"
+      imported: "Your data has been imported"
     upload: 
       file: "文件:"
   example_projects: 
@@ -658,15 +962,92 @@ zh:
       line2: 浏览这些页面将引导您使用Teambox的各个部分。
       line3: 确保您<b>阅读介绍</b>和<b>试验</b>如何创建、修改和删除元素！
       line4: 在这个项目您不能邀请其它用户，但您可以做其它任何事。
+  folders: 
+    edit: 
+      submit: Save
+    form: 
+      default_text: "Enter a folder name"
+    new: 
+      invalid_folder: "Folder contain errors"
+      submit: "Create folder"
+    parent_folder: "Parent folder"
+    public_download: 
+      link: 
+        anchor: "Send this folder to somebody..."
+        title: "Share this folder with people outside your team"
+    rename: 
+      error: "Folder name has not been changed"
+      success: "Folder name has been changed"
   form: 
     cancel: 取消
+  friends: 
+    filter: 
+      name: "Filter by name..."
+      provider: "Filter by provider..."
+      title: "Filter friends"
+    friend: 
+      invite: Invite
+      inviting: Inviting...
+      loading: "Loading your friends..."
+      profile_page: "profile page"
+      reinvite: "Resend invitation"
+      sent: Sent!
+    index: 
+      find_more_contacts: "Find more contacts on Teambox"
+      pending_invitation: "Invitations pending..."
+    invitations: 
+      facebook: 
+        project: "Join my '%{project}' project on Teambox so we can share tasks online. Follow the link below this post on Facebook"
+        signup: "Join my Teambox so we can share projects and tasks online. Follow the link below this post on Facebook."
+      twitter: 
+        project: "Join my '%{project}' project so we can share tasks: %{link}"
+        signup: "Join my Teambox so we can share projects: %{link}"
+    pending_invitation: 
+      delivery_fail: "we tried to deliver the invitation through %{provider} but an error occurred. You can manually invite this person by sending the sign up link:"
+      project: "was invited to join the project '%{project}' through %{provider}"
+      teambox: "was invited to join Teambox %{on} through %{provider}"
+    project: 
+      title: "Invite contacts to the '%{project}' project."
+  google_docs: 
+    attach: "Attach a Google Document"
+    authorization_required: "In order to use Google Docs you must first authorize Teambox to use your Google account."
+    authorize_link: "Authorize Google Docs"
+    create: Create
+    create_new: "Create a New Blank Document"
+    creating: Creating...
+    google_doc: 
+      lock: "Lock this document, preventing further edits"
+      lock_disabled: "Only document owner can lock it"
+      unlock: "Unlock this document, to allow edit"
+      view: "Open online"
+      write_access: 
+        message: 
+          lock: "This document is now locked"
+          unlock: "This document is now unlocked"
+    index_project: 
+      title: "Google Docs mentioned in this project"
+    new_document_placeholder: "New document title"
+    search_placeholder: "Search Google documents"
   hours: 
     all_tasks: 全部任务
     all_users: 所有用户
     comments: 时间输入
+    download: Download
     entry_hours: 小时
     entry_total: 合计
+    filter_assigned: 
+      anybody: Anybody
+      my_tasks: "My tasks"
     filter_by: 过滤于
+    filter_organization: 
+      all: "All organizations"
+    filter_project: 
+      all: "All projects"
+    filters: 
+      assigned_to: People
+      organizations: Organizations
+      projects: Projects
+      tasks: Tasks
     report: 报告
     reports: 
       project: 项目
@@ -675,6 +1056,8 @@ zh:
     week_num: "第%{num}周"
     week_total: 周合计
   invitations: 
+    destroy: 
+      discarded: "The invitation to %{user} has been discarded"
     errors: 
       invalid: 无效的邀请
       invalid_code: 无效的邀请码
@@ -686,10 +1069,21 @@ zh:
     invitation: 
       discard: 放弃邀请
       invited_email: "%{inviter}邀请<b>%{email}</b>加入这个项目。"
+      invited_email_html: "%{inviter} invited <b>%{email}</b> to join the project."
       invited_user_html: "%{inviter}邀请<b>%{invitee}</b>加入这个项目。"
+      just_now: "(just now)"
       pending: 已经向此用户发送邀请邮件，但对方还没有确认邀请。
       resend: 重新发送邀请邮件
       time_ago: "(%{time_ago_in_words}以前)"
+    invite_format: 
+      enter_this: 
+        title: "Enter this"
+      title: "In the username/email box, use either a list of usernames or email addresses. e.g.:"
+      to_invite: 
+        not_example_html: "(NOT <span class=\"mention\">@fred</span> or <span class=\"mention\">@lisa</span>)"
+        title: "To invite"
+    new: 
+      also_invite_to_organization: "Invite also to the organization '%{organization}'"
     pending: 
       invited_to_join: "%{by}已邀请您加入项目%{project}."
       to_access_or: 访问项目或者
@@ -699,19 +1093,92 @@ zh:
       resent: "邀请已经重新发送给%{recipient}。如果没有收到邮件，请先查看一下垃圾邮件目录。"
       return: 返回
     search: 
+      help: Help
       invite: 邀请
       invite_from_project: 邀请来自项目
       invite_people: 邀请其他人加入此项目
       role: 选择一个角色
       submit: 发布
       username_or_email: 请输入您的团队成员的用户名或email
+    select_language: 
+      invitations_will_be_sent_in_language_html: "The invitations will be sent in %{language}"
     sent: 
       email_sent: "<b>我们刚刚发布了一个提醒邮件给此用户，邮件中包含了一个接受您项目邀请的链接。</b>. 如果他们不能收到此邮件，请确保此邮件不会作为垃圾邮件处理，或者尝试换一个邮件地址。如果还有问题，请联系我们。"
   last_announcement_html: "Read <a href='http://blog.teambox.com'>our blog</a> for the latest news about Teambox."
+  latest_announcement_html: "<strong>New</strong>: Earn money by referring new users into Teambox. Log in and go into your affiliate area to make up a 15% of the income you generate!<br/><br/>Read <a href='http://blog.teambox.com'>our blog</a> for more news about Teambox."
   locales: 
+    en: English
+    es: Spanish
+    pl: Polish
+    tr: Turkish
     zh: 中文
+  marketing: 
+    about_teambox: "About Teambox"
+    about_teambox_title: "About Teambox"
+    case_studies: "Case studies"
+    case_studies_title: "Companies using Teambox and their testimonials"
+    change_locale: 
+      accept: "View in %{language}"
+      another_language_available: "This page is also avaliable in %{language}"
+      cancel: "Hide this"
+    history: "The Teambox Story"
+    history_title: "Origins and milestone for Teambox"
+    home: Home
+    home_title: "Home | Teambox"
+    newsletters: "Past newsletters"
+    newsletters_title: "Corporate communications"
+    press: "Press room"
+    press_title: "Teambox logo, PR notes and press releases"
+    pricing: Pricing
+    pricing_title: "Plans & Pricing"
+    tour: Tour
+    tour_conversations: Conversations
+    tour_conversations_title: "Status messaging"
+    tour_files: Files
+    tour_files_title: "File sharing and Dropbox alternative"
+    tour_pages: Pages
+    tour_pages_title: "Wiki Software with Pages"
+    tour_projects: Projects
+    tour_projects_title: "Project Management tools"
+    tour_social: "Social tools"
+    tour_social_title: "Social productivity software"
+    tour_tasklists: "Task lists"
+    tour_tasklists_title: "Getting Things Done and Task management"
+    tour_time: "Time tracking"
+    tour_time_title: "Time tracking software"
+    tour_title: "Project collaboration for agile teams"
+    tour_video: "Watch video"
+    tour_video_title: "Tutorial video for Teambox"
+    webinars: "Previous and upcoming webinars"
+    webinars_title: "Online training sesssions for task management"
+    what_is_teambox: "What is Teambox?"
+    what_is_teambox_title: "Features & Information"
+  memberships: 
+    index: 
+      add_as_admin: "add as an admin"
+      add_to_the_org: "Add to the organization as a participant"
+      admins: 
+        explain: "Can access any project and manage the organization's settings."
+        title: Admins
+      in_projects_but_not_in_the_organization: 
+        explain: "Can access only the projects they are invited to. Can't create projects inside the organization."
+        title: "External people"
+      make_admin: "Give admin rights"
+      no_users: "No users here"
+      remove: "remove from this organization"
+      remove_admin: "Remove admin rights"
+      title: "Users in %{name}"
+      users: 
+        explain: "Can create projects inside the organization, but only access the projects they're invited to."
+        title: Participants
+    roles: 
+      admin: "As an administrator. Will be able to add new users and manage the organization."
+      external: "Don't invite. User won't be able to create projects in this organization."
+      participant: "As a participant. Will be able to create his own projects."
   not_found: 
     conversation: "在这个项目中找不到话题%{id}。"
+    data: "There was a problem locating your data."
+    folder: "Folder not found in this project."
     page: "在这个项目中找不到页面%{id}。"
     project: "项目%{id}不存在。"
     task: "在这个项目中找不到任务%{id}。"
@@ -733,13 +1200,17 @@ zh:
       format: 
         delimiter: ","
         format: "%u%n"
+        precision: 2
         separator: "."
         unit: $
     format: 
       delimiter: ","
-      separator: "."
       precision: 2
+      separator: "."
     human: 
+      format: 
+        delimiter: ""
+        precision: 1
       storage_units: 
         format: "%n %u"
         units: 
@@ -750,6 +1221,200 @@ zh:
           kb: KB
           mb: MB
           tb: TB
+    percentage: 
+      format: 
+        delimiter: ""
+    precision: 
+      format: 
+        delimiter: ""
+  oauth: 
+    account_linked: "Your account has been linked."
+    already_linked_to_your_account: "This service is already linked to your account. You can log in with it."
+    already_taken_by_other_account: "This service is already linked to another account on the system. Try logging out and logging in with it. To link it to a different account, you'll need to unlink it from the current one."
+    app_unlinked: "App unlinked"
+    auth_status: "OAuth Auth"
+    auth_status_link: "Link with your account"
+    auth_status_linked: "Linked with the provider"
+    authentication_failure: "Authentication failure, '%{message}'"
+    authorize: 
+      allow: Allow
+      authorize_access: "Allow this application access?"
+      deny: Deny
+      offline_access: "Access the account at any time"
+      offline_access_description: "The application will be able to access your account until you revoke access."
+      read_projects: "Access project data"
+      read_projects_description: "All project data, such as conversations, tasks, task lists, pages, and so on will be visible to the application."
+      title: "Authorize Application"
+      write_projects: "Create project data"
+      write_projects_description: "Create conversations, tasks, task lists, pages, etc."
+    link_account: "Link account."
+    logged_in: "Logged in successfully"
+    not_linked: "That service is not linked to your Teambox account."
+    sign_up_conflict: "We already have an account on the system with same username and/or email. If you already have an account you should login to your account instead of creating a new one."
+    signup_for_a_new_account: "click here to sign up for a new account"
+    this_account_will_be_linked_to: "This account will be linked with %{provider}"
+    unlink_account: "Unlink account."
+    your_account_is_linked_html: "Your %{provider} profile is <strong>linked</strong> to Teambox."
+    your_account_is_not_linked_html: "Your %{provider} profile is <strong>not linked</strong> to Teambox."
+  oauth_clients: 
+    client: 
+      edit: Edit
+    client_token: 
+      authorized_at: "Authorized on %{time}"
+      confirm_revoke: "Are you sure you want to revoke access to this application?"
+      revoke: "Revoke access"
+    developer: 
+      no_registered_applications_html: "Do you have an application you would like to register for use with us using the <a href='http://oauth.net'>OAuth</a> standard? You must register your web application before it can make OAuth requests to this service."
+      registered_applications_html: "You have the following client applications registered."
+      title: "Third-party applications"
+    edit: 
+      confirm_delete: "Are you sure you want to delete this application?"
+      submit: Update
+    form: 
+      callback_url: "Callback URI"
+      name: Name
+      support_url: "Support URL"
+      url: "Client URL"
+    index: 
+      authorized_applications: "The following applications are authorized to access your Teambox account."
+      developers_register_html: "<strong>Developers:</strong> Register your apps <a href='%{url}'>Here</a>"
+      no_authorized_applications: "No applications are authorized to access your Teambox account."
+      register_app: "Register a new app"
+      title: "Linked applications"
+    new: 
+      submit: "Register application"
+      title: "Register a new application"
+  organizations: 
+    active_projects: 
+      dont_belong: "You're not part of this project"
+      no_active_projects: "There are no active projects in this organization."
+      role_html: "you're an <strong>%{role}</strong>"
+      settings: settings
+      storage: "%{now} of files"
+      title: "Active projects"
+    appearance: 
+      submit: "Save changes"
+      title: "Appearance for %{organization}"
+    appearance_fields: 
+      delete_custom_logo: "Delete custom logo (and revert back to the Teambox one)"
+      description_html: "HTML to be displayed on the entrance page <a href=\"http://help.teambox.com/knowledgebase/articles/10249-customizing-your-login-page\">Learn how to use this</a>"
+      logo_html: "Logo <em>Ideally should be 134x36 pixels</em>"
+    archived_projects: 
+      last_activity: "last activity at %{date}"
+      title: "Archived projects"
+    billing: 
+      billing_area_html: "You can downgrade or change your billing options at any time from the <a href='%{link}'>billing area</a>."
+      billing_email_html: "Billing e-mail <em>We will send invoices to this address</em>"
+      cancel: "Cancel subscription"
+      current_plan: "Your current plan"
+      downgrade: Downgrade
+      plan: Plan
+      projects: Projects
+      search: Search
+      storage: Storage
+      submit: "Update billing e-mail"
+      suggested_upgrade: 
+        for_only: "for $%{price} more a month"
+        get_projects_html: "Up to <b>%{number} projects</b>"
+        get_storage_html: "Up to <b>%{number}</b>"
+        upgrade_to: "Upgrade to %{plan}"
+      upgrade: "Upgrade now!"
+      yearly_plans: 
+        save_with_yearly_plans_html: "<b>Save 20%</b>. You can also sign up for any plan yearly and <b>get two months free</b>."
+        signup_links_html: "Sign up yearly for <a href='%{pro}'>Pro ($990)</a>, <a href='%{basic}'>Basic ($290)</a> or <a href='%{personal}'>Personal ($120)</a>."
+    column: 
+      admin_projects: "Manage projects"
+      admin_users: "Manage users"
+      appearance: Appearance
+      billing: "Plans and Billing"
+      delete: "Delete this organization..."
+      general_settings: "General settings"
+      invoices: Invoices
+      task_list_templates: "Task List Templates"
+    delete: 
+      clarification: "If you delete this organization, all the information that's attached to it organization will be lost forever. The users that belong to this organization will still be able to login to Teambox and work with their other organizations."
+      confirm: "I understand that deleting this organization is irreversible and all the content related to this organization will be lost."
+      delete: "Delete this organization"
+      deleted: "You deleted the organization"
+      go_delete_some_projects_html: "You can't delete an organization while it still has projects inside. Please <a href='%{link}'>delete or transfer</a> all the projects from this organization before deleting it."
+      go_downgrade_to_free_plan_html: "You need to <a href='%{link}'>unsubscribe</a> from the paid plan before deleting the organization. You can downgrade your account to the free plan from the <a href='%{link}'>billing</a> section."
+      need_to_be_admin: "You need to be an administrator to destroy this organization"
+      not_paid_plan: "You can't delete an organization with a paid plan."
+      not_with_projects: "You can't destroy this organization because it still has projects"
+    edit: 
+      invalid: "Invalid organization"
+      number_of_projects: "%{count} projects"
+      number_of_users: "%{count} users"
+      public_site: "Your organization's public site is %{link}"
+      saved: "Changes saved"
+      submit: "Save changes"
+      there_are: "There are"
+      title: "Settings for %{organization}"
+    external_view: 
+      create_your_own_org_html: "However, you can <a href='%{link}'>create your own organization</a> for your projects."
+      request_permission: "To access this organization, you must request permission to some of the administrators:"
+      title: "%{name}"
+      you_cant_access: "You don't have permission to access or edit this organization."
+    fields: 
+      domain_html: "Domain <em>You can use your own domain for your organization, check the <a href='http://help.teambox.com/knowledgebase/articles/10247-custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em>"
+      name_html: "Organization name"
+      name_placeholder: "Your organization"
+      omit_email_processing_html: "Do not process incoming emails"
+      permalink_html: "Short organization code <em>No spaces allowed. Will be used for the web address.</em>"
+    index: 
+      about: 
+        explain1: "An organization allows you to group projects and users under a brand name."
+        explain2: "You can link them to your own domain to customize your Teambox space. Use your own logo and login page, and share it with your clients."
+        title: "About Organizations"
+      new: 
+        create: "+ Create a new Organization"
+        explain: "Brand it with your own logo and website, and create projects inside."
+      title: Organizations
+    invoices: 
+      address: Address
+      amount: Amount
+      company: Company
+      company_name: "Company name"
+      date: Date
+      invoice: "Teambox invoice"
+      invoices: "Your Invoices"
+      name: Name
+      no_invoices: "You don't have any invoice"
+      optional: "Optional data for the invoice"
+      print: Print
+      update_billing_details: "Update your billing address"
+      vat: "VAT Code"
+    new: 
+      created: "Your organization has been created!"
+      explain: "Organize your people and projects inside an organization."
+      invalid_organization: "Invalid organization, correct errors and try again."
+      submit: "Create Organization"
+      title: "New Organization"
+    not_admin: "You can't access the billing page because you are not an administrator."
+    not_in_community: "The community version doesn't support multiple organizations"
+    organization: 
+      admin: admin
+      external: "external worker"
+      more_users: "and %{count} more users"
+      number_of_projects: 
+        one: "One project"
+        other: "%{count} projects"
+      participant: participant
+      upgrade: "Upgrade your plan!"
+      you_are_html: "You're an <strong>%{role}</strong> of this organization"
+      your_plan_is: "Your plan is %{plan}"
+    projects: 
+      instructions_html: "These are the projects for this organization. If you're an admin, you can transfer a project to <a href='%{organizations_link}'>other organizations</a> by opening the project's settings."
+      new_project: "New project"
+      title: "Projects in %{organization}"
+    usage: 
+      active_projects: 
+        explain: "Deleted and archived projects don't count against the limit."
+        title: "%{now} / %{max} active projects"
+      storage: 
+        explain: "Attached files on your organization."
+        title: "%{now} / %{max}"
+    you_are_not_admin: "You are not an admin of this organization. Only admins can edit its settings and manage users."
   page_title: 
     archived_task_lists: 存档任务
     create_uploads: 文件上传
@@ -767,6 +1432,8 @@ zh:
     new_pages: 新页面
     new_projects: 新增项目
     new_users: 注册
+    results_search: Search
+    show_plans: Plans
     show_projects: 概述
     welcome_users: 欢迎！
   pages: 
@@ -776,24 +1443,37 @@ zh:
       new_task_list: 任务列表
       new_upload: 上传
     column: 
+      all_pages: "All Pages"
       new_page: 新增页面
+      reorder: Reorder
+      reorder_done: Done
     edit: 
       submit: 更新
       title: 修改页面
     fields: 
       description: 说明
       description_description: 可选。可以输入任何其他人在阅读或修改此页面时需要了解的信息。
+      is_private: Privacy
       name: 标题
       name_description: 请使用简短清晰的标题
     index: 
+      cant_create: "You don't have permission to create pages in this project"
+      new_page: "New Page"
       pages_in_this_project: 当前项目的页面
       rss: 
         description: "%{name}项目的页面"
+        title: "%{name} pages"
+      title: "Pages in %{project}"
     new: 
       define1_html: 这里您可以和您的团队<b>分享有用的信息</b>：路线图，有意思的链接，规定，邮件模板等等...
       define2_html: 修改一个项目是相当容易和有趣的事，通过拖曳元素您可以即时修改页面。
+      feature1_html: "<b>Share</b>. All your teammates can view and edit the project's pages."
+      feature2_html: "<b>Publish</b>. Instant web publishing with shared pages. Show the world."
+      feature3_html: "<b>Print</b>. Pages are printer-friendly. Try printing or exporting a PDF!"
+      feature4_html: "<b>Wiki</b>. Pages acts like a wiki, giving quick access to the project's information."
       footer1_html: 使用Teambox作为您的频繁使用的<b>共享白板</b>。
       footer2_html: 您也可以添加附件到任何页面。使用愉快！
+      sending: Sending...
       submit: 创建
       title: 新增页面
     primer: 
@@ -809,6 +1489,12 @@ zh:
       item4_html: "<b>Wiki</b>. 页面就象是wiki，提供了一种快速访问项目信息的方式。"
     slots: 
       insert_here: 插入在这里
+  password_strength: 
+    average: Average
+    strong: Strong
+    too_long: "Too long"
+    too_short: "Too short"
+    weak: Weak
   people: 
     column: 
       confirm_delete: 您确信要把此人从项目中移除？
@@ -816,12 +1502,16 @@ zh:
       inviting: 邀请其它用户
       leave_project: 离开项目
       leaving: 离开项目
+      no_contacts: "There are no people available to invite."
       only_admins_can_invite: 只有管理员才可以邀请其他人加入此项目。
+      select_project: "Select a project"
       you_can_leave: 您可以在任何时候离开这个项目。如果这样做，你将不能访问任何数据，不能收到任何提醒邮件。其他人仍然可以使用此项目，不会丢失任何数据。
+      you_cannot_leave: "You cannot leave this project as you are the only administrator present."
     edit: 
       submit: 更新人员
     errors: 
       user_or_email: 用户没有找到。请输入他的用户名或Email。
+      users_or_emails: "Invalid usernames or email addresses"
     fields: 
       admin: 管理员。可以邀请新用户加入此项目。
       commenter: 评论者。可以评论，但不能创建新的元素。
@@ -833,6 +1523,7 @@ zh:
       commenter: 评论者
       confirm_delete: 您确信要把此人从项目中移除？
       leave_project: 离开项目
+      not_logged_in_recently: "Not logged in recently"
       observer: 观察者
       owner: 项目所有者
       participant: 参与者
@@ -840,11 +1531,40 @@ zh:
       transfer: 改变所有者
     link: 
       edit: 编辑
+    update: 
+      success: "You have updated %{name}'s role"
+  plans: 
+    copies: 
+      copy1_html: "Like Teambox? Get more projects! <a href='%{link}'>Upgrade now</a> to support our development!"
+      copy2_html: "<a href='%{link}'>Upgrade now</a> to get more projects, storage and search across all projects."
+      copy3_html: "<a href='%{link}'>Get more done</a> with a premium account! Extra storage, more projects."
+      copy4_html: "<a href='%{link}'>Make work better</a> with a premium account: Search bar across all projects."
+      copy5_html: "<a href='%{link}'>Upgrade your Teambox account now</a> and enjoy professional collaboration!"
+      copy6_html: "A search bar across all projects will save you hours. <a href='%{link}'>Upgrade now</a> to get it!"
+      copy7_html: "Your business matters! <a href='%{link}'>Get the best support</a> for Teambox with our premium plans."
+    show: 
+      branding: 
+        configure_html: "Your plan supports custom branding and domain names. <a href='%{link}'>Configure your branding here</a>."
+        not_available_html: "Your plan doesn't support <strong>custom branding</strong>. Upgrade to a higher account to get it."
+      current_plan_html: "Your current plan is <strong>%{name}</strong>."
+      max_projects: "You can have up to %{max} projects."
+      max_storage: "You can store up to %{max}."
+      plan: "Teambox plans"
+      title: "Which organization would you like to upgrade?"
+      usage: "You can create <b>%{available_projects} more projects</b> on this organization"
+    thanks: 
+      explain: "By purchasing a premium account, you're contributing to Teambox's development and getting much more."
+      reset_your_password: "Please enter a new password and confirm it."
+      title: "Thank you for your support!"
+      you_can_now_create: "You can now create up to %{projects} projects."
   projects: 
     edit: 
       change_owner: 修改所有者
+      deleted: "You deleted the project"
+      error: "Couldn't change project settings"
       invalid_transferred: 项目所有者不能移交，请修正错误并重试。
       submit: 保存修改
+      success: "Project updated"
       title_deletion: 存档/删除项目
       title_ownership: 所有者
       title_picture: 项目Logo
@@ -852,31 +1572,88 @@ zh:
       transferred: 项目所有者已经被移交。
     fields: 
       archived: 存档此项目
+      archived_html: "Archive this Project <em>This will keep it accessible for its members, but not writable anymore.</em>"
       archiving: 存档此项目
       confirm_delete: 您确信要永久删除此项目？此操作不可恢复。如果您还想保留它，请使用存档项目操作。
+      delete_project: 
+        body_extra_html: "Deleting this project will not cancel your Teambox subscription. To cancel your subscription <a href='%{url}''>click here</a>."
+        body_html: "This will <strong>permanently</strong> delete all data in the project."
+        title: "Are you sure you want to delete %{project}?"
+      delete_this_project: "Delete this project"
+      extra_options: "More options"
       forever: 永久删除此项目
       name: 名称
+      name_example: "Project name"
+      name_html: "Project Name <em>Keep it short and descriptive, for example: Taggart Transcontinental.</em>"
+      new: 
+        choose_organization: 
+          choose_org_html: "Organization <em>Which organization does this project belong to?</em>"
+          new_org_name_html: "Organization name <em>You may later add more projects to this same organization</em>"
+          or_create_a_new_org_html: "or create a <a href='%{link}'>new organization</a>"
+        time_tracking_docs: "Learn more."
+      organization: Organization
+      organizations: 
+        available_projects: "project slots available: %{number_of_projects}"
+        current_organization: "current organization"
+        organization_has_too_many_project_in: "This organization has too many projects for its plan."
+        upgrade: upgrade
+        upgrade_organization: "You should now upgrade this organization."
       owner: 所有者
       owner_description: 所有者是一个项目的主要负责人，他不能被从此项目中移除，除非先行指定另一个所有者。
-      permalink_html: URL
       permalink_description: 这是您项目的网址。请尽量简短，不允许有空格。
+      permalink_html: URL
+      public_project_html: "Public project. <em>Anybody will be able to access it and join it at the <a href='/public'>public projects section</a>.</em>"
+      select_an_organization: "Select an organization"
+      settings: 
+        manage_organizations: "Manage organizations."
+        you_cant_transfer_this_project_html: "This project belongs to the <b>%{organization}</b> organization. You don't have the rights to transfer it."
       tracks_time_html: 启用时间跟踪
     index: 
       archived: "显示%{count}个已存档项目..."
+      close_pane: "Close projects view"
       new_project: 新增项目
       projects: 我的项目
       rss: 
         description: 概览所有您的项目
         title: 项目摘要
       subscribe: 订阅动态反馈
+    invite_people: 
+      explain_invitations: "Choose who will have access to this project. You can add or remove people later."
+      invite_by_email: "Invite users by entering their email addresses"
+      invite_from_this_organization: "Invite users already in the %{organization} organization"
+      sending: "Sending invitations..."
+      submit: "Send invitations and start collaborating"
+      title: "Invite people to %{project}"
+    join: 
+      welcome: "You're now part of this project"
+    list: 
+      archived: Archived
+      archived_at: "archived at %{date}"
+      show_archived: 
+        one: "Show one archived project"
+        other: "Show %{count} archived projects"
     new: 
+      active_projects: 
+        one: "You have one active project."
+        other: "You have %{count} active projects."
+        zero: "You have no active projects."
       create_an_example_project: "第一次使用Teambox？可以先<a href='%{link}'>创建一个样例项目</a>以尝试并熟悉Teambox。"
       created: 您的项目已经创建成功！
+      explain1_html: "A project is a shared group with your teammates. Use it to post Conversations, Tasks and Files."
+      explain2_html: "You can create a project for each area: Development, Sales, your client projects, etc."
       invalid_project: 无效的项目，请修正错误并重试
       new_project: 新项目...
       not_allowed: 您的当前帐号不能创建任何项目。
+      select_an_organization: "You need to select an organization for your project"
+      sending: "Creating the project…"
       submit: 创建项目并开始邀请其他人
       title: 创建项目
+      upgrade: 
+        to_2_html: "<a href='%{link}'>Upgrade your account now</a> to create <b>up to %{projects} projects</b>, store up to <b>%{storage} Gb</b> of files and use the <b>search bar across all projects</b>."
+      you_can_create_more: 
+        one: "You can create one more project with your current plan."
+        other: "You can create %{count} more projects with your current plan."
+        zero_html: "You can't create any more projects.<br/>The maximum of projects with your current plan is %{max}."
     new_primer: 
       define1_html: 项目是一个与您的团队成员共享的群。
       define2_html: 在项目中，每个项目成员可以：
@@ -890,6 +1667,31 @@ zh:
       footer: 此项目归你所有。你可以随时发送这个项目给其他人。
       limited: 作为免费帐户，你最多只能上传50M的附件到这个项目。
       upgrade: 现在就升级您的帐号！
+    new_project_suggestions: 
+      add_conversations: 
+        content: "Start a discussion with the group, it's as easy as sending an email."
+        title: "Post a conversation"
+      add_people: 
+        content: "This project is private. Invite anyone you would like to have access to it."
+        title: "Add collaborators"
+      add_tasks: 
+        content: "Start planning your project with deadlines and deliverables by using tasks."
+        title: "Create some tasks"
+    not_in_project: 
+      explain_admin_html: "In order to view this project, you must join it. This will give you access to its conversation wall, tasks, pages and files. You can do this because you're an administrator of the <b>%{organization}</b> organization."
+      explain_public_html: "In order to view this project, you must join it. This will give you access to its conversation wall, tasks, pages and files. You can do this because this is a <b>public project</b>."
+      join: "Join this project"
+      not_allowed: "This is a private project and you're not authorized to access it."
+      title: "Join '%{project}' project?"
+    pages: 
+      new: "+ New page"
+      title: Pages
+    people_list: 
+      invite_people: "Invite people..."
+      pending_invitations: 
+        one: "One invitation pending"
+        other: "%{count} invitations pending"
+      people_in_project: "People in this project"
     primer: 
       create_first: 创建您第一个项目!
       define1_html: 项目用户与一组人进行<b>协作</b>：建立网站，组织一次聚会，客户工作...
@@ -901,18 +1703,32 @@ zh:
       item3_html: <b>讨论</b>关于任何重要的决定（话题）
       item4_html: <b>计划</b>需要完成的任何及发布对任务的更新。
       item5_html: <b>分享信息</b>于多个项目，通过易于修改的页面。
+    recent_conversations: 
+      first: "+ Create the first conversation"
+      new: "+ New conversation"
+      title: "Recent conversations"
+      view_all: "View all conversations"
     show: 
       new_task_list_link: 新建任务列表
+      public_project: "Public site for this project"
       rss: 
         description: "项目%{name}的近期活动"
         title: "%{name}"
       subscribe: 订阅动态反馈
       text_styling: 文本样式
       tip: "引用某人的 @username，某人将会收到一个包含您消息内容的email"
+      title: "Recent activity for %{project}"
       update_your_status: 更新您的状态...
+  public_downloads: 
+    download: 
+      download_file: "Download file:"
+    not_found: "%{downloadable} not found. Verify the link you followed or request a new link in case of problem."
+    promo_p1: "This %{downloadable} is shared using Teambox, a collaboration platform for your projects."
+    promo_p2: "Enjoy better task management, file sharing and group communication."
   reset_passwords: 
     create: 
       invalid: "您输入的修改密码地址无效或已经过期。请尝试再次使用主页上的找回密码功能。<br/>请检查电子邮箱地址并重新尝试。如果不能成功，请联系我们%{support}"
+      invalid_html: "The change password URL you visited is either invalid or expired. Try using I Forgot my Password again from the home page.<br/>If that doesn't work, contact us at %{support}"
       not_found_html: "我们不能找到任何使用此电子邮箱的用户： %{email}<br/>请检查电子邮箱地址并重新尝试。如果不能成功，请联系我们%{support}"
       password_not_updated: 新密码无效，请重试。
       password_updated: 密码修改成功，请重新登录
@@ -921,10 +1737,31 @@ zh:
       email: 您注册时使用的邮箱是？
       submit: 发给我一个重置密码的链接
       title: 忘记密码？
+    reset: 
+      reset_your_password: "Please enter a new password and confirm it."
+      submit: "Reset my password"
+      title: "You can now reset your password"
     sent: 
       follow_the_link_html: 点击此邮件中的链接以登录Teambox！如果您找不到邮件，请尝试看一下垃圾邮件夹。
       login_link_sent: "我们将发送邮件到%{email}给您以重置您的密码。"
       title: 重置密码
+  roles: 
+    admin: admin
+    commenter: commenter
+    observer: observer
+    participant: participant
+  search: 
+    close_search: "Close search results"
+    found_results: "Found %{length} results"
+    index: 
+      no_results: 
+        explain: "Try using more specific search terms to find more results."
+        title: "We didn't find any results for '%{term}', sorry!"
+      search_again: "Search again"
+      title: "Searching in all projects"
+      title_in_project: "Searching in project: %{project}"
+    placeholder: "Search all projects"
+    results_for: "Results for %{search_terms}"
   sessions: 
     fields: 
       forgot: 忘记密码？
@@ -939,30 +1776,76 @@ zh:
   shared: 
     archived_projects: 
       archived_projects: 已存档的项目
+    chrome_frame: 
+      enhance_html: "使用谷歌浏览器。点击<a href=\"%{link}\" target=\\\"_blank\\\">这里</ a>，然后安装。"
+    collapsed_mode: 查看异常的工作进度
+    confirm_email: 
+      change_email: "use a different e-mail address"
+      go_to_your_email_to_confirm: "Go to %{email} to confirm your account."
+      resend_email: "Resend the instructions"
+    expanded_mode: 查看延迟的工作进度
     footer: 
+      feedback: Feedback
       help: 帮助
       mobile: 移动版
       support: 反馈和缺陷
     gantt_banner_primer: 
       title: 在甘特图中没有需要显示的任务列表
     global_navigation: 
+      help: "Help & Feedback"
       home: 主页
       login: 登录
       logout: 注销
       project_invitations: "邀请数 (%{count})"
       settings: 设置
+    instructions: 
+      send_email: 通过邮件发表回复...
+      send_email_conversations: 通过邮件发起会议...
+      send_email_help_conversation_html: "To post a new comment to this conversation send an email to <a href=\"mailto:%{email}\">%{email}</a>. Only members from the project can post to the conversation."
+      send_email_help_conversations_html: "To create a new conversation send an email to <a href=\"mailto:%{email}\">%{email}</a> with Subject for the title and Body for the comment. Only members from the project can create a new conversation."
+      send_email_help_project_html: "To post a new comment to this project's activity wall send an email to <a href=\"mailto:%{email}\">%{email}</a>. Only members from the project can post to the wall."
+      send_email_help_task_html: "To post a new comment to this task send an email to <a href=\"mailto:%{email}\">%{email}</a>. Only members from the project can comment to the task."
+      subscribe_to_calendars: 订阅日历...
+      subscribe_to_feeds: 订阅feeds...
+    invite_contacts: 
+      find_more_contacts: "Find more contacts"
+      note1: "Your contacts will not be invited to your projects."
+      note2: "They will be able to create their own accounts."
+      title: "Invite your friends to Teambox"
     navigation: 
+      affiliate: "Affiliate area"
       all_projects: 全部项目
+      conversations: Conversations
+      dropbox: "Dropbox folders"
+      files: Files
+      gantt_and_calendars: 甘特图和日历
+      my_tasks: 我的任务
       new_project: +
+      open_my_tasks: 打开所有任务
+      organizations: 组织
+      pages: Pages
+      people: "People & Permissions"
+      recent_activity: 近期活动
+      settings: Settings
+      show_all_organizations: "Manage organizations..."
+      show_all_projects: 显示所有项目
+      show_all_tasks: 显示所有任务
+      tasks: Tasks
+      time: 时间
+      today: 今天
       welcome: 欢迎
     project_navigation: 
+      affiliate_area: "Affiliate Area"
       all_conversations: 所有话题
       all_pages: 所有页面
       all_task_lists: 所有任务
       conversations: 话题
       files: 文件
+      gantt: "Calendar and charts"
       invitations: 邀请
       login: 登录
+      organization: Organization
+      organizations: Organizations
       overview: 概述
       pages: 页面
       people: 成员
@@ -992,6 +1875,7 @@ zh:
       all_tasks: 全部任务
       everybodys_tasks: 所有人的任务
       hide_archived_tasks: 隐藏归档任务
+      my_assigned_tasks: "only tasks assigned to me"
       my_tasks: 
         one: 我的1个任务
         other: "我的%{count}个任务"
@@ -999,17 +1883,22 @@ zh:
     upcoming_events_primer: 
       title: 在日历中没有需要显示的任务
     upgrade_browser: 
-      chrome: "Chrome,"
-      firefox: Firefox
-      ie: "升级Internet Explorer"
+      chrome: "谷歌浏览器,"
+      firefox: 火狐浏览器
+      ie: 请升级至IE8
       or_install: 或者安装
-      safari: Safari
-      upgrade: "您正在使用一个过于陈旧版本的Internet Explorer，Teambox可能不能正常工作。"
+      safari: Safari浏览器
+      upgrade: 你正在使用低版本的IE浏览器，可能无法获得最好的体验，
     user_navigation: 
       account_settings: 帐号设置
+      delete_account: "Delete Account..."
+      linked_accounts: "Linked Accounts"
+      linked_apps: "Linked Apps"
       notifications: 提醒
+      plans_and_billing: "Plans and Billing"
       profile_information: 个人信息
       profile_picture: 个性图片
+      your_data: "Import / Export"
     watchers: 
       nobody_watching: 没有人在关注
       people_watching: "关注中的人: "
@@ -1017,6 +1906,12 @@ zh:
       stopped_watching: 您将不再收到此记录的提醒。
       unwatch: 取消关注
       watch: 关注
+  sites: 
+    fields: 
+      password: Password
+      username_or_email: "Email or Username"
+    show: 
+      submit: "Log in"
   support: 
     array: 
       last_word_connector: ", 和 "
@@ -1024,16 +1919,39 @@ zh:
       words_connector: ", "
     select: 
       prompt: 请选择
+  task_list_templates: 
+    description: Description
+    explanation: "A task list template is a set of common tasks you can repeatedly create task lists from."
+    form: 
+      name_html: "Template name <i>eg. Design process</i>"
+    index: 
+      new: "New Task List Template"
+      title: "Task List Templates for %{name}"
+    name: "Template name"
+    task: Task
+    task_name: "Task name"
+    tasks: Tasks
+    title: "Task List Template"
   task_lists: 
     actions: 
+      archive: "archive this task list"
+      confirm_resolve_and_archive: "Are you sure you want to resolve and archive this task list?"
+      rename: "Rename task list"
+      resolve_and_archive: "Resolve all tasks and archive"
+      set_dates: "Set the start & end date"
       show_archived: 
         one: 显示一条已存档的任务
         other: "显示%{count}条已存档的任务"
+    archive_box: 
+      unarchive_list: "This task list is archived."
     archived: 
       description: 您正在查看已存档的任务，这些任务已经被关闭。
       title: 所有已存档的任务
     column: 
+      cant_create: "You don't have permission to create tasks in this project"
+      gantt_view: "Project Gantt and calendar"
       new_task_list: 创建任务列表
+      other_views: "Other views"
       subscribe: 订阅动态反馈
     destroy_message: 
       deleted_html: "任务列表<b>%{name}</b>已经被成功删除！"
@@ -1045,17 +1963,57 @@ zh:
         too_long: 名称不能超过255个字符
     fields: 
       finish_on: "结束于... <i>可选</i>"
+      finish_on_html: "End on... <i>optional</i>"
       name: 任务列表名称
+      name_html: "Choose a name for this Task List <i>eg. Prepare a Prototype</i>"
+      no_templates_yet_html: "You didn't create a task list template yet. Go to your organization's %{link}"
+      optional: "If you set starting and ending dates, this task will be displayed in the Gantt chart"
+      or_from_scratch: "or create a Task List from scratch"
+      or_from_template: "or create a Task List from a template"
       start_on: "开始于... <i>可选</i>"
+      start_on_html: "Starts on... <i>optional</i>"
       task_list: 任务列表为您的项目定义一个里程碑。在任务列表中，您可以创建任务并分配任务给项目成员。
+      task_list_templates_page: "Task List Templates page"
+      title: "New Task List"
+    filter: 
+      2weeks: "Next 2 weeks"
+      3weeks: "Next 3 weeks"
+      anybody: Anybody
+      anytime: "Any time"
+      by_name: "By name..."
+      filter_tasks: "Filter tasks"
+      hide: Hide
+      late_tasks: "Late tasks"
+      month: "Within 1 month"
+      my_tasks: "My tasks"
+      no_date_assigned: "No date assigned"
+      today: Today
+      tomorrow: Tomorrow
+      unassigned: Unassigned
+      week: "This week"
+    gantt_view: 
+      back_to_normal_view: "Go back to normal view"
+      view_for_all_projects: "view Calendar and Gantt charts for all projects"
     index: 
       add_link: 创建任务列表
       empty: 此目录中没有任务！
+      ends_on: "Ends on %{date}"
+      gantt_view: "Project Gantt and calendar"
+      no_dates_assigned: "No dates assigned"
+      other_views: "Other views"
+      rss: 
+        description: "Tasks activity for project %{name}"
+        title: "%{name} task updates"
+      starts_on: "Starts on %{date}"
       tasks_for_all_projects: 所有项目的任务
+      tasks_for_all_projects_explain: "Displaying all tasks. In order to manage task lists and reorder tasks, open each project's tasks."
+      tasks_for_project: "Task lists for %{project}"
     link: 
       edit: 编辑
       new: 创建任务列表
       reorder: 重新排序
+      reorder_done: "Done reorder"
+      unarchive: Unarchive
     new: 
       submit: 创建任务列表
       title: 创建任务列表
@@ -1080,6 +2038,8 @@ zh:
       archived_html: "任务 <b>%{name}</b>已经成功存档！"
     assigned: 
       assigned_to: "分配给%{user}"
+      myself: "Assign to myself (%{user})"
+      unassigned: "Cleared the assigned user"
     create: 添加任务
     destroy_message: 
       deleted_html: "任务 <b>%{name}</b>已经成功删除！"
@@ -1087,15 +2047,25 @@ zh:
       due_on: 截止于
       today: 今天
       tomorrow: 明天
+      undefined: "No due date"
     edit: 
+      sending: "Updating the task…"
       submit: 修改任务
     errors: 
       name: 
         cant_be_blank: 必须不为空
         too_long: 必须少于255字符
     fields: 
+      assigned_to: "Who is responsible?"
+      assigned_to_nobody: Nobody
+      body_html: "What needs to be done? <i>optional</i>"
       due_on: "需要在...之前完成 <i>(可选)</i>"
+      due_on_html: "Needs to be done before... <i>optional</i>"
       name: 有哪些任务需要完成？
+      name_html: "Enter a Task title <i>eg. Upload Logo Proposal</i>"
+      optional: "You can provide better instructions for this Task below."
+      task: "Choose an actionable task. The more specific, the better."
+      title: "New Task"
     link: 
       edit: 编辑
       hide_archived_tasks: 
@@ -1105,9 +2075,13 @@ zh:
     my_tasks: 
       my_tasks: 我的任务
     new: 
+      sending: "Creating the task…"
       submit: 添加任务
       title: 新任务
     overdue: "%{days}天以后"
+    overview_box: 
+      status: Status
+      title: "This task"
     show: 
       title: "任务: %{name}"
     status: 
@@ -1120,6 +2094,50 @@ zh:
       reopen: 重新打开任务
       task_is_closed: 此任务已经关闭并存档
       unarchive: 取消存档
+    urgent: 
+      caption: Urgent
+      set: "Urgent flag set"
+      unset: "Urgent flag unset"
+  teambox_datas: 
+    column: 
+      description: "Here you can move your data in and out of Teambox."
+    data: 
+      confirm_delete: "Are you sure you want to delete this data?"
+      incomplete: "More information required."
+      processed_at: "Processed at %{processed_at}"
+      processing: "Currently processing..."
+      remove: Remove
+    export_fields: 
+      description: "Please select which projects you wish to export."
+    import_fields: 
+      in_organization: "Put all projects in this organization"
+      please_supply_user_map: "We detected the following users in your import. Please confirm which users correspond to which user on Teambox."
+      select_file: "Please choose a file containing your data."
+      service: "Which service did you export your data from?"
+      teambox_user: "Teambox user"
+      user: User
+    index: 
+      exports: "Export your projects"
+      imports: "Import data from a file"
+      imports_explain: "You may import Teambox backup files, or Basecamp projects."
+      no_exports: "There are no recent exports."
+      no_imports: "There are no recent imports."
+      title: "Import or export your data"
+    new_export: 
+      submit: "Export data"
+      title: "Export data"
+    new_import: 
+      submit: "Import data"
+      title: "Import data"
+    show_export: 
+      download: "Download export"
+      projects: "Projects exported:"
+      title: "Import / Export"
+    show_import: 
+      import_error: "There was an error loading your import. Please try again."
+      projects: "Imported projects"
+      submit: Import
+      title: "Import data"
   time: 
     am: 上午
     formats: 
@@ -1129,17 +2147,40 @@ zh:
     pm: 下午
   uploads: 
     comment_upload_link: 附件
+    errors: 
+      exceeded_storage_plan_limit_html: "You have exceeded your storage quota for %{organization_name}. To increase your storage limits, <a href='%{url}'>upgrade your plan now</a>."
+      general: "There was an error uploading the file"
     form: 
       description_html: "标题 <i>(可选)</i>"
       max_size: "文件大小不能超过%{mb}"
+      max_upload_size: "Max upload size is %{mb} Mb"
       presence: 您不能上传空文件
       select_file: 选择文件
+      title: "Upload a file"
       upload: 上传文件
     index: 
+      also: Also
+      cant_create: "You don't have permission to upload files to this project"
+      current_storage_size_html: "You can upload %{bytes} more in the organization %{organization_name}.<br/><br/><a href='%{url}'>Upgrade</a> your plan to store more documents."
       max_upload_size: "最大上传文件大小是%{mb}Mb"
       new_file: 上传文件
+      new_folder: "New Folder"
+      no_storage_left_html: "You have reached the storage limit for your organization.<br/><br/><a href='%{url}'>Upgrade</a> your plan now."
+      title: "Files in %{project}"
+      view_google_docs: "View %{count} Google Docs associated to this project"
+    moveable: 
+      error: 
+        folder: "Folder has not been moved"
+        upload: "File has not been moved"
+      title: "Move to another folder"
+      to_parent: "Move to parent folder"
     new: 
       select_a_file: 选择文件
+      storage_remaining: "You can upload up to %{bytes} more with your current plan. <a href='%{url}'>Upgrade</a> for more storage."
+      uploading: Uploading...
+    new_folder: 
+      default_text: "New folder name"
+      submit: "Create folder"
     primer: 
       create_first: 在这个项目中上传第一个文件！
       define1_html: 还有与您的团队分享文件的问题？Teambox再次让分享更容易。
@@ -1148,6 +2189,11 @@ zh:
       item1_html: "<b>更大的文件</b>. 上传任意大小的文件，忘记电子邮件附件大小的限制吧。"
       item2_html: "<b>版本</b>. 上传新版本的文件，同时保留旧版本的变更记录。"
       item3_html: "<b>永远可用</b>. 文件保存在项目上下文相关的地方，将来查找引用更方便。"
+    public_download: 
+      link: 
+        anchor: "Send this file to somebody..."
+        title: "Share this file with people outside your team"
+    tooltip: "Upload a file"
     upload: 
       download: 下载
       on_: 打开
@@ -1160,6 +2206,19 @@ zh:
       invalid_html: <p>无效或已经过期的链接。请使用您的email和密码登录。</p><p>如果您忘记了您的登录密码，请点击下面的“忘记密码”链接。</p>
       invalid_user: 无效用户
       resent: 我们已经重新发送了激活邮件。请检查您的收件箱！
+    calendars: 
+      clients: 
+        body_html: "Refer to the <a href='%{link}'>knowledge base</a> for instructions on how to configure Google Calendar, Apple's iCal, Outlook, Blackberry and others."
+        title: "Specific instructions"
+      how_to: 
+        body_html: "Basically, you should import the links below into your calendar client. Visit our <a href='%{link}'>knowledge base</a> to learn how to use them with your calendar app."
+        title: "How to sync your calendars"
+      possible_clients: "You can sync your Google Calendar, your Apple's iCal, Outlook, Blackberry and others."
+      subscribe_to_all: "All Projects: "
+      subscribe_to_project: "Project %{project}: "
+      tasks_can_be_synced: "Teambox tasks can be synched with your usual Calendars so you don't forget what's coming up."
+      title: "Sync your calendars"
+      your_calendars: "Your Calendars"
     create: 
       error: 对不起，我们不能创建此帐号。请重新尝试，或者联系管理员（链接如下）。
       thanks: 谢谢注册！
@@ -1172,45 +2231,139 @@ zh:
       tasks_for_today: 今日任务
       tasks_for_tomorrow: 明日任务
       tasks_without_a_due_date: 无截止日期任务
+      urgent: Urgent
+      urgent_tasks: "Urgent tasks"
       you_receive_this_message_html: "您收到此邮件是因为您设置了提醒选项。您可以通过%{link}不再收到这些邮件"
     edit: 
       submit: 更新帐号
+      title_delete: "Delete Account"
       title_deletion: 项目存档/回收站
+      title_linked_accounts: "Linked Application Accounts"
       title_notifications: 您的提醒
       title_picture: 您的个性图片
       title_profile: 您的个性设置
       title_settings: 您的帐号设置
+    email_posts: 
+      other_shortcuts_available: "Also, you can use these other handy shortcuts:"
+      send_replies_with_this_email: "You can send replies to this thread by email. Just email to this address:"
+      teambox_magic_happens: "Teambox will parse your message and attachments and post them to the thread."
+      title: "Reply via email"
+      will_create_conversation: "will create a new conversation in the project."
+      will_create_task: "will create a new task in the project."
+    feeds: 
+      configure: "You can configure your feed reader to alert you every time something new happens in Teambox, even if you don't have it open in a window."
+      feed_reader: 
+        body_html: "Refer to the <a href='%{link}'>knowledge base</a> for this."
+        title: "Which news reader should I use?"
+      follow_activities: "You can follow Teambox activities from News Readers (Desktop or Mobile)."
+      import: 
+        body_html: "Beneath you have a list of feeds you can follow. To import them into your feed reader you need to <strong>right-click the link</strong> and select <strong>copy link address</strong>. Next, go to your feed reader, add a new Feed and paste the address of that feed."
+        title: "How to import a news feed"
+      more_tips: 
+        body_html: "Learn <a href='%{link}'>more ways to access Teambox</a>."
+        title: "More tips"
+      receive_notifications: "By using a Feed Reader on your computer or mobile device, you will receive notifications from activities in your projects."
+      subscribe_to_all: "Activity for All Projects"
+      subscribe_to_project: "Activity for %{project}"
+      title: "Sync your activity feeds"
+      your_feeds: "Your news feeds"
     form: 
-      picture: 
-        field: 您的头像
-        max_size: "文件大小不能超过%{mb}"
-        presence: 您不能上传空文件
-        upload_here_or_at_gravatar_html: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Teambox或其它网站。"
-        we_have_this_avatar_html: 当前您的头像：
+      agreement_html: "By signing up, you're accepting our %{terms} and %{privacy} conditions."
+      auto_accept_invites: "Accept invites to projects automatically (recommended)"
+      badges: "Enable Badges and Achievements"
+      betatester: "Use beta features (less stable) before they're released."
       biography: 自我介绍
       change_password: 修改密码
       confirm_password: 确认密码
+      delete: 
+        account_deleted: "Your account has been deleted. We will miss you!"
+        couldnt_delete_account: "We can't delete your account because you still have active or archived projects."
+        delete_my_account: "Delete my account now"
+        organization: 
+          steps_before_1: "You can't delete your Teambox account if you are the last administrator of a paid organization."
+          steps_before_2: "In order to delete your account you need to give administrator privilege to at least one other member of the organization, or downgrade this organization to a free plan."
+          steps_before_3: "Give administrator to another user or downgrade your organizations and come back to this page to delete your account."
+        project: 
+          steps_before_1: "To delete your Teambox account, you first need to leave or delete all your current projects."
+          steps_before_2: "This will ensure that no other users will lose data on their projects when you delete your account."
+          steps_before_3: "Leave or delete your current projects and then come back to this page to delete your account."
+        what_will_happen: "After deleting your account, your Teambox profile will not be accessible anymore."
       email: 电子邮件
       first_day_of_week: 一周开始于
       first_name: 姓
       invalid_login: 只能使用字母，数字和下划线_
+      keyboard_shortcuts: "Enable keyboard shortcuts. Press 'h' for help when enabled."
       language: 语言
       last_name: 名
+      linked_accounts: 
+        find_more_contacts: "Find more contacts by linking your accounts"
+        link_your_accounts: "Link your social network profiles to find your friends!"
+        no_spam_html: "We hate spam! Teambox will <b>not</b> send unsolicited messages to your contacts."
+        teambox_integrates_services: "We integrate with services you already use. Get the most out of Teambox by connecting your accounts."
       login: 用户名
       monday: 周一
+      new: 
+        account: 
+          choose_username: "Choose a username so people can find you. You will use it to log in."
+          field_note: "This is what other users will use to refer to you"
+          title: "Your Teambox account"
+          validations: "Must be all lowercase, no spaces allowed. You can use underscores."
+        organization: 
+          explain1: "Your organization will be a private space for all your projects."
+          explain2: "You can create more workspaces later. Choose a brief name for it."
+          field_note: "We will create a workspace with this name for you"
+          label: "Organization name"
+          title: "Your Organization"
+        use_this_email: "You have invitations to share projects for this email address. If you want to access these projects, don't change this email address. You can change your email address once you've completed the signup process."
+      newsletter: "Notify me about new features and tips!"
       notifications: 
+        clarification: |
+            When someone mentions you (as '@%{login}' or '@all') in conversation or a task,
+            you will be notified and added as a watcher for that item.
+        default: Default
+        digest: "Email delivery mode"
+        digest_delivery_time: "Send task reminder and digest at"
+        digest_option_daily: "Daily digest"
+        digest_option_instant: "Instant notification"
+        digest_option_none: "No email"
+        digest_option_weekly: "Weekly digest"
+        notification_options: "Notification options"
         notify_conversations: 在我关注的话题变化时通知我
+        notify_on_mention: "Send email instantly when someone @mentions me on a conversation or task I'm following"
+        notify_pages: "Notify me of updates to pages I'm watching"
         notify_tasks: 在我关注的任务变化时通知我
+        project_name: "Project name"
         wants_task_reminder: 发送我的任务每日情况报告
+        watch_new_conversation: Conversation
+        watch_new_item: "Watch new item"
+        watch_new_page: Page
+        watch_new_task: Task
+      old_password: "Old password"
       password: 密码
       password_confirmation: 确认密码
+      phone: "Phone Number"
+      phone_for_integration: "Optional. For future SMS integration"
       picture: 
+        destroy: "Delete avatar"
         field: 您的头像
+        gravatar_in_use_html: "We don't have a picture of you, so we're using %{gravatar}."
         max_size: "文件大小不能超过%{mb}"
         presence: 您不能上传空文件
         upload_here_or_at_gravatar: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Teambox或其它网站。"
+        upload_here_or_at_gravatar_html: "You can either upload a picture here or set one on %{gravatar}."
         we_have_this_avatar: 当前您的头像：
+        we_have_this_avatar_html: "This is the picture we currently have of you:"
+      privacy: privacy
+      subscription: 
+        card_expiration: "Expires on"
+        card_number: "Card number"
+        coupon: "Coupon code"
+        coupon_question: "Do you have a coupon code?"
+        info_price: "You are going to be charged monthly %{price}."
+        info_unsubscribe: "You can cancel your subscription at any moment."
+        new_org_name: "Organization name"
       sunday: 周日
+      terms: "terms of use"
       time_zone: 时区
       tooltips: 
         email: 请输入真实的Email地址，你的队友可以通过邮件联系您。
@@ -1218,6 +2371,44 @@ zh:
         last_name: 最多20个字符.
         login: 您需要用户名才能登录。其他人通过用户名可以找到你。必须全为小写字母，不能有空格，可以使用下划线。
         password: 组合字母，数字，大小写混合是个好注意。
+    help_box: 
+      feedback: 
+        link: "Send us your feedback and ideas"
+        text: "to help us improve"
+      guide: 
+        link: "Read the User Guide"
+        text: "to get started"
+      support: 
+        link: "Contact support"
+        text: "if you need help"
+      tips: 
+        link: "Learn our staff's tips"
+        text: "to master your Teambox"
+      videos: 
+        link: "Watch the tutorial videos"
+        text: "if it's your first time here"
+    link_profiles: 
+      connected: Connected!
+      expired: Expired!
+      facebook: 
+        connect: "Connect Facebook"
+        reason1: "Find your friends"
+        reason2: "Import your Address Book"
+        reason3: "Log in with one click"
+        title: Facebook
+      google: 
+        connect: "Connect Google"
+        reason1: "Google Docs"
+        reason2: "Google Contacts"
+        reason3: "Future integrations"
+        title: "Google Account"
+      renew: "Renew now"
+      twitter: 
+        connect: "Connect Twitter"
+        reason1: "Connect to your contacts"
+        reason2: "Log in with one click"
+        reason3: "Future integrations"
+        title: Twitter
     new: 
       existing_user_html: "如果您已经有一个帐号，请<a href='%{login_url}'>登录</a>或者<a href='%{forgot_url}'>找回密码</a>。"
       no_public_signup: 此系统不允许公共注册。
@@ -1229,16 +2420,53 @@ zh:
       pending_invite: "%{name}当前已经有一个您的项目的未受理邀请。在此邀请被接受前，您不允许操作任何信息。"
       profile: 个性设置
       projects: 项目
+      projects_in_common_with: "Projects you share with %{user_name}"
       recent_activity_for: "%{user_name}的近期活动"
+    text_styles: 
+      block_of_code: "Paste your code indented (4 spaces or tabs) to paste it as a block of code."
+      enter_this: 
+        bold_text: "**bold** text"
+        header: |
+            Header
+            ======
+        image: "![alt text](http://w3.org/img.jpg)"
+        italic_text: "*italics* text"
+        link: "[Link something](http://teambox.com)"
+        ordered_list: |
+            1. ordered list
+            2. leave empty lines!
+        smaller_header: |
+            Smaller header
+            ---------
+        title: "Enter this"
+        unordered_list: |
+            * unordered list
+            * leave empty lines around
+      to_see_this: 
+        bold_text_html: "<strong style=\"font-weight: bold\">bold</strong> text"
+        header_html: "<h3 style=\"font-size:18px\">Header</h3>"
+        image_html: "<img src=\"http://www.w3.org/Icons/valid-html401\">"
+        italic_text_html: "<i>italics</i> text"
+        link_html: "<a href=\"http://www.teambox.com\">Link something</a>"
+        ordered_list_html: |
+            <li>ordered list</li>
+            <li>leave empty lines!</li>
+        smaller_header_html: "<h4 style=\"font-size:14px\">Smaller header</h4>"
+        title_html: "To see this"
+        unordered_list_html: |
+            <li>unordered list</li>
+            <li>leave empty lines around</li>
     unconfirmed_email: 
       follow_the_link_html: 请<b>打开此邮件并点击邮件中的链接</b>，以激活您的帐号。
       invitation_sent_to_html: "已经向<i>%{email}</i>发出一封邮件邀请，以确认您的邮件地址。"
       problems_html: "如果还有其它问题，请通过%{support}联系我们"
       problems_title: 问题？
       resend: "没有收到邮件？请点击<a href='%{link}'>这里</a>重新发布激活邮件。"
+      resend_html: "Can't find the email? Press <a href='%{link}'>here</a> to re-send the activation email."
       spam: 请确保在您的邮件客户端程序中，此邮件没有被标识为垃圾邮件。
       title: 确认您的邮件
       wrong_address_html: "不正确的邮件地址？如果您的邮件地址拼写错误，<a href='%{link}'>取消注册过程</a>并使用一个有效的邮件地址重新创建您的帐号。"
+      wrong_email_html: "Wrong address? If you mistyped your email address, <a href='%{link}'>you can change it now</a>."
     update: 
       error: 不能保存修改的个性设置，请修正错误并重试。
       updated: 用户个性设置已更新！
@@ -1262,6 +2490,11 @@ zh:
         title: 您也喜欢我们的产品吗？
         twitter: "Twitter,"
       stop_welcome: 不再显示此欢迎页签
+  watchers: 
+    index: 
+      title: "Your watch list"
+    watcher: 
+      remove: remove
   weakling: 
     average: 一般
     default: 必须至少5个字符
