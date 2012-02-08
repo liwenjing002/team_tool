@@ -28,7 +28,7 @@ gem 'hpricot', '~> 0.8.2'
 gem 'json'
 gem 'oa-oauth', '= 0.2.3', :require => 'omniauth/oauth'
 gem 'hashie'
-gem 'tilt', '~> 1.2.2'
+#gem 'tilt', '~> 1.2.2'
 gem 'choices', :git => "git://github.com/teambox/choices.git"
 gem 'rack-staticifier', :git => "https://github.com/remi/rack-staticifier.git"
 gem 'trimmer', :git => "https://github.com/teambox/trimmer.git"
