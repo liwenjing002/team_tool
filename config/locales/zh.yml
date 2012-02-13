@@ -3,11 +3,11 @@ zh:
   activerecord: 
     attributes: 
       address: 
-        city: City
-        country: Country
-        state: State
-        street: Street
-        zip: ZIP
+        city: 城市
+        country: 国家
+        state: 省/州
+        street: 街道
+        zip: 邮编
       card: 
         city: 城市
         country: 国家
@@ -28,7 +28,7 @@ zh:
       im: 
         account_im_type: 服务
         account_type: 类型
-        name: Address
+        name: 地址
       invitation: 
         email: 电子邮件
       note: 
@@ -94,18 +94,18 @@ zh:
         comment: 
           attributes: 
             body: 
-              blank: "Can't post an empty comment."
-              duplicate: "Duplicate comment"
+              blank: "评论不能为空"
+              duplicate: "不能重复评论"
         conversation: 
           attributes: 
             comments: 
-              must_have_one: "The conversation cannot start with an empty comment."
+              must_have_one: "话题必须要有至少一个评论"
             name: 
               no_title: 请为这个话题指定一个标题。
         task: 
           attributes: 
             assigned: 
-              doesnt_belong: "Assigned user doesn't belong to the project"
+              doesnt_belong: "当前被分配到的用户不属于该项目"
     models: 
       address: 地址
       card: Card
@@ -116,7 +116,7 @@ zh:
       im: 即时通信
       invitation: 邀请
       note: 备注
-      organization: Organization
+      organization: 组织
       page: 页面
       phone_number: 电话
       project: 项目
@@ -127,110 +127,110 @@ zh:
       website: 网址
   activities: 
     create_comment: 
-      create_comment: "created the comment"
-      title: "%{user} commented on %{target}"
+      create_comment: "发表评论"
+      title: "%{user} 在%{target} 中发表评论"
     create_comment_conversation: 
-      title: "%{user} followed up on conversation %{target}"
+      title: "%{user} 在话题:%{target}发表评论"
     create_comment_project: 
-      title: "%{user} updated status on %{target}"
+      title: "%{user} 在项目:%{target}中发表评论"
     create_comment_task: 
-      title: "%{user} updated task %{target}"
+      title: "%{user} 在任务:%{target}中发表评论"
     create_conversation: 
-      create_conversation: 开始新的话题
-      title: "%{user} started a conversation: %{conversation}"
+      create_conversation: 创建新的话题
+      title: "%{user} 创建新的话题: %{conversation}"
     create_note: 
-      create_note: "added note"
-      title: "%{user} created note \"%{note}\" in %{page}"
+      create_note: "添加备注"
+      title: "%{user} 在页面:%{page} 添加备注 \"%{note}\" "
     create_page: 
       create_page: 创建新页面
-      title: "%{user} created page %{page}"
+      title: "%{user} 创建新页面: %{page}"
     create_person: 
       by: 由
       create_person: 已经被邀请加入此项目
-      title: "%{person} joined the project %{project}"
+      title: "%{person} 被邀请加入项目: %{project}"
     create_project: 
-      left: "created the project"
-      title: "%{person} created the project %{project}"
+      left: "创建项目"
+      title: "%{person} 创建项目: %{project}"
     create_task: 
       create_task: 创建新任务
-      title: "%{user} created task %{task} in %{task_list}"
+      title: "%{user}在任务列表:%{task_list} 中创建任务: %{task}"
     create_task_list: 
-      create_task_list: 创建新的任务列表
-      title: "%{user} created task list %{task_list}"
+      create_task_list: 
+      title: "%{user} 创建新的任务列表: %{task_list}"
     create_teambox_data: 
-      title: "%{person} imported the project %{project}"
+      title: "%{person} 导入项目: %{project}"
     create_upload: 
-      title: "%{user} uploaded a file: %{file}"
-      title_with_page: "%{user} uploaded a file to %{page}:"
+      title: "%{user} 上传文件: %{file}"
+      title_with_page: "%{user} 上传文件到页面: %{page}:"
     delete_person: 
       by: 由
       delete_person: 已经被从此项目移除
       left: 离开此项目
-      title: "%{person} left the project %{project}"
+      title: "%{person} 离开项目: %{project}"
     edit_note: 
       edit_note: "edited note"
-      title: "%{user} edited the note \"%{note}\" in %{page}"
+      title: "%{user} 在页面: %{page}中编辑备注 \"%{note}\""
     edit_page: 
-      edit_page: "edited the page"
-      title: "%{user} edited the page %{page}"
+      edit_page: "编辑页面"
+      title: "%{user} 编辑页面: %{page}"
     thread: 
-      conversation_with_title_html: "%{conversation} on %{project} project"
-      conversation_without_title_html: "<a href='%{conversation_url}'>Conversation</a> on %{project} project"
+      conversation_with_title_html: " 在项目:%{project}中的话题:%{conversation}"
+      conversation_without_title_html: "在项目:%{project}中<a href='%{conversation_url}'>话题</a> "
       created: 
-        conversation: "created the conversation"
-        task: "created a task"
+        conversation: "创建话题"
+        task: "创建任务"
       more_comments: 
-        one: "Show one previous comment"
-        other: "Show %{count} previous comments"
-      task_on_task_list_html: "%{task} on %{task_list} task list"
+        one: "显示上一条评论"
+        other: "显示评论条数: %{count}"
+      task_on_task_list_html: "%{task} 任务列表: %{task_list}中的任务"
   affiliate: 
-    area: "Affiliate Area"
+    area: "加入的地区"
     index: 
-      addresses: addresses
-      credits_earned: "Credit you've earned"
-      desc_1_html: "With our partner tools, you can get <strong>free months</strong> using Teambox or make <strong>real money</strong> by referring others."
-      desc_2_html: "Bring new users to Teambox, and get <strong>%{percent}% of the income</strong> your referred users generate, <strong>forever</strong>."
+      addresses: 地质
+      credits_earned: "你赢得的信任"
+      desc_1_html: "使用我们的平台插件工具，你可以得到<strong>每月免费</ STRONG>使用Teambox或者要求其他人来获得<strong>实际的金钱</ STRONG>。"
+      desc_2_html: "您带来新的Teambox用户，并得到你推荐的用户产生的<strong>%{percent}%的收入</ STRONG>"
       facebook: Facebook
-      get_in_touch: "get in touch with us"
-      idea1: "Create a site about how to use Teambox, with guides for beginners."
-      idea2: "Post a link to Teambox on your blog and talk about how it helped you."
-      idea3: "Run an event about Project Collaboration and refer your attendees."
-      idea4: "Simply email invitations to new users."
-      ideas: "Some ideas to make the most out of Teambox"
-      learn_more: "Learn more..."
-      no_referred_users: "You don't have any referred users yet."
-      option_1: "Option 1: Share this link"
-      option_2: "Option 2: Invite your contacts by entering their email"
-      option_3: "Option 3: Invite your contacts by importing contacts from a CSV file"
-      over_100: "Whenever you have over $100,"
-      plan_for: "plan for"
-      premium_plan: "premium account"
-      refer_info: "Refer %{users} users on %{plan} accounts, get $%{credit} every month."
-      referred_users: "Your referred users "
-      send_invites: "Invite to Teambox"
-      send_money: "and we will send you the money you've earned."
-      sent_invites_to: "The invitation email will be sent to the following addresses:"
-      sent_number_of_invites: "The invitation email will be sent to"
-      tracking1: "When you refer users to Teambox, they must sign up at a page with a special parameter."
-      tracking2: "This parameter is unique for you, and it allows us to track your users."
-      tracking3: "Once a user follows this link, they will be marked as coming from you."
-      tracking4: "Even if they navigate away from the page and come later, we store this data in their session so when they sign up we still remember they came from you."
-      tracking5: "Your special page for signup is"
-      tracking6: "Post this link on Facebook, Twitter, on your own site, or send it by email to a friend. After they sign up you will receive an email confirmation."
+      get_in_touch: "联系我们"
+      idea1: "这是对于初学者的指南； 如何创建一个网站并使用Teambox的"
+      idea2: "将teambox的链接分享到你的博客并告诉我们它是怎么帮助你的"
+      idea3: "运行有关项目协作的事件，并邀请你的与会者。"
+      idea4: "简单的邮件邀请来邀请用户"
+      ideas: "告诉你的好点子来帮助我们改进teambox"
+      learn_more: 了解更多..."
+      no_referred_users: "你还没有要求任何用户"
+      option_1: "1: 分享链接"
+      option_2: "2: 通过邮件来邀请你的好友"
+      option_3: "3: 通过导入CVS联系人文件来邀请你的好友"
+      over_100: "当你拥有超过$100,"
+      plan_for: "计划"
+      premium_plan: "奖金账户
+      refer_info: "在%{plan}账户中邀请用户: %{users},可以每个月获得$%{credit}"
+      referred_users: "你的邀请好友 "
+      send_invites: "邀请到teambox"
+      send_money: "然后我们就会将您赚的的金额转给您"
+      sent_invites_to: "邀请的电子邮件将被发送到以下地址："
+      sent_number_of_invites: "邀请的电子邮件将被发送到以下地址："
+      tracking1: "当你需要邀请用户到Teambox，他们必须在注册页面中输入一个特殊的参数。"
+      tracking2: "这个参数你是独一无二的，它使我们能够跟踪用户。"
+      tracking3: "一旦用户遵循这个环节，他们将被标记为来自你的邀请"
+      tracking4: "即使他们从页面导航离开来后，我们存储数据，以便在他们的登录时我们还记得他们来自你的邀请"
+      tracking5: "你的特色注册页面是:"
+      tracking6: "发布这个链接在Facebook，Twitter，你自己的网站上，或通过电子邮件发送给朋友。他们注册后，您会收到一封确认电子邮件。"
       twitter: Twitter
       twitter_link: "Try%20Teambox%20to%20collaborate%20with%20your%20team,%20sign%20up%20for%20free%20at%20%{link}"
-      use_money: "You can use this money to get a"
-      use_money_cash: "or to earn real cash."
-      use_tracking_code: "You must use a tracking code so we can know which users are coming from you."
-      website: "Share it on your website,"
+      use_money: "你可以使用金钱去消费"
+      use_money_cash: "或者去赚钱."
+      use_tracking_code: "你必须使用一个跟踪代码，所以我们可以知道哪些用户从您的到来。"
+      website: "在你的网站上分享它,"
     notification: 
-      accepted_subscription: "%{name} (%{email}) just signed up on Teambox using your referral code."
-      check_your_earnings: "Go check your earnings from referrals on Teambox"
-      check_your_referrals: "Go check your referred users on Teambox"
-      new_signup: "A user signed up on Teambox using your referral code!"
-      new_subscription: "A user upgraded his account on Teambox using your referral code!"
-      upgraded_subscription: "%{name} (%{email}) just upgraded his account on Teambox, and you are earning $%{price} in credit"
-      wait: "The transaction has been just processed, but may take a while to be reflected on your Teambox Partner area"
+      accepted_subscription: "%{name} (%{email}) 刚刚使用你的邀请码在teambox注册了。"
+      check_your_earnings: "查看通过邀请你赚取了多少。"
+      check_your_referrals: "查看你邀请的用户"
+      new_signup: 有一个用户使用你的邀请码注册了账户"
+      new_subscription: "用户使用您的邀请码升级Teambox他的帐户！"
+      upgraded_subscription: "%{name} (%{email}) 刚升级他的账户,同时你赚得 $%{price} "
+      wait: "交易已处理，但可能需要一段时间才能反映在您的Teambox合作区"
   avatars: 
     edit: 
       upload: 上传头像
@@ -263,13 +263,13 @@ zh:
       vcard: 下载vCard
       websites: 网址
     card_types: 
-      business: Business
-      fax: Fax
-      home: Home
-      mobile: Mobile
-      other: Other
-      personal: Personal
-      work: Work
+      business: 商业
+      fax: 传真
+      home: 家庭电话
+      mobile: 移动电话
+      other: 其他
+      personal: 个人
+      work: 工作
     field: 
       add_addresses: 添加地址
       add_email_addresses: 添加Email
@@ -280,41 +280,41 @@ zh:
   comments: 
     actions: 
       confirm_delete: 您确认要删除此评论？
-      convert_task: "Convert to task"
-      edit: "Edit comment"
-      post_by_email: "Reply via email"
+      convert_task: "新增任务"
+      edit: "编辑回复"
+      post_by_email: "回复via邮件"
     attach: 
-      tooltip: Attach
+      tooltip: 附件
     comment: 
-      cannot_edit: "Comment cannot be edited after 15 minutes"
+      cannot_edit: "15分钟后留言就无法编辑
       commented_on: "-"
       commented_on_a_task_list: "-"
       confirm_delete: 您确信要删除这条评论？
       hours: "%{hours}h"
-      hours_with_minutes: "%{hours}h %{minutes}m"
-      loading: Loading...
+      hours_with_minutes: "%{hours}小时%{minutes}分钟"
+      loading: 加载中...
     conversations: 
-      convert_to_task: "Convert to task"
-      task_name: "eg. Upload Logo Proposal"
+      convert_to_task: "新增任务"
+      task_name: "例如。上传提案的标志"
     convert_form: 
-      destination: "Select the destination task list"
-      name: "Enter a name for this task"
-      submit: Convert
+      destination: "选择目标任务列表"
+      name: "输入任务名称
+      submit: 提交
     edit: 
       submit: 保存
     errors: 
       cannot_update: 您没有权限更新此评论
     fields: 
-      attach: Attach
+      attach: 附件
     hours: 
-      add_hours: Hours
-      hours: "How many hours did you put into this task?"
-      time_tracking_docs: "Learn how to use time-tracking"
-      tooltip: "Add hours to this task"
+      add_hours: 添加工时
+      hours: "你安排多少工时在这个任务里"
+      time_tracking_docs: 学习如何使用时间追踪"
+      tooltip: "为该任务添加工时"
     new: 
       assigned_to: "分配给:"
       assigned_to_nobody: 未分配
-      comment_on_project: "Comment on:"
+      comment_on_project: "回复:"
       conversation: 发送消息给群里其他成员。
       project: 您在做什么？分享想法，链接，更新。
       sending: Sending…
@@ -322,18 +322,18 @@ zh:
       task: 通过注释定义需要做什么，分配此任务给某人，发布更新，附加结果。
       task_list: 分享这个任务列表的想法。需要创建和分配任务，请使用侧务条。
     preview: 
-      close: "Hide preview"
-      preview: Preview
+      close: "隐藏上一个"
+      preview: 上一个
     private: 
-      all: All
-      private: "This element is only visible to people you specify..."
-      private_foreveralone: "This element is only visible to you"
-      private_global: "This element is only visible to the following people..."
-      public: "This element is visible to everybody in this project"
-      readonly_warning: "Only %{user} is able to change privacy settings."
+      all: 所有
+      private: "私人"
+      private_foreveralone: "自己"
+      private_global: "关注的用户才能访问"
+      public: "所有人都能访问"
+      readonly_warning: "只有%{user}才能修改私人设置"
     watchers: 
-      explain: "Click on users to @mention them in your comment. Mentioned users will receive email notifications for your message and others after it."
-      popup_note_html: "Select <b>Notify people</b> to send notifications for this conversation."
+      explain: "用户点击@mention,将会收到你的消息和其他一些通知。."
+      popup_note_html: "选择 <b>通知用户</b> 去发送关于该会话的通知"
   common: 
     accept: 接受
     and: 和
@@ -346,29 +346,29 @@ zh:
     decline: 拒绝
     delete: 删除
     download: Download
-    download_as_csv: "Download as CSV"
+    download_as_csv: "下载CSV"
     edit: 编辑
     format_name: "%{first_name} %{last_name}"
     format_name_short: "%{first_name_first_character}. %{last_name}"
-    gantt_chart: "Gantt Chart"
-    in_project: in
-    loading: Loading...
-    logged_out: "You were logged out"
+    gantt_chart: "甘特图"
+    in_project: 在
+    loading: 加载中...
+    logged_out: "您已经退出"
     move: Move
     next: 下一个
     not_allowed: 您不允许操作此操作！
     or: 或者
-    pagination: "Showing results from: "
+    pagination: "显示结果: "
     prev: 上一个
     print: 打印此页
-    rename: Rename
+    rename: 重命名
     save: 保存
     saving: Saving
     show_more: 显示更多
-    signup: "Sign up"
+    signup: "注册"
   confirm: 
-    delete_folder: "Are you sure you want to delete this folder?"
-    delete_group: "Are you sure you want to delete this group?"
+    delete_folder: "您确定删除此文件夹?"
+    delete_group: "您确信要删除此群组?"
     delete_page: 您确信要删除此页面？
     delete_task: 您确信要删除此任务？
     delete_task_list: 您确信要删除这个任务列表？
@@ -377,15 +377,15 @@ zh:
     actions: 
       confirm_delete: 您确信要删除此评论？
     column: 
-      cant_create: "You don't have permission to create conversations in this project"
+      cant_create: "您没有访问当前项目的权限"
       new_conversation: 新的话题
       subscribe: 订阅动态反馈
     conversation_with_extract: 
       posted_by: 发表者：
     convert_form: 
-      name: "Name this task"
-      status: Status
-      task_list: "Create task in"
+      name: "为任务命名"
+      status: 状态
+      task_list: "创建任务"
     edit: 
       submit: 更新话题
     fields: 
@@ -395,13 +395,13 @@ zh:
         body: 提出问题，告诉您的团队成员最新动态，开始一个讨论
         name: 尽量简短，这些内容将作为提醒邮件的标题
     index: 
-      cant_create: "You don't have permissions to create a conversation in this project"
-      new_conversation: "New Conversation"
+      cant_create: 您在当前项目中没有创建会话的权限
+      new_conversation: "新建会话"
       rss: 
         description: "%{name}项目的话题"
-        title: "%{name} conversations"
-      title: "Conversations in %{project}"
-      view_single: "Read more"
+        title: "%{name} 会话"
+      title: " %{project}中的会话"
+      view_single: "查看更多"
     link: 
       edit: 编辑
     new: 
@@ -427,7 +427,7 @@ zh:
       started_by: 开始于
     watcher_fields: 
       add_suscribers: 哪些人将关注这个话题？
-      cant_notify: "This is a public project. To avoid unwanted emails, we're not showing the list of users that you can notify."
+      cant_notify: "这是一个公共页面，为了避免垃圾邮件，我们不显示用户列表"
       invite_users: 您是这个项目的唯一成员！
       no_users_yet_html: "话题因分享而更有用。现在就<a href='%{invite_link}'>邀请某人</a>加入此项目，以便他们可以读取这个话题，解答问题或收到更新提示。"
       people_all: 所有项目成员
@@ -747,11 +747,11 @@ zh:
       - !ruby/symbol day
     yesterday: 昨天
   date_picker: 
-    no_date_assigned: "No date assigned"
+    no_date_assigned: "没有分配的时间"
     urgent: 
-      info: "Will show up on \"tasks due for today\" for the assigned user"
-      long: "Urgent, to be done as soon as possible"
-      short: Urgent
+      info: "\"今天到期的任务\"将显示给指定的用户"
+      long: "紧迫，要尽快完成"
+      short: 不紧迫
   datetime: 
     distance_in_words: 
       about_x_hours: 
@@ -796,8 +796,8 @@ zh:
     time_ago: "%{time_ago_in_words}以前"
   deleted: 
     conversation: "已删除<b>%{name}</b>话题"
-    failed_left_project: "You cannot leave this project"
-    failed_person: "%{name} could not be removed from the project"
+    failed_left_project: "您不能离开项目"
+    failed_person: "%{name} 不能从项目中被删除"
     folder: "Deleted %{name} folder"
     left_project: 您不再属于此项目
     page: "已删除<b>%{name}</b>页面"
@@ -814,51 +814,51 @@ zh:
       submit: 新增
   downloadable: 
     email: 
-      not_sent: "Email has not been sent. %{error}"
-      sent: "We just sent a link to the %{downloadable} to %{email}"
-      submit: "Send link"
-    enter_an_email: "Enter an Email address to send a link to this %{downloadable}:"
-    security_clarification: "Anybody with this link will be able to access %{downloadable_ext}. They will not be granted access to your projects or files."
+      not_sent: "邮件发送失败. %{error}"
+      sent: "我们干刚发送一个链接到%{downloadable}，在你的邮箱%{email}"
+      submit: "发送链接"
+    enter_an_email: "输入一个邮箱地址以供我们发送 %{downloadable}:"
+    security_clarification: "通过该链接，所有人都可以访问这个地址%{downloadable_ext}.但是不能访问你的项目和文件"
     security_clarification_ext: 
-      file: "this file and only this file"
-      folder: "this folder and its child folders and files"
-    sending: Sending...
-    share_link: "Alternatively, you can share the following link to this %{downloadable}:"
-    share_outside_your_team: "You can share this %{downloadable} with people outside your team."
+      file: "文件"
+      folder: "文件夹和其子目录
+    sending: 发送中...
+    share_link: "另外，你可以分享下面的链接%{downloadable}："
+    share_outside_your_team: "你可以分享 %{downloadable} 给不是你团队的用户."
     type: 
-      folder: folder
-      upload: file
+      folder: 文件夹
+      upload: 文件
   emailer: 
     accepted_invitation: 
-      go_to_project: "Go to %{project} now, and collaborate with %{user}"
-      subject: "%{user} accepted your invitation to [%{project}]"
-      user_has_accepted: "%{user} has accepted your invitation to %{project}"
-      you_can_now_collaborate: "How can you get started? Post conversations or create some tasks on the project!"
+      go_to_project: "进入 %{project} 并且和用户:%{user}进行合作"
+      subject: "%{user} 接受你的邀请，并加入项目:[%{project}]"
+      user_has_accepted: "%{user} 已经接受你的邀请，并加入项目:[%{project}]"
+      you_can_now_collaborate: "如何开始？发表谈话或项目上创造一些任务！"
     bounce: 
-      not_delivered: "Your email couldn't be processed by Teambox. View our documentation to learn which types of email we accept: %{link}"
-      not_project_member_error: "You are not a member of the specified Teambox project."
-      project_not_found_error: "There is no project on Teambox corresponding to this email address."
-      subject: "Error sending email to Teambox"
-      target_not_found_error: "We couldn't find the item where you are trying to post your comment."
-      user_not_found_error: "This email address is not associated with any Teambox account."
+      not_delivered: "您的电子邮件不能由Teambox处理。查看我们的文档，以了解我们接受哪些类型的电子邮件：%{link}"
+      not_project_member_error: "你不是Teambox指定的项目的成员。"
+      project_not_found_error: "没有到这个电子邮件地址Teambox相应的项目。"
+      subject: "发送邮件到teambox失败"
+      target_not_found_error: "我们无法找到你正在试图发表您的留言所在的项目，。"
+      user_not_found_error: "这个电子邮件地址没有相关任何Teambox帐户."
     common: 
       answer_above_this_line: 回复此行以发表回复
       do_not_answer: 请不要回复此邮件。
     confirm: 
-      complete: "complete your signup"
-      follow_this_link: "In order to %{complete} for Teambox, we need you to log in by clicking here:"
+      complete: "完成你的注册"
+      follow_this_link: "为了 %{complete},我们需要你通过点击此处来进行登陆:"
       hey: "您好, %{user_name}!"
       log_in: 现在就登录Teambox！
       plaintext_link: 如果出现问题，复制并粘贴以下链接到您的浏览器地址栏：
       problems_html: "如果您有任何问题，请通过%{support}联系我们"
       report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Teambox帐号"
-      subject: "Get started with Teambox"
+      subject: "开始teambox之旅"
     digest: 
       title: 
-        daily: "[%{project}] Daily digest"
-        weekly: "[%{project}] Weekly digest"
+        daily: "[%{project}]  日报"
+        weekly: "[%{project}] 周报"
     forgot_password: 
-      subject: "Password retrieval for Teambox"
+      subject: "密码找回"
     invitation: 
       accept_the_invitation: 接受邀请开始协作
       collaborate_with: "%{name}希望通过Teambox与您协作："
@@ -873,59 +873,59 @@ zh:
     notify: 
       activity: 
         create_note: 
-          body: "%{name} created a note on the page %{page}."
-          subject: "%{name} created a note"
+          body: "%{name} 在页面%{page}新增一个备注."
+          subject: "%{name} 新增一个备注e"
         create_page: 
-          body: "%{name} created the page %{page}."
-          subject: "%{name} created a page"
+          body: "%{name} 新增一个页面%{page}."
+          subject: "%{name} 新增一个页面"
         edit_note: 
-          body: "%{name} edited a note on the page %{page}."
-          subject: "%{name} edited a note"
+          body: "%{name} 在页面中%{page}编辑一个备注."
+          subject: "%{name} 新增一个备注"
         edit_page: 
-          body: "%{name} edited the page %{page}."
-          subject: "%{name} edited a page"
-        title: "Activity on %{project}"
+          body: "%{name} 编辑一个页面%{page}."
+          subject: "%{name} 编辑一个页面"
+        title: "项目%{project}中的活动"
       are_watching: 已经订阅了此话题，将能够收到回复的提醒。
       are_watching_task: 
-        one: " is subscribed to this task, and will be notified of future replies."
-        other: " are subscribed to this task, and will be notified of future replies."
+        one: " 订阅这个任务，并将于未来的答复通知。"
+        other: " 订阅这个任务，并将于未来的答复通知。"
       assigned_to: "分配给<b>%{user}</b>"
       comment: 在项目公告板上评论：
       comments: "%{number}评论"
       conversation: "话题:"
-      digest_reply_text: "Go to %{reply_online}."
-      digest_title_html: "Activity digest for %{project_link}"
+      digest_reply_text: "到往：%{reply_online}."
+      digest_title_html: "%{project_link}的活动摘要"
       due_on: "截止日期：%{date}"
       my_tasks: "分配给您的更多%{project}中的任务"
       notification_settings: "您可以通过<a href='%{url}'>提醒设置</a>修改更多邮件相关设置。"
-      notification_settings_link_html: "You can change your %{settings_link} for further emails."
+      notification_settings_link_html: "你可以修改你的%{settings_link}"
       project: "Teambox项目:"
       reply: 您也可以通过回复此邮件来发表您对这个话题的答复。
-      reply_by_email: "Reply by email"
-      reply_online: "Reply online"
-      settings_link: "notification settings"
+      reply_by_email: "通过邮件回复"
+      reply_online: "在线回复"
+      settings_link: "通知设置"
       status: "状态: %{status}"
-      stop_watch: "Stop watching"
+      stop_watch: "停止查看"
       stop_watching: "<a href='%{stop_watching_url}'>停止订阅</a>这一话题将中止收到邮件提醒。"
-      stop_watching_link_html: "%{stop_watch} this thread to stop receiving email notifications."
+      stop_watching_link_html: "%{stop_watch} 停止订阅"
       task: "任务:"
-      task_commands: "Write #resolve, #reject or #hold on the top of your reply to change the task status. Write #%{username} to assign it to @%{username}, etc."
-      task_link: "view this task online"
+      task_commands: "写＃解决，＃拒绝或＃持有你的答复，改变任务状态。写＃%{username}把它分配给 @%{username}, 等等."
+      task_link: "在线查看任务"
       task_list: "任务列表:"
-      view_conversation_online: "view this conversation online"
+      view_conversation_online: "在线查看回话"
       view_online: "您可以<a href='%{link}'>在线查看这个话题</a>，进行答复，也可以附加文件。"
-      view_this_conversation_online_html: "You can %{conversation} to answer and attach files."
-      view_this_task_online_html: "You can %{link} to comment and attach files."
+      view_this_conversation_online_html: "你可以上传文件或者发表话题来回答问题"
+      view_this_task_online_html: "你可以 %{link}来回复或者上传文件."
     project_membership_notification: 
-      project_link: "Click on the link below to start collaborating on %{project} now"
-      subject: "%{user} shared [%{project}] with you"
-      you_have_been_added_to: "You are now a member of the project %{project}"
+      project_link: "点击下面的链接开始项目%{project}的协作"
+      subject: "%{user} 与你分享项目: [%{project}]"
+      you_have_been_added_to: "现在你是项目%{project}中的一员了。"
     public_download: 
       folder: 
-        go_to_download_page: "Download files from this folder"
-        subject: "%{user} wants to share a folder with you on Teambox"
-        user_sent_you_a_link: "%{user} sent you a link to download a files from %{name}"
-      plaintext_link: "If the above link doesn't work, copy and paste the following url into your browser bar: "
+        go_to_download_page: "从该文件夹下载文件"
+        subject: "%{user} 与你分享一个文件夹"
+        user_sent_you_a_link: "%{user} 发送给你一个链接以供下载一个文件:%{name}"
+      plaintext_link: "如果上面的链接不起作用，复制并粘贴下面的URL到您的浏览器栏："
       upload: 
         go_to_download_page: "Download this file"
         subject: "%{user} wants to share a file with you on Teambox"
