@@ -927,29 +927,29 @@ zh:
         user_sent_you_a_link: "%{user} 发送给你一个链接以供下载一个文件:%{name}"
       plaintext_link: "如果上面的链接不起作用，复制并粘贴下面的URL到您的浏览器栏："
       upload: 
-        go_to_download_page: "Download this file"
-        subject: "%{user} wants to share a file with you on Teambox"
-        user_sent_you_a_link: "%{user} sent you a link to download %{name}"
+        go_to_download_page: "下载文件"
+        subject: "%{user} 想要同你分享文件"
+        user_sent_you_a_link: "%{user} 发送给你一个下载链接 %{name}"
     reset_password: 
-      follow_this_link: "In order to %{new_password} for Teambox, we need you to log in with the following link:"
+      follow_this_link: "通过该链接登录teambox，然后重置密码%{new_password}"
       hey: "您好, %{user_name}!"
       log_in: 现在就登录Teambox！
-      new_password: "set a new password"
+      new_password: "设置新密码"
       plaintext_link: 如果出现问题，复制并粘贴以下链接到您的浏览器地址栏：
       problems_html: "如果您有任何问题，请通过%{support}联系我们"
       report_abuse: "您收到此邮件是因为您使用了%{email}注册了一个Teambox帐号"
-      subject: "Your password has successfully been reset"
-      successfully_reset: "Your password has been successfully reset."
+      subject: "您的密码已经重置"
+      successfully_reset: "您的密码已经被重置."
     teamboxdata: 
-      data_export_failed: "Your data could not be exported from Teambox. To try again, please visit the following link:"
-      data_exported: "Your data has been exported from Teambox, and is available as a download from the following link:"
-      data_import_failed: "Your data could not be imported into Teambox. Please check that the data you uploaded is valid. To try again, visit the following link:"
-      data_imported: "Your data has been successfully imported into Teambox. To view details, please visit the following link:"
-      export_failed: "Your data could not be exported"
-      exported: "Your data is ready for download"
+      data_export_failed: "您的数据不能导入到teambox，请点击该链接，然后重试"
+      data_exported: "您的数据不能导入到teambox，请点击该链接，然后重试"
+      data_import_failed: "您的数据不能导入到teambox，请检查数据格式，然后点击该链接，再重试"
+      data_imported: "您的数据不能导入到teambox，请点击该链接，查看详情，再重试"
+      export_failed: "您的数据不能被导入"
+      exported: "您的下载数据已经被准备"
       hey: "Hey, %{user_name}!"
-      import_failed: "Your data could not be imported"
-      imported: "Your data has been imported"
+      import_failed: "您的数据不能被导入"
+      imported: "您的数据已经被导入"
     upload: 
       file: "文件:"
   example_projects: 
@@ -964,70 +964,70 @@ zh:
       line4: 在这个项目您不能邀请其它用户，但您可以做其它任何事。
   folders: 
     edit: 
-      submit: Save
+      submit: 保存
     form: 
-      default_text: "Enter a folder name"
+      default_text: "输入文件夹名"
     new: 
-      invalid_folder: "Folder contain errors"
-      submit: "Create folder"
-    parent_folder: "Parent folder"
+      invalid_folder: "存在错误"
+      submit: "创建文件夹"
+    parent_folder: "父目录"
     public_download: 
       link: 
-        anchor: "Send this folder to somebody..."
-        title: "Share this folder with people outside your team"
+        anchor: "给某人发送当前目录"
+        title: "给你小组外的用户分享该目录"
     rename: 
-      error: "Folder name has not been changed"
-      success: "Folder name has been changed"
+      error: "文件夹名不能被修改"
+      success: 文件夹名已经被修改"
   form: 
     cancel: 取消
   friends: 
     filter: 
-      name: "Filter by name..."
-      provider: "Filter by provider..."
-      title: "Filter friends"
+      name: "通过名称过滤..."
+      provider: "通过提供者过滤..."
+      title: "过滤好友"
     friend: 
-      invite: Invite
-      inviting: Inviting...
-      loading: "Loading your friends..."
-      profile_page: "profile page"
-      reinvite: "Resend invitation"
-      sent: Sent!
+      invite: 邀请
+      inviting: 邀请中...
+      loading: "加载你的好友..."
+      profile_page: "个人主页"
+      reinvite: "重新发送"
+      sent: 发送
     index: 
-      find_more_contacts: "Find more contacts on Teambox"
-      pending_invitation: "Invitations pending..."
+      find_more_contacts: "查找更多联系方式"
+      pending_invitation: "邀请等待中..."
     invitations: 
       facebook: 
-        project: "Join my '%{project}' project on Teambox so we can share tasks online. Follow the link below this post on Facebook"
-        signup: "Join my Teambox so we can share projects and tasks online. Follow the link below this post on Facebook."
+        project: "加入我的项目:%{project}'以便我们能够在线分享任务，通过这个链接在facebook上follow我们"
+        signup: "加入我的项目以便我们能够在线分享任务，通过这个链接在facebook上follow我们"
       twitter: 
-        project: "Join my '%{project}' project so we can share tasks: %{link}"
-        signup: "Join my Teambox so we can share projects: %{link}"
+        project: "加入我的项目'%{project}' 以便我们能够分享这个任务: %{link}"
+        signup: "加入我的项目以便我们能够分享这个项目: %{link}"
     pending_invitation: 
-      delivery_fail: "we tried to deliver the invitation through %{provider} but an error occurred. You can manually invite this person by sending the sign up link:"
-      project: "was invited to join the project '%{project}' through %{provider}"
-      teambox: "was invited to join Teambox %{on} through %{provider}"
+      delivery_fail: "我们试图提供通过%{provider}的邀请，但发生了错误。您可以手动发送链接来邀请此人："
+      project: "被邀请加入项目'%{project}'通过%{provider}"
+      teambox: "被邀请加入项目'%{project}'通过%{provider}"
     project: 
-      title: "Invite contacts to the '%{project}' project."
+      title: "邀请加入％项目'%{project}'"
   google_docs: 
-    attach: "Attach a Google Document"
-    authorization_required: "In order to use Google Docs you must first authorize Teambox to use your Google account."
-    authorize_link: "Authorize Google Docs"
-    create: Create
-    create_new: "Create a New Blank Document"
-    creating: Creating...
+    attach: "附上Google文档"
+    authorization_required: "为了使用“Google文档”，你必须先授权Teambox使用您的Google帐户。"
+    authorize_link: "认证google文档"
+    create: 创建
+    create_new: 创建一个空的文档"
+    creating: 创建中...
     google_doc: 
-      lock: "Lock this document, preventing further edits"
-      lock_disabled: "Only document owner can lock it"
-      unlock: "Unlock this document, to allow edit"
-      view: "Open online"
+      lock: "锁定这个文件，防止进一步的编辑"
+      lock_disabled: "只有文件所有者可以将其锁定"
+      unlock: "锁定文档来进行编辑"
+      view: "在线打开"
       write_access: 
         message: 
-          lock: "This document is now locked"
-          unlock: "This document is now unlocked"
+          lock: "当前文档已被锁定"
+          unlock: "当前文档已被解锁"
     index_project: 
-      title: "Google Docs mentioned in this project"
-    new_document_placeholder: "New document title"
-    search_placeholder: "Search Google documents"
+      title: "Google文档”中提到这个项目"
+    new_document_placeholder: "新文档标题"
+    search_placeholder: "搜索google文档"
   hours: 
     all_tasks: 全部任务
     all_users: 所有用户
@@ -1036,18 +1036,18 @@ zh:
     entry_hours: 小时
     entry_total: 合计
     filter_assigned: 
-      anybody: Anybody
-      my_tasks: "My tasks"
+      anybody: 任何人
+      my_tasks: "我的任务"
     filter_by: 过滤于
     filter_organization: 
-      all: "All organizations"
+      all: "所有组织"
     filter_project: 
-      all: "All projects"
+      all: "所有组织"
     filters: 
-      assigned_to: People
-      organizations: Organizations
-      projects: Projects
-      tasks: Tasks
+      assigned_to: 用户
+      organizations: 组织
+      projects: 项目
+      tasks: 任务
     report: 报告
     reports: 
       project: 项目
@@ -1057,7 +1057,7 @@ zh:
     week_total: 周合计
   invitations: 
     destroy: 
-      discarded: "The invitation to %{user} has been discarded"
+      discarded: "发给 %{user}的邀请已经过期"
     errors: 
       invalid: 无效的邀请
       invalid_code: 无效的邀请码
@@ -1069,21 +1069,21 @@ zh:
     invitation: 
       discard: 放弃邀请
       invited_email: "%{inviter}邀请<b>%{email}</b>加入这个项目。"
-      invited_email_html: "%{inviter} invited <b>%{email}</b> to join the project."
+      invited_email_html: "%{inviter} 邀请 <b>%{email}</b> 加入这个项目."
       invited_user_html: "%{inviter}邀请<b>%{invitee}</b>加入这个项目。"
-      just_now: "(just now)"
+      just_now: "(刚刚)"
       pending: 已经向此用户发送邀请邮件，但对方还没有确认邀请。
       resend: 重新发送邀请邮件
       time_ago: "(%{time_ago_in_words}以前)"
     invite_format: 
       enter_this: 
-        title: "Enter this"
-      title: "In the username/email box, use either a list of usernames or email addresses. e.g.:"
+        title: "输入"
+      title: "在用户名/电子邮件中，我们使用的用户名或电子邮件地址列表。"
       to_invite: 
         not_example_html: "(NOT <span class=\"mention\">@fred</span> or <span class=\"mention\">@lisa</span>)"
-        title: "To invite"
+        title: "去邀请"
     new: 
-      also_invite_to_organization: "Invite also to the organization '%{organization}'"
+      also_invite_to_organization: "邀请并且组织'%{organization}'"
     pending: 
       invited_to_join: "%{by}已邀请您加入项目%{project}."
       to_access_or: 访问项目或者
@@ -1101,11 +1101,11 @@ zh:
       submit: 发布
       username_or_email: 请输入您的团队成员的用户名或email
     select_language: 
-      invitations_will_be_sent_in_language_html: "The invitations will be sent in %{language}"
+      invitations_will_be_sent_in_language_html: "该邀请已经用%{language}发送出去了"
     sent: 
       email_sent: "<b>我们刚刚发布了一个提醒邮件给此用户，邮件中包含了一个接受您项目邀请的链接。</b>. 如果他们不能收到此邮件，请确保此邮件不会作为垃圾邮件处理，或者尝试换一个邮件地址。如果还有问题，请联系我们。"
-  last_announcement_html: "Read <a href='http://blog.teambox.com'>our blog</a> for the latest news about Teambox."
-  latest_announcement_html: "<strong>New</strong>: Earn money by referring new users into Teambox. Log in and go into your affiliate area to make up a 15% of the income you generate!<br/><br/>Read <a href='http://blog.teambox.com'>our blog</a> for more news about Teambox."
+  last_announcement_html: "阅读 <a href='http://blog.teambox.com'>我们的博客</a> 了解我们最新动态"
+  latest_announcement_html: "<strong>新</strong>:赚钱，参照进入Teambox的新用户。登录到您的会员区，去弥补收入的15％，生成！<br/><br/>阅读<a href='http://blog.teambox.com'>的我们的博客</a>更多关于Teambox新闻。"
   locales: 
     en: English
     es: Spanish
@@ -1113,72 +1113,72 @@ zh:
     tr: Turkish
     zh: 中文
   marketing: 
-    about_teambox: "About Teambox"
-    about_teambox_title: "About Teambox"
-    case_studies: "Case studies"
-    case_studies_title: "Companies using Teambox and their testimonials"
+    about_teambox: "关于我们"
+    about_teambox_title: "关于我们"
+    case_studies: "案例学习"
+    case_studies_title: "公司使用Teambox和他们的推荐"
     change_locale: 
-      accept: "View in %{language}"
-      another_language_available: "This page is also avaliable in %{language}"
-      cancel: "Hide this"
-    history: "The Teambox Story"
-    history_title: "Origins and milestone for Teambox"
-    home: Home
-    home_title: "Home | Teambox"
-    newsletters: "Past newsletters"
-    newsletters_title: "Corporate communications"
-    press: "Press room"
-    press_title: "Teambox logo, PR notes and press releases"
-    pricing: Pricing
-    pricing_title: "Plans & Pricing"
+      accept: "使用%{language}访问"
+      another_language_available: "该页面能够通过%{language}访问"
+      cancel: "隐藏"
+    history: "teambox的历史"
+    history_title: "Teambox的起源和里程碑"
+    home: 主页
+    home_title: "主页 | Teambox"
+    newsletters: "过去新闻"
+    newsletters_title: "企业通讯"
+    press: "新闻发布室"
+    press_title: "teambox logo，公关笔记和新闻稿"
+    pricing: 定价
+    pricing_title: "套餐 & 定价"
     tour: Tour
-    tour_conversations: Conversations
-    tour_conversations_title: "Status messaging"
-    tour_files: Files
-    tour_files_title: "File sharing and Dropbox alternative"
+    tour_conversations: 会话
+    tour_conversations_title: "状态信息"
+    tour_files: 文件
+    tour_files_title: "文件共享和Dropbox的替代品"
     tour_pages: Pages
-    tour_pages_title: "Wiki Software with Pages"
-    tour_projects: Projects
-    tour_projects_title: "Project Management tools"
-    tour_social: "Social tools"
-    tour_social_title: "Social productivity software"
-    tour_tasklists: "Task lists"
-    tour_tasklists_title: "Getting Things Done and Task management"
-    tour_time: "Time tracking"
-    tour_time_title: "Time tracking software"
-    tour_title: "Project collaboration for agile teams"
-    tour_video: "Watch video"
-    tour_video_title: "Tutorial video for Teambox"
-    webinars: "Previous and upcoming webinars"
-    webinars_title: "Online training sesssions for task management"
-    what_is_teambox: "What is Teambox?"
-    what_is_teambox_title: "Features & Information"
+    tour_pages_title: "wiki页"
+    tour_projects: 项目
+    tour_projects_title: "项目管理工具"
+    tour_social: "社会化工具"
+    tour_social_title: "社会生产力的软件"
+    tour_tasklists: "任务列表"
+    tour_tasklists_title: "做事情和任务管理"
+    tour_time: "时间线追踪"
+    tour_time_title: "时间线追踪软件"
+    tour_title: "敏捷团队项目合作"
+    tour_video: "观看视频"
+    tour_video_title: "Teambox视频教程"
+    webinars: "过去和将来的网络研讨会"
+    webinars_title: "任务管理和在线培训"
+    what_is_teambox: "什么事teambox?"
+    what_is_teambox_title: "特色与信息"
   memberships: 
     index: 
-      add_as_admin: "add as an admin"
-      add_to_the_org: "Add to the organization as a participant"
+      add_as_admin: "添加管理员"
+      add_to_the_org: "作为参与者加入组织"
       admins: 
-        explain: "Can access any project and manage the organization's settings."
-        title: Admins
+        explain: "可以访问任何项目和管理机构的设置."
+        title: 管理员
       in_projects_but_not_in_the_organization: 
-        explain: "Can access only the projects they are invited to. Can't create projects inside the organization."
-        title: "External people"
-      make_admin: "Give admin rights"
-      no_users: "No users here"
-      remove: "remove from this organization"
-      remove_admin: "Remove admin rights"
-      title: "Users in %{name}"
+        explain: "只能访问他们被邀请到项目。无法建立组织内部的项目."
+        title: "外部人"
+      make_admin: "赋予管理员权限"
+      no_users: "没有用户"
+      remove: "从当前组织中益处"
+      remove_admin: "删除管理员权限"
+      title: "在 %{name}中的用户"
       users: 
-        explain: "Can create projects inside the organization, but only access the projects they're invited to."
-        title: Participants
+        explain: "可以创建组织内的项目，但只能访问他们邀请到的项目."
+        title: 与会者
     roles: 
-      admin: "As an administrator. Will be able to add new users and manage the organization."
-      external: "Don't invite. User won't be able to create projects in this organization."
-      participant: "As a participant. Will be able to create his own projects."
+      admin: "作为管理员。就能添加新用户和管理的组织."
+      external: "没有邀请。用户将无法在这个组织中创建项目."
+      participant: "作为一个参与者​​。将能够创建自己的项目."
   not_found: 
     conversation: "在这个项目中找不到话题%{id}。"
-    data: "There was a problem locating your data."
-    folder: "Folder not found in this project."
+    data: "定位数据出现了问题。"
+    folder: "没有文件夹。"
     page: "在这个项目中找不到页面%{id}。"
     project: "项目%{id}不存在。"
     task: "在这个项目中找不到任务%{id}。"
@@ -1228,193 +1228,193 @@ zh:
       format: 
         delimiter: ""
   oauth: 
-    account_linked: "Your account has been linked."
-    already_linked_to_your_account: "This service is already linked to your account. You can log in with it."
-    already_taken_by_other_account: "This service is already linked to another account on the system. Try logging out and logging in with it. To link it to a different account, you'll need to unlink it from the current one."
-    app_unlinked: "App unlinked"
-    auth_status: "OAuth Auth"
-    auth_status_link: "Link with your account"
-    auth_status_linked: "Linked with the provider"
-    authentication_failure: "Authentication failure, '%{message}'"
+    account_linked: "您的帐户已链接。"
+    already_linked_to_your_account: "这项服务已经连接到您的帐户。你可以登录它."
+    already_taken_by_other_account: "这项服务已链接到另一个系统上的帐户。尝试注销并记录它。要登录到不同的帐户，你需要从目前账户退出."
+    app_unlinked: "APP无关联"
+    auth_status: "OAuth的验证"
+    auth_status_link: "与您的帐户的链接"
+    auth_status_linked: "提供商提供商"
+    authentication_failure: "验证失败，'%{message}'"
     authorize: 
-      allow: Allow
-      authorize_access: "Allow this application access?"
+      allow: 允许
+      authorize_access: "允许此应用程序的访问?"
       deny: Deny
-      offline_access: "Access the account at any time"
-      offline_access_description: "The application will be able to access your account until you revoke access."
-      read_projects: "Access project data"
-      read_projects_description: "All project data, such as conversations, tasks, task lists, pages, and so on will be visible to the application."
-      title: "Authorize Application"
-      write_projects: "Create project data"
-      write_projects_description: "Create conversations, tasks, task lists, pages, etc."
-    link_account: "Link account."
-    logged_in: "Logged in successfully"
-    not_linked: "That service is not linked to your Teambox account."
-    sign_up_conflict: "We already have an account on the system with same username and/or email. If you already have an account you should login to your account instead of creating a new one."
-    signup_for_a_new_account: "click here to sign up for a new account"
-    this_account_will_be_linked_to: "This account will be linked with %{provider}"
-    unlink_account: "Unlink account."
-    your_account_is_linked_html: "Your %{provider} profile is <strong>linked</strong> to Teambox."
-    your_account_is_not_linked_html: "Your %{provider} profile is <strong>not linked</strong> to Teambox."
+      offline_access: "在任何时候访问帐户"
+      offline_access_description: "应用程序将能够访问您的帐户，直到你取消访问."
+      read_projects: "访问项目数据"
+      read_projects_description: "所有项目的数据，如谈话，任务，任务列表，网页，等等，将是可见的应用程序."
+      title: "授权应用"
+      write_projects: "创建项目数据"
+      write_projects_description: "创建对话，任务，任务列表，网页等."
+    link_account: "链接帐户."
+    logged_in: "成功登录"
+    not_linked: "该服务是没有链接到您的Teambox帐户."
+    sign_up_conflict: "我们已经有一个帐户，在相同的用户名和/或电子邮件系统。如果您已经有一个帐户，你要登入你的帐户，而不是创建一个新的。"
+    signup_for_a_new_account: "点击这里注册一个新帐户"
+    this_account_will_be_linked_to: "此帐户将链接到%{provider}"
+    unlink_account: "取消连结帐户."
+    your_account_is_linked_html: "你的 %{provider} 个人页面 被 <strong>链接</strong> 到 Teambox."
+    your_account_is_not_linked_html: "你的 %{provider} 个人页面 没有被 <strong>链接</strong> 到Teambox."
   oauth_clients: 
     client: 
-      edit: Edit
+      edit: 编辑
     client_token: 
-      authorized_at: "Authorized on %{time}"
-      confirm_revoke: "Are you sure you want to revoke access to this application?"
-      revoke: "Revoke access"
+      authorized_at: "在%{time} 被认证"
+      confirm_revoke: "你确定你要撤销这个应用程序的访问?"
+      revoke: "取消访问"
     developer: 
-      no_registered_applications_html: "Do you have an application you would like to register for use with us using the <a href='http://oauth.net'>OAuth</a> standard? You must register your web application before it can make OAuth requests to this service."
-      registered_applications_html: "You have the following client applications registered."
-      title: "Third-party applications"
+      no_registered_applications_html: "你有没有想对我们使用使用<a href='http://oauth.net'> OAuth的</a>的标准，注册你的应用程序？你必须注册你的web应用程序，它可以使这项服务的OAuth的请求."
+      registered_applications_html: "你有以下的客户端应用程序注册."
+      title: "第三方应用"
     edit: 
-      confirm_delete: "Are you sure you want to delete this application?"
-      submit: Update
+      confirm_delete: "您确定删除该应用？"
+      submit: 更新
     form: 
-      callback_url: "Callback URI"
-      name: Name
-      support_url: "Support URL"
-      url: "Client URL"
+      callback_url: "回调URL"
+      name: 名称
+      support_url: "支持URL"
+      url: "客户端URL"
     index: 
-      authorized_applications: "The following applications are authorized to access your Teambox account."
-      developers_register_html: "<strong>Developers:</strong> Register your apps <a href='%{url}'>Here</a>"
-      no_authorized_applications: "No applications are authorized to access your Teambox account."
-      register_app: "Register a new app"
-      title: "Linked applications"
+      authorized_applications: "以下应用程序被授权访问您的Teambox帐户."
+      developers_register_html: "<strong>开发者:</strong> 注册你的应用<a href='%{url}'></a>"
+      no_authorized_applications: "没有应用程序被授权访问您的Teambox帐户."
+      register_app: "注册新的应用"
+      title: "链接的应用程序"
     new: 
-      submit: "Register application"
-      title: "Register a new application"
+      submit: "链接的应用程序"
+      title: "注册新的应用"
   organizations: 
     active_projects: 
-      dont_belong: "You're not part of this project"
+      dont_belong: "你不是这个项目的一部分"
       no_active_projects: "There are no active projects in this organization."
-      role_html: "you're an <strong>%{role}</strong>"
-      settings: settings
-      storage: "%{now} of files"
-      title: "Active projects"
+      role_html: "你是一个 <strong>%{role}</strong>"
+      settings: 设置
+      storage: "%{now} 文件里"
+      title: "活动中的项目"
     appearance: 
-      submit: "Save changes"
-      title: "Appearance for %{organization}"
+      submit: "更新保存"
+      title: "外观为%{organization}"
     appearance_fields: 
-      delete_custom_logo: "Delete custom logo (and revert back to the Teambox one)"
-      description_html: "HTML to be displayed on the entrance page <a href=\"http://help.teambox.com/knowledgebase/articles/10249-customizing-your-login-page\">Learn how to use this</a>"
-      logo_html: "Logo <em>Ideally should be 134x36 pixels</em>"
+      delete_custom_logo: "删除自定义logo恢复到了Teambox默认logo）"
+      description_html: "HTML将显示在入口页的<a href=\"http://help.teambox.com/knowledgebase/articles/10249-customizing-your-login-page\">学习如何使用这个</a>"
+      logo_html: "标志的<em>理想像素应该是134x36</ EM>"
     archived_projects: 
-      last_activity: "last activity at %{date}"
-      title: "Archived projects"
+      last_activity: "最后活动在%{date}"
+      title: "归档项目"
     billing: 
-      billing_area_html: "You can downgrade or change your billing options at any time from the <a href='%{link}'>billing area</a>."
-      billing_email_html: "Billing e-mail <em>We will send invoices to this address</em>"
-      cancel: "Cancel subscription"
-      current_plan: "Your current plan"
-      downgrade: Downgrade
-      plan: Plan
-      projects: Projects
-      search: Search
-      storage: Storage
-      submit: "Update billing e-mail"
+      billing_area_html: "你可以在任何时间从的<a href='%{link}'>的计费面积降级或更改帐单选项</a>。"
+      billing_email_html: "帐单电子邮箱的<em>，我们会寄发票给这个地址</em>"
+      cancel: "取消订阅"
+      current_plan: "您的当前套餐"
+      downgrade: 降级
+      plan: 套餐
+      projects: 项目
+      search: 搜索
+      storage: 存储
+      submit: "更新帐单电子邮件"
       suggested_upgrade: 
-        for_only: "for $%{price} more a month"
-        get_projects_html: "Up to <b>%{number} projects</b>"
-        get_storage_html: "Up to <b>%{number}</b>"
-        upgrade_to: "Upgrade to %{plan}"
-      upgrade: "Upgrade now!"
+        for_only: "$%{price} 一个月以上"
+        get_projects_html: "升级到<b>%{number} 项目</b>"
+        get_storage_html: "升级到<b>%{number}</b>"
+        upgrade_to: "升级到%{plan}"
+      upgrade: "已升级!"
       yearly_plans: 
-        save_with_yearly_plans_html: "<b>Save 20%</b>. You can also sign up for any plan yearly and <b>get two months free</b>."
-        signup_links_html: "Sign up yearly for <a href='%{pro}'>Pro ($990)</a>, <a href='%{basic}'>Basic ($290)</a> or <a href='%{personal}'>Personal ($120)</a>."
+        save_with_yearly_plans_html: "<b>节省20%</b>. 你也可以签署每年的免费计划<b>获得两个月免费</ B>"
+        signup_links_html: "签署了每年<a href='%{pro}'>临（$ 990）</a>，的<a href='%{basic}'>基本法（$ 290）</a><a HREF='％{个人}'>个人（120美元）</a>。"
     column: 
-      admin_projects: "Manage projects"
-      admin_users: "Manage users"
-      appearance: Appearance
-      billing: "Plans and Billing"
-      delete: "Delete this organization..."
-      general_settings: "General settings"
-      invoices: Invoices
-      task_list_templates: "Task List Templates"
+      admin_projects: "项目管理"
+      admin_users: 人员管理"
+      appearance: 外观
+      billing: "计划和帐单"
+      delete: "删除该组织..."
+      general_settings: "常用设置"
+      invoices: 发票
+      task_list_templates: "任务列表模板
     delete: 
-      clarification: "If you delete this organization, all the information that's attached to it organization will be lost forever. The users that belong to this organization will still be able to login to Teambox and work with their other organizations."
-      confirm: "I understand that deleting this organization is irreversible and all the content related to this organization will be lost."
-      delete: "Delete this organization"
-      deleted: "You deleted the organization"
-      go_delete_some_projects_html: "You can't delete an organization while it still has projects inside. Please <a href='%{link}'>delete or transfer</a> all the projects from this organization before deleting it."
-      go_downgrade_to_free_plan_html: "You need to <a href='%{link}'>unsubscribe</a> from the paid plan before deleting the organization. You can downgrade your account to the free plan from the <a href='%{link}'>billing</a> section."
-      need_to_be_admin: "You need to be an administrator to destroy this organization"
-      not_paid_plan: "You can't delete an organization with a paid plan."
-      not_with_projects: "You can't destroy this organization because it still has projects"
+      clarification: "如果你删除了这个组织，所有连接到它组织的信息将永远消失。属于该组织的用户仍然可以登录到Teambox，并与其他组织的工作。"
+      confirm: "删去这个组织是不可逆的，与该组织有关的所有内容都将丢失。"
+      delete: "删除组织"
+      deleted: "删除组织完成"
+      go_delete_some_projects_html: "同时它仍然有项目里面，你不能删除一个组织。请<a href='%{link}'>删除或转移删除它之前，该组织从</a>所有项目."
+      go_downgrade_to_free_plan_html: "您需要<a href='%{link}'>退订</a>删去该组织之前的支付计划。你可以从的<a href='%{link}'>计费</a>一节免费计划​​降级您的帐户。"
+      need_to_be_admin: "你需要删除这个组织的管理员"
+      not_paid_plan: "你不能删除一个付费计划的组织。"
+      not_with_projects: "你不无法除这个组织，因为它仍然存在有项目"
     edit: 
-      invalid: "Invalid organization"
-      number_of_projects: "%{count} projects"
-      number_of_users: "%{count} users"
-      public_site: "Your organization's public site is %{link}"
-      saved: "Changes saved"
-      submit: "Save changes"
-      there_are: "There are"
-      title: "Settings for %{organization}"
+      invalid: "无效的组织"
+      number_of_projects: "%{count} 项目"
+      number_of_users: "%{count} 用户"
+      public_site: "您的组织的公共网站 %{link}"
+      saved: "更新保存"
+      submit: "更新保存"
+      there_are: "这里是"
+      title: " %{organization}的设置"
     external_view: 
-      create_your_own_org_html: "However, you can <a href='%{link}'>create your own organization</a> for your projects."
-      request_permission: "To access this organization, you must request permission to some of the administrators:"
+      create_your_own_org_html: "但是，您可以<a href='%{link}'>为您的项目建立自己的组织</a>。"
+      request_permission: "要访问这个组织，你必须有管理员权限："
       title: "%{name}"
-      you_cant_access: "You don't have permission to access or edit this organization."
+      you_cant_access: "您没有权限访问或编辑该组织。"
     fields: 
-      domain_html: "Domain <em>You can use your own domain for your organization, check the <a href='http://help.teambox.com/knowledgebase/articles/10247-custom-domain' title='How to use your own domain for your organization in Teambox'>documentation</a>.</em>"
-      name_html: "Organization name"
-      name_placeholder: "Your organization"
-      omit_email_processing_html: "Do not process incoming emails"
-      permalink_html: "Short organization code <em>No spaces allowed. Will be used for the web address.</em>"
+      domain_html: "域<em>您可以使用自己的域名为您的组织，检查的<a href='http://help.teambox.com/knowledgebase/articles/10247-custom-domain“标题='如何使用自己的域名为您的组织在Teambox'>文件</a></em>"
+      name_html: "组织名称"
+      name_placeholder: "您的组织"
+      omit_email_processing_html: "不处理传入的电子邮件"
+      permalink_html: "组织机构代码短<em>不允许有空格。将用于网络地址。</em>"
     index: 
       about: 
-        explain1: "An organization allows you to group projects and users under a brand name."
-        explain2: "You can link them to your own domain to customize your Teambox space. Use your own logo and login page, and share it with your clients."
-        title: "About Organizations"
+        explain1: "组织允许你将项目和用户通过一个名称添加到一个群组."
+        explain2: "您可以链接到使用你定制的域名的teambox空间，使用你自己的logo和登录页面，并于您的客户分享"
+        title: "关于组织"
       new: 
-        create: "+ Create a new Organization"
-        explain: "Brand it with your own logo and website, and create projects inside."
-      title: Organizations
+        create: "+ 创建一个新的组织"
+        explain: "使用自己的徽标和网站来宣传，并建立内部项目"
+      title: 组织
     invoices: 
-      address: Address
-      amount: Amount
-      company: Company
-      company_name: "Company name"
-      date: Date
-      invoice: "Teambox invoice"
-      invoices: "Your Invoices"
-      name: Name
-      no_invoices: "You don't have any invoice"
-      optional: "Optional data for the invoice"
-      print: Print
-      update_billing_details: "Update your billing address"
-      vat: "VAT Code"
+      address: 抵制
+      amount: 金额
+      company: 公司
+      company_name: "公司名称"
+      date: 时间
+      invoice: "Teambox 发票"
+      invoices: "您的发票"
+      name: 名称
+      no_invoices: "您没有任何发票"
+      optional: "可选的数据发票"
+      print: 打印
+      update_billing_details: "更新您的帐单地址"
+      vat: "VAT 代码"
     new: 
-      created: "Your organization has been created!"
-      explain: "Organize your people and projects inside an organization."
-      invalid_organization: "Invalid organization, correct errors and try again."
-      submit: "Create Organization"
-      title: "New Organization"
-    not_admin: "You can't access the billing page because you are not an administrator."
-    not_in_community: "The community version doesn't support multiple organizations"
+      created: "您的组织已经建立!"
+      explain: "在组织内部和项目组织你的人."
+      invalid_organization: "无效的组织，纠正错误，并再次尝试."
+      submit: "创建组织"
+      title: "N创建组织"
+    not_admin: "因为你是不是管理员，你不能访问计费页."
+    not_in_community: "社区版本不支持多个组织"
     organization: 
-      admin: admin
-      external: "external worker"
-      more_users: "and %{count} more users"
+      admin: 管理员
+      external: "外部工人"
+      more_users: "和 %{count}更多用户"
       number_of_projects: 
-        one: "One project"
-        other: "%{count} projects"
-      participant: participant
-      upgrade: "Upgrade your plan!"
-      you_are_html: "You're an <strong>%{role}</strong> of this organization"
-      your_plan_is: "Your plan is %{plan}"
+        one: "一个项目"
+        other: "%{count} 项目"
+      participant: 参加者
+      upgrade: "升级您的套餐!"
+      you_are_html: "在组织中你作为一个<strong>%{role}</strong>而存在"
+      your_plan_is: "您的套餐是%{plan}"
     projects: 
-      instructions_html: "These are the projects for this organization. If you're an admin, you can transfer a project to <a href='%{organizations_link}'>other organizations</a> by opening the project's settings."
-      new_project: "New project"
-      title: "Projects in %{organization}"
+      instructions_html: "这些都是为这个组织的项目。如果你是一个管理员，你可以到<a href='%{organizations_link}'>其他组织转让项目</a>通过开放项目的设置。"
+      new_project: "创建项目"
+      title: "%{organization}中的项目"
     usage: 
       active_projects: 
-        explain: "Deleted and archived projects don't count against the limit."
-        title: "%{now} / %{max} active projects"
+        explain: "删除和归档的项目不计入限制."
+        title: "%{now} / %{max} 有效项目"
       storage: 
-        explain: "Attached files on your organization."
+        explain: "您的组织上的附加文件."
         title: "%{now} / %{max}"
-    you_are_not_admin: "You are not an admin of this organization. Only admins can edit its settings and manage users."
+    you_are_not_admin: "你不是该组织的管理。只有管理员可以修改它的设置和管理用户。"
   page_title: 
     archived_task_lists: 存档任务
     create_uploads: 文件上传
@@ -1438,15 +1438,15 @@ zh:
     welcome_users: 欢迎！
   pages: 
     buttons: 
-      new_divider: Divider
+      new_divider: 分配者
       new_note: 备注
       new_task_list: 任务列表
       new_upload: 上传
     column: 
-      all_pages: "All Pages"
+      all_pages: "所有页面"
       new_page: 新增页面
-      reorder: Reorder
-      reorder_done: Done
+      reorder: 重新排序
+      reorder_done: 确定
     edit: 
       submit: 更新
       title: 修改页面
@@ -1457,23 +1457,23 @@ zh:
       name: 标题
       name_description: 请使用简短清晰的标题
     index: 
-      cant_create: "You don't have permission to create pages in this project"
+      cant_create: "在这个项目中您没有权限区创建一个页面"
       new_page: "New Page"
       pages_in_this_project: 当前项目的页面
       rss: 
         description: "%{name}项目的页面"
-        title: "%{name} pages"
-      title: "Pages in %{project}"
+        title: "%{name} 页面"
+      title: "  %{project}中的页面"
     new: 
       define1_html: 这里您可以和您的团队<b>分享有用的信息</b>：路线图，有意思的链接，规定，邮件模板等等...
       define2_html: 修改一个项目是相当容易和有趣的事，通过拖曳元素您可以即时修改页面。
-      feature1_html: "<b>Share</b>. All your teammates can view and edit the project's pages."
-      feature2_html: "<b>Publish</b>. Instant web publishing with shared pages. Show the world."
-      feature3_html: "<b>Print</b>. Pages are printer-friendly. Try printing or exporting a PDF!"
-      feature4_html: "<b>Wiki</b>. Pages acts like a wiki, giving quick access to the project's information."
+      feature1_html: "分享</b>。你的队友可以查看和编辑项目的网页。"
+      feature2_html: "<b>发布</b>。即时网络发布共享页面。向世界展示。"
+      feature3_html: "<b>打印</b>。页面是打印友好的，请尝试一下打印或导出为PDF！"
+      feature4_html: "<b>Wiki</b>. 页面就象是wiki，提供了一种快速访问项目信息的方式。"
       footer1_html: 使用Teambox作为您的频繁使用的<b>共享白板</b>。
       footer2_html: 您也可以添加附件到任何页面。使用愉快！
-      sending: Sending...
+      sending: 发送中...
       submit: 创建
       title: 新增页面
     primer: 
@@ -1490,11 +1490,11 @@ zh:
     slots: 
       insert_here: 插入在这里
   password_strength: 
-    average: Average
-    strong: Strong
-    too_long: "Too long"
-    too_short: "Too short"
-    weak: Weak
+    average: 平均
+    strong: 强烈
+    too_long: "太长"
+    too_short: "太短"
+    weak: 弱
   people: 
     column: 
       confirm_delete: 您确信要把此人从项目中移除？
@@ -1502,16 +1502,16 @@ zh:
       inviting: 邀请其它用户
       leave_project: 离开项目
       leaving: 离开项目
-      no_contacts: "There are no people available to invite."
+      no_contacts: "没有人邀请."
       only_admins_can_invite: 只有管理员才可以邀请其他人加入此项目。
-      select_project: "Select a project"
+      select_project: "S选择一个项目"
       you_can_leave: 您可以在任何时候离开这个项目。如果这样做，你将不能访问任何数据，不能收到任何提醒邮件。其他人仍然可以使用此项目，不会丢失任何数据。
-      you_cannot_leave: "You cannot leave this project as you are the only administrator present."
+      you_cannot_leave: "你不能离开，因为你是唯一的管理员目前这个项目."
     edit: 
       submit: 更新人员
     errors: 
       user_or_email: 用户没有找到。请输入他的用户名或Email。
-      users_or_emails: "Invalid usernames or email addresses"
+      users_or_emails: "无效的用户名或电子邮件地址"
     fields: 
       admin: 管理员。可以邀请新用户加入此项目。
       commenter: 评论者。可以评论，但不能创建新的元素。
@@ -1523,7 +1523,7 @@ zh:
       commenter: 评论者
       confirm_delete: 您确信要把此人从项目中移除？
       leave_project: 离开项目
-      not_logged_in_recently: "Not logged in recently"
+      not_logged_in_recently: "当前没有登录"
       observer: 观察者
       owner: 项目所有者
       participant: 参与者
@@ -1532,11 +1532,11 @@ zh:
     link: 
       edit: 编辑
     update: 
-      success: "You have updated %{name}'s role"
+      success: "您已经更新为%{name}角色"
   plans: 
     copies: 
-      copy1_html: "Like Teambox? Get more projects! <a href='%{link}'>Upgrade now</a> to support our development!"
-      copy2_html: "<a href='%{link}'>Upgrade now</a> to get more projects, storage and search across all projects."
+      copy1_html: "像teambox？获得更多项目！ <a href='%{link}'>马上升级</a> 来获得我们的开发版本"
+      copy2_html: "<a href='%{link}'>马上升级</a> to get more projects, storage and search across all projects."
       copy3_html: "<a href='%{link}'>Get more done</a> with a premium account! Extra storage, more projects."
       copy4_html: "<a href='%{link}'>Make work better</a> with a premium account: Search bar across all projects."
       copy5_html: "<a href='%{link}'>Upgrade your Teambox account now</a> and enjoy professional collaboration!"
@@ -1576,8 +1576,8 @@ zh:
       archiving: 存档此项目
       confirm_delete: 您确信要永久删除此项目？此操作不可恢复。如果您还想保留它，请使用存档项目操作。
       delete_project: 
-        body_extra_html: "Deleting this project will not cancel your Teambox subscription. To cancel your subscription <a href='%{url}''>click here</a>."
-        body_html: "This will <strong>permanently</strong> delete all data in the project."
+        body_extra_html: "删去该项目将不会取消你的Teambox认购。为了您订阅<a href='%{url}''>的取消点击这里</a>。"
+        body_html: "这将<strong>永久<strong> 删除项目中的数据"
         title: "Are you sure you want to delete %{project}?"
       delete_this_project: "Delete this project"
       extra_options: "More options"
@@ -1602,15 +1602,15 @@ zh:
       owner_description: 所有者是一个项目的主要负责人，他不能被从此项目中移除，除非先行指定另一个所有者。
       permalink_description: 这是您项目的网址。请尽量简短，不允许有空格。
       permalink_html: URL
-      public_project_html: "Public project. <em>Anybody will be able to access it and join it at the <a href='/public'>public projects section</a>.</em>"
-      select_an_organization: "Select an organization"
+      public_project_html: "公开项目. <em>任何人都能访问和加入这个 <a href='/public'>公开项目</a>.</em>"
+      select_an_organization: "选择一个组织"
       settings: 
         manage_organizations: "Manage organizations."
         you_cant_transfer_this_project_html: "This project belongs to the <b>%{organization}</b> organization. You don't have the rights to transfer it."
       tracks_time_html: 启用时间跟踪
     index: 
       archived: "显示%{count}个已存档项目..."
-      close_pane: "Close projects view"
+      close_pane: "关闭项目视图"
       new_project: 新增项目
       projects: 我的项目
       rss: 
@@ -1618,41 +1618,41 @@ zh:
         title: 项目摘要
       subscribe: 订阅动态反馈
     invite_people: 
-      explain_invitations: "Choose who will have access to this project. You can add or remove people later."
-      invite_by_email: "Invite users by entering their email addresses"
-      invite_from_this_organization: "Invite users already in the %{organization} organization"
-      sending: "Sending invitations..."
-      submit: "Send invitations and start collaborating"
-      title: "Invite people to %{project}"
+      explain_invitations: "选择一个允许加入项目的用户，然后添加或者删除ta"
+      invite_by_email: "通过邮件地址邀请用户"
+      invite_from_this_organization: "受邀请的用户已经存在在 %{organization} 组织中"
+      sending: "邀请发送中..."
+      submit: "发送邀请同时开始合作"
+      title: "邀请用户到项目: %{project}"
     join: 
-      welcome: "You're now part of this project"
+      welcome: "你现在已经加入项目啦！"
     list: 
-      archived: Archived
-      archived_at: "archived at %{date}"
+      archived: 存档
+      archived_at: "存档于%{date}"
       show_archived: 
-        one: "Show one archived project"
-        other: "Show %{count} archived projects"
+        one: "显示一个已存档的项目"
+        other: "显示%{count} 个已存档的项目"
     new: 
       active_projects: 
-        one: "You have one active project."
-        other: "You have %{count} active projects."
-        zero: "You have no active projects."
+        one: "您已经有一个已存档的项目"
+        other: "您已经有%{count} 个已存档的项目"
+        zero: "您没有已存档的项目."
       create_an_example_project: "第一次使用Teambox？可以先<a href='%{link}'>创建一个样例项目</a>以尝试并熟悉Teambox。"
       created: 您的项目已经创建成功！
-      explain1_html: "A project is a shared group with your teammates. Use it to post Conversations, Tasks and Files."
-      explain2_html: "You can create a project for each area: Development, Sales, your client projects, etc."
+      explain1_html: "一个项目是与你的队友共享组。用它来发表谈话，任务和文件。"
+      explain2_html: "你可以创建每个区域的项目开发，销售，客户项目等。"
       invalid_project: 无效的项目，请修正错误并重试
       new_project: 新项目...
       not_allowed: 您的当前帐号不能创建任何项目。
-      select_an_organization: "You need to select an organization for your project"
-      sending: "Creating the project…"
+      select_an_organization: "你需要选择一个适合您的项目的组织"
+      sending: "正在创建项目…"
       submit: 创建项目并开始邀请其他人
       title: 创建项目
       upgrade: 
-        to_2_html: "<a href='%{link}'>Upgrade your account now</a> to create <b>up to %{projects} projects</b>, store up to <b>%{storage} Gb</b> of files and use the <b>search bar across all projects</b>."
+        to_2_html: "<a href='%{link}'>升级您的帐户</a>创建<b>％{项目}项目</b>，储存达到<b>％{存储} GB </b>文件和使用的所有项目<b>的搜索栏</b>。"
       you_can_create_more: 
-        one: "You can create one more project with your current plan."
-        other: "You can create %{count} more projects with your current plan."
+        one: "您目前的套餐，你可以创建更多的项目。"
+        other: "根据您目前的套餐，你能创建%{count}或者更多项目"
         zero_html: "You can't create any more projects.<br/>The maximum of projects with your current plan is %{max}."
     new_primer: 
       define1_html: 项目是一个与您的团队成员共享的群。
@@ -1669,11 +1669,11 @@ zh:
       upgrade: 现在就升级您的帐号！
     new_project_suggestions: 
       add_conversations: 
-        content: "Start a discussion with the group, it's as easy as sending an email."
-        title: "Post a conversation"
+        content: "开始小组讨论，它就像发送电子邮件一样简单。"
+        title: "发表谈话"
       add_people: 
-        content: "This project is private. Invite anyone you would like to have access to it."
-        title: "Add collaborators"
+        content: "这个项目是私人的。邀请任何想访问它的人."
+        title: "新增的合作者"
       add_tasks: 
         content: "Start planning your project with deadlines and deliverables by using tasks."
         title: "Create some tasks"

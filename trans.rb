@@ -5,8 +5,10 @@ require'ya2yaml'
 $KCODE = "u"  
 
 
-zh = YAML.load(File.open("/home/lee/dev/teambox/config/locales/zh.yml"))
-en = YAML.load(File.open("/home/lee/dev/teambox/config/locales/en.yml"))
+# zh = YAML.load(File.open("/home/lee/dev/teambox/config/locales/zh.yml"))
+# en = YAML.load(File.open("/home/lee/dev/teambox/config/locales/en.yml"))
+zh = YAML.load(File.open("F:/opensource/team_tool/config/locales/zh.yml"))
+en = YAML.load(File.open("F:/opensource/team_tool/config/locales/en.yml"))
 # zh = YAML.load(File.open("d:/2.yml"))
 # en = YAML.load(File.open("d:/1.yml"))
 
@@ -50,12 +52,9 @@ end
 # p zh["zh"]
 mapdo en["en"],zh["zh"]
 
-a = File.new("/home/lee/3.yml","w")
+a = File.new("D:/3.yml","w")
 a.puts zh.ya2yaml
 
 
 
-hash_with_utf8_value = {:key => "一串UTF-8字符..."}  
-puts hash_with_utf8_value.to_yaml  
-puts hash_with_utf8_value.ya2yaml  
-p(YAML.load hash_with_utf8_value.ya2yaml) 
+
