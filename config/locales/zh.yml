@@ -298,7 +298,7 @@ zh:
       task_name: "例如。上传提案的标志"
     convert_form: 
       destination: "选择目标任务列表"
-      name: "输入任务名称
+      name: "输入任务名称"
       submit: 提交
     edit: 
       submit: 保存
@@ -308,7 +308,7 @@ zh:
       attach: 附件
     hours: 
       add_hours: 添加工时
-      hours: "你安排多少工时在这个任务里"
+      hours: "你安排多少工时在这个任务里" 
       time_tracking_docs: "学习如何使用时间追踪"
       tooltip: "为该任务添加工时"
     new: 
@@ -821,7 +821,7 @@ zh:
     security_clarification: "通过该链接，所有人都可以访问这个地址%{downloadable_ext}.但是不能访问你的项目和文件"
     security_clarification_ext: 
       file: "文件"
-      folder: "文件夹和其子目录
+      folder: "文件夹和其子目录"
     sending: 发送中...
     share_link: "另外，你可以分享下面的链接%{downloadable}："
     share_outside_your_team: "你可以分享 %{downloadable} 给不是你团队的用户."
@@ -1330,7 +1330,7 @@ zh:
       delete: "删除该组织..."
       general_settings: "常用设置"
       invoices: 发票
-      task_list_templates: "任务列表模板
+      task_list_templates: "任务列表模板"
     delete: 
       clarification: "如果你删除了这个组织，所有连接到它组织的信息将永远消失。属于该组织的用户仍然可以登录到Teambox，并与其他组织的工作。"
       confirm: "删去这个组织是不可逆的，与该组织有关的所有内容都将丢失。"
