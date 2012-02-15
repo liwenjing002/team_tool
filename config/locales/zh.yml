@@ -1675,23 +1675,23 @@ zh:
         content: "这个项目是私人的。邀请任何想访问它的人."
         title: "新增的合作者"
       add_tasks: 
-        content: "Start planning your project with deadlines and deliverables by using tasks."
-        title: "Create some tasks"
+        content: "通过使用的任务列表来规划您的项目，期限和交付。"
+        title: "创建一些任务"
     not_in_project: 
-      explain_admin_html: "In order to view this project, you must join it. This will give you access to its conversation wall, tasks, pages and files. You can do this because you're an administrator of the <b>%{organization}</b> organization."
-      explain_public_html: "In order to view this project, you must join it. This will give you access to its conversation wall, tasks, pages and files. You can do this because this is a <b>public project</b>."
-      join: "Join this project"
-      not_allowed: "This is a private project and you're not authorized to access it."
-      title: "Join '%{project}' project?"
+      explain_admin_html: "以查看这个项目，你必须加入其中。这会给你到交谈墙，任务，网页和文件的访问权限。你能做到这一点，因为你是一个管理员的<b>%{组织} </b>组织."
+      explain_public_html: "以查看这个项目，你必须参加。这会给你到交谈墙，任务，网页和文件的访问。你可以做到这一点，因为这是一个<b>公共项目</b>。"
+      join: "J加入项目"
+      not_allowed: "这是一个私人的项目并且你未被授权访问."
+      title: "是否加入项目'%{project}'?"
     pages: 
-      new: "+ New page"
-      title: Pages
+      new: "+ 新的页面"
+      title: 页面
     people_list: 
-      invite_people: "Invite people..."
+      invite_people: "邀请好友..."
       pending_invitations: 
-        one: "One invitation pending"
-        other: "%{count} invitations pending"
-      people_in_project: "People in this project"
+        one: "一个邀请正在发送"
+        other: "%{count} 个邀请正在发送"
+      people_in_project: "项目中的成员"
     primer: 
       create_first: 创建您第一个项目!
       define1_html: 项目用户与一组人进行<b>协作</b>：建立网站，组织一次聚会，客户工作...
@@ -1704,31 +1704,31 @@ zh:
       item4_html: <b>计划</b>需要完成的任何及发布对任务的更新。
       item5_html: <b>分享信息</b>于多个项目，通过易于修改的页面。
     recent_conversations: 
-      first: "+ Create the first conversation"
-      new: "+ New conversation"
-      title: "Recent conversations"
-      view_all: "View all conversations"
+      first: "+ 创建第一个会话"
+      new: "+ 新的会话"
+      title: "最近的会话"
+      view_all: "查看所有会话"
     show: 
       new_task_list_link: 新建任务列表
-      public_project: "Public site for this project"
+      public_project: "为该项目发布站点"
       rss: 
         description: "项目%{name}的近期活动"
         title: "%{name}"
       subscribe: 订阅动态反馈
       text_styling: 文本样式
       tip: "引用某人的 @username，某人将会收到一个包含您消息内容的email"
-      title: "Recent activity for %{project}"
+      title: "%{project}的新鲜事"
       update_your_status: 更新您的状态...
   public_downloads: 
     download: 
-      download_file: "Download file:"
-    not_found: "%{downloadable} not found. Verify the link you followed or request a new link in case of problem."
-    promo_p1: "This %{downloadable} is shared using Teambox, a collaboration platform for your projects."
-    promo_p2: "Enjoy better task management, file sharing and group communication."
+      download_file: "下载文件"
+    not_found: "%{downloadable} 没有找到. 确认您遵循的链接，或要求在新的问题的情况下链接."
+    promo_p1: "当前 %{downloadable} 已被分享,作为您项目的合作平台"
+    promo_p2: "享受更好的任务管理，文件共享和组通信。"
   reset_passwords: 
     create: 
       invalid: "您输入的修改密码地址无效或已经过期。请尝试再次使用主页上的找回密码功能。<br/>请检查电子邮箱地址并重新尝试。如果不能成功，请联系我们%{support}"
-      invalid_html: "The change password URL you visited is either invalid or expired. Try using I Forgot my Password again from the home page.<br/>If that doesn't work, contact us at %{support}"
+      invalid_html: "您访问更改密码的网址是无效或过期。尝试使用我忘记了密码，再从主页。<br/>如果不起作用，请联系我们 %{support}"
       not_found_html: "我们不能找到任何使用此电子邮箱的用户： %{email}<br/>请检查电子邮箱地址并重新尝试。如果不能成功，请联系我们%{support}"
       password_not_updated: 新密码无效，请重试。
       password_updated: 密码修改成功，请重新登录
@@ -1738,30 +1738,30 @@ zh:
       submit: 发给我一个重置密码的链接
       title: 忘记密码？
     reset: 
-      reset_your_password: "Please enter a new password and confirm it."
-      submit: "Reset my password"
-      title: "You can now reset your password"
+      reset_your_password: "请输入密码并确认."
+      submit: "重置我的密码"
+      title: "您可以重置您的密码"
     sent: 
       follow_the_link_html: 点击此邮件中的链接以登录Teambox！如果您找不到邮件，请尝试看一下垃圾邮件夹。
       login_link_sent: "我们将发送邮件到%{email}给您以重置您的密码。"
       title: 重置密码
   roles: 
-    admin: admin
-    commenter: commenter
-    observer: observer
-    participant: participant
+    admin: 管理员
+    commenter: 意见发表者
+    observer: 观察员
+    participant: 参与者
   search: 
-    close_search: "Close search results"
-    found_results: "Found %{length} results"
+    close_search: "关闭查询结果"
+    found_results: "找到 %{length}条结果"
     index: 
       no_results: 
-        explain: "Try using more specific search terms to find more results."
-        title: "We didn't find any results for '%{term}', sorry!"
-      search_again: "Search again"
-      title: "Searching in all projects"
-      title_in_project: "Searching in project: %{project}"
-    placeholder: "Search all projects"
-    results_for: "Results for %{search_terms}"
+        explain: "尝试使用更具体的搜索条件，找到更多的结果。"
+        title: "对不起，没有找到如何和'%{term}'相关的内容"
+      search_again: "再次搜索"
+      title: "在所有项目中搜索"
+      title_in_project: "在当项目: %{project中搜索}"
+    placeholder: "在所有项目中搜索"
+    results_for: "搜索%{search_terms}的结果"
   sessions: 
     fields: 
       forgot: 忘记密码？
@@ -1780,9 +1780,9 @@ zh:
       enhance_html: "使用谷歌浏览器。点击<a href=\"%{link}\" target=\\\"_blank\\\">这里</ a>，然后安装。"
     collapsed_mode: 查看异常的工作进度
     confirm_email: 
-      change_email: "use a different e-mail address"
-      go_to_your_email_to_confirm: "Go to %{email} to confirm your account."
-      resend_email: "Resend the instructions"
+      change_email: "使用不同的邮件地址"
+      go_to_your_email_to_confirm: "到 %{email} 认证您的账户."
+      resend_email: "重新发送认证邮件"
     expanded_mode: 查看延迟的工作进度
     footer: 
       feedback: Feedback
@@ -1801,22 +1801,22 @@ zh:
     instructions: 
       send_email: 通过邮件发表回复...
       send_email_conversations: 通过邮件发起会议...
-      send_email_help_conversation_html: "To post a new comment to this conversation send an email to <a href=\"mailto:%{email}\">%{email}</a>. Only members from the project can post to the conversation."
-      send_email_help_conversations_html: "To create a new conversation send an email to <a href=\"mailto:%{email}\">%{email}</a> with Subject for the title and Body for the comment. Only members from the project can create a new conversation."
-      send_email_help_project_html: "To post a new comment to this project's activity wall send an email to <a href=\"mailto:%{email}\">%{email}</a>. Only members from the project can post to the wall."
-      send_email_help_task_html: "To post a new comment to this task send an email to <a href=\"mailto:%{email}\">%{email}</a>. Only members from the project can comment to the task."
+      send_email_help_conversation_html: "这次谈话发表新的评论发送电子邮件到<a href=\"mailto:%{email}\">％{电子邮件}</a>。从项目的成员才可以发表谈话."
+      send_email_help_conversations_html: "要创建一个新的会话发送电子邮件到<a href=\"mailto:%{email}\">％{电子邮件} </a>，并为主题的标题和评论的主体。从该项目中的成员，才能够创建一个新的对话。"
+      send_email_help_project_html: "发表新的评论这个项目的活动墙，发送电子邮件到<a href=\"mailto:%{email}\">％{} </a>。从该项目中只有会员可以张贴在墙上。"
+      send_email_help_task_html: "发表新的评论，这个任务发送电子邮件到<a href= \"mailto:%{email}\">%{email}</a>.从该项目中的成员才可以发表评论的任务。"
       subscribe_to_calendars: 订阅日历...
       subscribe_to_feeds: 订阅feeds...
     invite_contacts: 
-      find_more_contacts: "Find more contacts"
-      note1: "Your contacts will not be invited to your projects."
-      note2: "They will be able to create their own accounts."
-      title: "Invite your friends to Teambox"
+      find_more_contacts: "寻找更多的联系"
+      note1: "您的联系人将不会被邀请到您的项目."
+      note2: "他们能够创建自己的账户"
+      title: "邀请您的好友"
     navigation: 
-      affiliate: "Affiliate area"
+      affiliate: "加盟地区"
       all_projects: 全部项目
-      conversations: Conversations
-      dropbox: "Dropbox folders"
+      conversations: 会话
+      dropbox: "Dropbox的文件夹"
       files: Files
       gantt_and_calendars: 甘特图和日历
       my_tasks: 我的任务
@@ -1824,28 +1824,28 @@ zh:
       open_my_tasks: 打开所有任务
       organizations: 组织
       pages: Pages
-      people: "People & Permissions"
+      people: "用户和权限"
       recent_activity: 近期活动
       settings: Settings
-      show_all_organizations: "Manage organizations..."
+      show_all_organizations: "组织管理..."
       show_all_projects: 显示所有项目
       show_all_tasks: 显示所有任务
-      tasks: Tasks
+      tasks: 任务
       time: 时间
       today: 今天
       welcome: 欢迎
     project_navigation: 
-      affiliate_area: "Affiliate Area"
+      affiliate_area: "加盟地区"
       all_conversations: 所有话题
       all_pages: 所有页面
       all_task_lists: 所有任务
       conversations: 话题
       files: 文件
-      gantt: "Calendar and charts"
+      gantt: "日历和图表"
       invitations: 邀请
       login: 登录
-      organization: Organization
-      organizations: Organizations
+      organization: 组织
+      organizations: 组织
       overview: 概述
       pages: 页面
       people: 成员
@@ -1875,7 +1875,7 @@ zh:
       all_tasks: 全部任务
       everybodys_tasks: 所有人的任务
       hide_archived_tasks: 隐藏归档任务
-      my_assigned_tasks: "only tasks assigned to me"
+      my_assigned_tasks: "分配给我的唯一任务"
       my_tasks: 
         one: 我的1个任务
         other: "我的%{count}个任务"
@@ -1891,14 +1891,14 @@ zh:
       upgrade: 你正在使用低版本的IE浏览器，可能无法获得最好的体验，
     user_navigation: 
       account_settings: 帐号设置
-      delete_account: "Delete Account..."
-      linked_accounts: "Linked Accounts"
-      linked_apps: "Linked Apps"
+      delete_account: "删除账户..."
+      linked_accounts: "链接到账户"
+      linked_apps: "链接到APP"
       notifications: 提醒
-      plans_and_billing: "Plans and Billing"
+      plans_and_billing: "套餐和账单"
       profile_information: 个人信息
       profile_picture: 个性图片
-      your_data: "Import / Export"
+      your_data: "导入/导出"
     watchers: 
       nobody_watching: 没有人在关注
       people_watching: "关注中的人: "
@@ -1908,10 +1908,10 @@ zh:
       watch: 关注
   sites: 
     fields: 
-      password: Password
-      username_or_email: "Email or Username"
+      password: 密码
+      username_or_email: "用户名和邮箱"
     show: 
-      submit: "Log in"
+      submit: "登录"
   support: 
     array: 
       last_word_connector: ", 和 "
@@ -1920,38 +1920,38 @@ zh:
     select: 
       prompt: 请选择
   task_list_templates: 
-    description: Description
-    explanation: "A task list template is a set of common tasks you can repeatedly create task lists from."
+    description: 描述
+    explanation: "任务列表模板是一组共同的任务可以反复创建任务列表。"
     form: 
-      name_html: "Template name <i>eg. Design process</i>"
+      name_html: "模板名称<i>设计过程</i>"
     index: 
-      new: "New Task List Template"
-      title: "Task List Templates for %{name}"
-    name: "Template name"
-    task: Task
-    task_name: "Task name"
-    tasks: Tasks
-    title: "Task List Template"
+      new: "新建任务模板"
+      title: "%{name}的任务列表模板"
+    name: "模板名称"
+    task: 任务
+    task_name: "任务名称"
+    tasks: 任务
+    title: "任务列表名称"
   task_lists: 
     actions: 
-      archive: "archive this task list"
-      confirm_resolve_and_archive: "Are you sure you want to resolve and archive this task list?"
-      rename: "Rename task list"
-      resolve_and_archive: "Resolve all tasks and archive"
-      set_dates: "Set the start & end date"
+      archive: "归档此任务列表"
+      confirm_resolve_and_archive: "你确定你要解决并存档此任务列表吗？"
+      rename: "重命名任务列表"
+      resolve_and_archive: "解决所有的任务和归档"
+      set_dates: "设置开始和结束日期"
       show_archived: 
         one: 显示一条已存档的任务
         other: "显示%{count}条已存档的任务"
     archive_box: 
-      unarchive_list: "This task list is archived."
+      unarchive_list: "此任务列表已被归档。"
     archived: 
       description: 您正在查看已存档的任务，这些任务已经被关闭。
       title: 所有已存档的任务
     column: 
-      cant_create: "You don't have permission to create tasks in this project"
-      gantt_view: "Project Gantt and calendar"
+      cant_create: "你没有权限在这个项目中创建任务"
+      gantt_view: 项目的甘特图和日历"
       new_task_list: 创建任务列表
-      other_views: "Other views"
+      other_views: "其他视图"
       subscribe: 订阅动态反馈
     destroy_message: 
       deleted_html: "任务列表<b>%{name}</b>已经被成功删除！"
@@ -1963,57 +1963,57 @@ zh:
         too_long: 名称不能超过255个字符
     fields: 
       finish_on: "结束于... <i>可选</i>"
-      finish_on_html: "End on... <i>optional</i>"
+      finish_on_html: "结束于... <i>选项</i>"
       name: 任务列表名称
-      name_html: "Choose a name for this Task List <i>eg. Prepare a Prototype</i>"
-      no_templates_yet_html: "You didn't create a task list template yet. Go to your organization's %{link}"
-      optional: "If you set starting and ending dates, this task will be displayed in the Gantt chart"
-      or_from_scratch: "or create a Task List from scratch"
-      or_from_template: "or create a Task List from a template"
+      name_html: "为任务列表选择一个名称<i>例如。准备一个属性</i>"
+      no_templates_yet_html: "您没有创建任务列表模板。转到您的组织 %{link}"
+      optional: "如果你设置起始和结束日期，这个任务将显示在甘特图"
+      or_from_scratch: "或从头开始创建的任务列表"
+      or_from_template: "或者从模板中创建一个任务列表"
       start_on: "开始于... <i>可选</i>"
-      start_on_html: "Starts on... <i>optional</i>"
+      start_on_html: "开始于... <i>选项</i>"
       task_list: 任务列表为您的项目定义一个里程碑。在任务列表中，您可以创建任务并分配任务给项目成员。
-      task_list_templates_page: "Task List Templates page"
-      title: "New Task List"
+      task_list_templates_page: "任务列表模板页"
+      title: "新建任务列表"
     filter: 
-      2weeks: "Next 2 weeks"
-      3weeks: "Next 3 weeks"
-      anybody: Anybody
-      anytime: "Any time"
-      by_name: "By name..."
-      filter_tasks: "Filter tasks"
-      hide: Hide
-      late_tasks: "Late tasks"
-      month: "Within 1 month"
-      my_tasks: "My tasks"
-      no_date_assigned: "No date assigned"
-      today: Today
-      tomorrow: Tomorrow
-      unassigned: Unassigned
-      week: "This week"
+      2weeks: "下2周"
+      3weeks: "下3周"
+      anybody: 任何人
+      anytime: 任何时间"
+      by_name: "通过名称..."
+      filter_tasks: "过滤任务"
+      hide: 隐藏
+      late_tasks: "后期任务"
+      month: "1个月"
+      my_tasks: "我的任务"
+      no_date_assigned: "没有分配日期"
+      today: 今天
+      tomorrow: 明天
+      unassigned: 无分配
+      week: "这周"
     gantt_view: 
-      back_to_normal_view: "Go back to normal view"
-      view_for_all_projects: "view Calendar and Gantt charts for all projects"
+      back_to_normal_view: "回到正常视图"
+      view_for_all_projects: "查看所有项目的日历和甘特图"
     index: 
       add_link: 创建任务列表
       empty: 此目录中没有任务！
-      ends_on: "Ends on %{date}"
-      gantt_view: "Project Gantt and calendar"
-      no_dates_assigned: "No dates assigned"
-      other_views: "Other views"
+      ends_on: "结束于%{date}"
+      gantt_view: "项目甘特图和日历"
+      no_dates_assigned: "没有分配日期"
+      other_views: "其他意见"
       rss: 
-        description: "Tasks activity for project %{name}"
-        title: "%{name} task updates"
-      starts_on: "Starts on %{date}"
+        description: ""
+        title: "%{name} 任务更新"
+      starts_on: "开始于 %{date}"
       tasks_for_all_projects: 所有项目的任务
-      tasks_for_all_projects_explain: "Displaying all tasks. In order to manage task lists and reorder tasks, open each project's tasks."
-      tasks_for_project: "Task lists for %{project}"
+      tasks_for_all_projects_explain: "显示所有任务。为了管理任务列表，并重新排列任务，打开每个项目的任务."
+      tasks_for_project: "%{project}的任务列表"
     link: 
       edit: 编辑
       new: 创建任务列表
       reorder: 重新排序
-      reorder_done: "Done reorder"
-      unarchive: Unarchive
+      reorder_done: "完成重新排序"
+      unarchive: 解压缩
     new: 
       submit: 创建任务列表
       title: 创建任务列表
@@ -2038,8 +2038,8 @@ zh:
       archived_html: "任务 <b>%{name}</b>已经成功存档！"
     assigned: 
       assigned_to: "分配给%{user}"
-      myself: "Assign to myself (%{user})"
-      unassigned: "Cleared the assigned user"
+      myself: "分配给自己(%{user})"
+      unassigned: "清除指定的用户"
     create: 添加任务
     destroy_message: 
       deleted_html: "任务 <b>%{name}</b>已经成功删除！"
@@ -2047,25 +2047,25 @@ zh:
       due_on: 截止于
       today: 今天
       tomorrow: 明天
-      undefined: "No due date"
+      undefined: "没有截止日期"
     edit: 
-      sending: "Updating the task…"
+      sending: "更新任务…"
       submit: 修改任务
     errors: 
       name: 
         cant_be_blank: 必须不为空
         too_long: 必须少于255字符
     fields: 
-      assigned_to: "Who is responsible?"
-      assigned_to_nobody: Nobody
-      body_html: "What needs to be done? <i>optional</i>"
+      assigned_to: "谁是责任人?"
+      assigned_to_nobody: 没有人
+      body_html: "哪些是必须完成的? <i>选项</i>"
       due_on: "需要在...之前完成 <i>(可选)</i>"
-      due_on_html: "Needs to be done before... <i>optional</i>"
+      due_on_html: "需要在什么之前完成... <i>选项</i>"
       name: 有哪些任务需要完成？
-      name_html: "Enter a Task title <i>eg. Upload Logo Proposal</i>"
-      optional: "You can provide better instructions for this Task below."
-      task: "Choose an actionable task. The more specific, the better."
-      title: "New Task"
+      name_html: "输入任务列表 <i>例如。上传logo</i>"
+      optional: "您可以提供低于更好的关于这个任务说明."
+      task: "选择一个可操作的任务。更具体的，更好的."
+      title: "新建任务"
     link: 
       edit: 编辑
       hide_archived_tasks: 
@@ -2075,13 +2075,13 @@ zh:
     my_tasks: 
       my_tasks: 我的任务
     new: 
-      sending: "Creating the task…"
+      sending: "正在创建任务…"
       submit: 添加任务
       title: 新任务
     overdue: "%{days}天以后"
     overview_box: 
-      status: Status
-      title: "This task"
+      status: 状态
+      title: "这个任务"
     show: 
       title: "任务: %{name}"
     status: 
@@ -2095,49 +2095,49 @@ zh:
       task_is_closed: 此任务已经关闭并存档
       unarchive: 取消存档
     urgent: 
-      caption: Urgent
-      set: "Urgent flag set"
-      unset: "Urgent flag unset"
+      caption: 紧急
+      set: "设置紧急标志"
+      unset: "解除设置紧急标志"
   teambox_datas: 
     column: 
-      description: "Here you can move your data in and out of Teambox."
+      description: "在这里，你可以将数据移入和移出的Teambox."
     data: 
-      confirm_delete: "Are you sure you want to delete this data?"
-      incomplete: "More information required."
-      processed_at: "Processed at %{processed_at}"
-      processing: "Currently processing..."
-      remove: Remove
+      confirm_delete: "确定删除数据?"
+      incomplete: 需要更多的信息."
+      processed_at: "在 %{processed_at}被处理"
+      processing: "正在处理..."
+      remove: 移除
     export_fields: 
-      description: "Please select which projects you wish to export."
+      description: "选择您想导出的项目."
     import_fields: 
-      in_organization: "Put all projects in this organization"
-      please_supply_user_map: "We detected the following users in your import. Please confirm which users correspond to which user on Teambox."
-      select_file: "Please choose a file containing your data."
-      service: "Which service did you export your data from?"
-      teambox_user: "Teambox user"
-      user: User
+      in_organization: "将所有项目导入到这个组织"
+      please_supply_user_map: "我们发现在以下的被导入用户。请确认这些用户"
+      select_file: "选择文件."
+      service: "哪些服务您要导出数据?"
+      teambox_user: "Teambox 用户"
+      user: 用户
     index: 
-      exports: "Export your projects"
-      imports: "Import data from a file"
-      imports_explain: "You may import Teambox backup files, or Basecamp projects."
-      no_exports: "There are no recent exports."
-      no_imports: "There are no recent imports."
-      title: "Import or export your data"
+      exports: "导出您的项目"
+      imports: "导入数据"
+      imports_explain: "你可以导入Teambox备份文件，或Basecamp的项目."
+      no_exports: "当前没有文件被导出."
+      no_imports: "当前没有文件被导入."
+      title: "导入或导出您的数据"
     new_export: 
-      submit: "Export data"
-      title: "Export data"
+      submit: "导出数据"
+      title: "导出数据"
     new_import: 
-      submit: "Import data"
-      title: "Import data"
+      submit: "导入数据"
+      title: "导入数据"
     show_export: 
-      download: "Download export"
-      projects: "Projects exported:"
-      title: "Import / Export"
+      download: "下载导出"
+      projects: "项目被导出:"
+      title: "导入 / 导出"
     show_import: 
-      import_error: "There was an error loading your import. Please try again."
-      projects: "Imported projects"
-      submit: Import
-      title: "Import data"
+      import_error: "导入失败，请重试."
+      projects: "导入项目"
+      submit: 导入
+      title: "导入数据"
   time: 
     am: 上午
     formats: 
@@ -2148,39 +2148,39 @@ zh:
   uploads: 
     comment_upload_link: 附件
     errors: 
-      exceeded_storage_plan_limit_html: "You have exceeded your storage quota for %{organization_name}. To increase your storage limits, <a href='%{url}'>upgrade your plan now</a>."
-      general: "There was an error uploading the file"
+      exceeded_storage_plan_limit_html: "您已经超过了您的存储配额％{ORGANIZATION_NAME}。若要提高您的存储限制，<a href='%{url}'>;升级计划现在</a>。"
+      general: "上传文件有错误"
     form: 
       description_html: "标题 <i>(可选)</i>"
       max_size: "文件大小不能超过%{mb}"
-      max_upload_size: "Max upload size is %{mb} Mb"
+      max_upload_size: "最大上传大小是 %{mb} Mb"
       presence: 您不能上传空文件
       select_file: 选择文件
       title: "Upload a file"
       upload: 上传文件
     index: 
-      also: Also
-      cant_create: "You don't have permission to upload files to this project"
-      current_storage_size_html: "You can upload %{bytes} more in the organization %{organization_name}.<br/><br/><a href='%{url}'>Upgrade</a> your plan to store more documents."
+      also: 并且
+      cant_create: "你没有权限上传文件到该项目"
+      current_storage_size_html: "你可以上传组织%{字节}更多{ORGANIZATION_NAME。<br/><br/> href='%{url}'>升级</a>你的计划，以存储更多的文件。"
       max_upload_size: "最大上传文件大小是%{mb}Mb"
       new_file: 上传文件
-      new_folder: "New Folder"
-      no_storage_left_html: "You have reached the storage limit for your organization.<br/><br/><a href='%{url}'>Upgrade</a> your plan now."
-      title: "Files in %{project}"
-      view_google_docs: "View %{count} Google Docs associated to this project"
+      new_folder: "新的文件夹"
+      no_storage_left_html: "你已经达到存储限制为您的组织。<br/><br/><a href='%{url}'>升级</a>您的计划。"
+      title: "在%{project}中的文件"
+      view_google_docs: "查看%{count}个Google文件关联到这个项目"
     moveable: 
       error: 
-        folder: "Folder has not been moved"
-        upload: "File has not been moved"
-      title: "Move to another folder"
-      to_parent: "Move to parent folder"
+        folder: "文件夹没有被移动"
+        upload: "文件没有被移动"
+      title: "移动到其他文件夹"
+      to_parent: "移动到父目录"
     new: 
       select_a_file: 选择文件
-      storage_remaining: "You can upload up to %{bytes} more with your current plan. <a href='%{url}'>Upgrade</a> for more storage."
-      uploading: Uploading...
+      storage_remaining: "您目前的计划，您可以上传%{字节}更多。 <a href='%{url}'>升级</a>以取得更多的存储."
+      uploading: 上传中...
     new_folder: 
-      default_text: "New folder name"
-      submit: "Create folder"
+      default_text: "新目录名称"
+      submit: "创建目录"
     primer: 
       create_first: 在这个项目中上传第一个文件！
       define1_html: 还有与您的团队分享文件的问题？Teambox再次让分享更容易。
@@ -2191,9 +2191,9 @@ zh:
       item3_html: "<b>永远可用</b>. 文件保存在项目上下文相关的地方，将来查找引用更方便。"
     public_download: 
       link: 
-        anchor: "Send this file to somebody..."
-        title: "Share this file with people outside your team"
-    tooltip: "Upload a file"
+        anchor: "把这个文件发给其他人..."
+        title: "这个文件与您的团队以外的人分享"
+    tooltip: "上传一个文件"
     upload: 
       download: 下载
       on_: 打开
@@ -2208,17 +2208,17 @@ zh:
       resent: 我们已经重新发送了激活邮件。请检查您的收件箱！
     calendars: 
       clients: 
-        body_html: "Refer to the <a href='%{link}'>knowledge base</a> for instructions on how to configure Google Calendar, Apple's iCal, Outlook, Blackberry and others."
-        title: "Specific instructions"
+        body_html: "请参阅<a href='%{link}'>知识库</a>如何配置谷歌日历，苹果的iCal，Outlook中，黑莓及其他指示。"
+        title: "具体说明"
       how_to: 
-        body_html: "Basically, you should import the links below into your calendar client. Visit our <a href='%{link}'>knowledge base</a> to learn how to use them with your calendar app."
-        title: "How to sync your calendars"
-      possible_clients: "You can sync your Google Calendar, your Apple's iCal, Outlook, Blackberry and others."
-      subscribe_to_all: "All Projects: "
-      subscribe_to_project: "Project %{project}: "
-      tasks_can_be_synced: "Teambox tasks can be synched with your usual Calendars so you don't forget what's coming up."
-      title: "Sync your calendars"
-      your_calendars: "Your Calendars"
+        body_html: "基本上，你应该导入到您的日历客户端下面的链接。我们的<a href='%{link}'>知识库访问</ a>以了解如何使用您的日历应用程序。"
+        title: "如何同步日历"
+      possible_clients: "您可以同步您的Google日历，苹果的iCal，Outlook中，黑莓和其他。"
+      subscribe_to_all: "所有项目: "
+      subscribe_to_project: "项目%{project}: "
+      tasks_can_be_synced: "teambox任务可以与你平常的日历进行同步，这样你就不会忘记什么来。"
+      title: "同步日历"
+      your_calendars: "您的日历"
     create: 
       error: 对不起，我们不能创建此帐号。请重新尝试，或者联系管理员（链接如下）。
       thanks: 谢谢注册！
@@ -2231,139 +2231,139 @@ zh:
       tasks_for_today: 今日任务
       tasks_for_tomorrow: 明日任务
       tasks_without_a_due_date: 无截止日期任务
-      urgent: Urgent
-      urgent_tasks: "Urgent tasks"
+      urgent: 紧急
+      urgent_tasks: "紧急任务"
       you_receive_this_message_html: "您收到此邮件是因为您设置了提醒选项。您可以通过%{link}不再收到这些邮件"
     edit: 
       submit: 更新帐号
-      title_delete: "Delete Account"
+      title_delete: "删除账户"
       title_deletion: 项目存档/回收站
-      title_linked_accounts: "Linked Application Accounts"
+      title_linked_accounts: "链接到应用账户"
       title_notifications: 您的提醒
       title_picture: 您的个性图片
       title_profile: 您的个性设置
       title_settings: 您的帐号设置
     email_posts: 
-      other_shortcuts_available: "Also, you can use these other handy shortcuts:"
-      send_replies_with_this_email: "You can send replies to this thread by email. Just email to this address:"
-      teambox_magic_happens: "Teambox will parse your message and attachments and post them to the thread."
-      title: "Reply via email"
-      will_create_conversation: "will create a new conversation in the project."
-      will_create_task: "will create a new task in the project."
+      other_shortcuts_available: "此外，您可以使用这些方便的捷径:"
+      send_replies_with_this_email: "您可以发送通过电子邮件回复此主题。就发送到这个电子邮件地址:"
+      teambox_magic_happens: "teambox将分析您的邮件和附件，并张贴到线程."
+      title: "回复 via 邮件"
+      will_create_conversation: "该项目将创建一个新的对话."
+      will_create_task: "该项目将创建一个新任务."
     feeds: 
-      configure: "You can configure your feed reader to alert you every time something new happens in Teambox, even if you don't have it open in a window."
+      configure: "您可以配置您的供稿阅读器，提醒您每一次的东西，新在Teambox发生，即使你没有打开一个窗口。"
       feed_reader: 
-        body_html: "Refer to the <a href='%{link}'>knowledge base</a> for this."
-        title: "Which news reader should I use?"
-      follow_activities: "You can follow Teambox activities from News Readers (Desktop or Mobile)."
+        body_html: "请参阅<a href='%{link}'>知识库</a>此。"
+        title: "我应该使用哪种新闻阅读器?"
+      follow_activities: "你可以按照从新闻读者Teambox活动（桌面或移动）."
       import: 
-        body_html: "Beneath you have a list of feeds you can follow. To import them into your feed reader you need to <strong>right-click the link</strong> and select <strong>copy link address</strong>. Next, go to your feed reader, add a new Feed and paste the address of that feed."
-        title: "How to import a news feed"
+        body_html: "下方有一个源列表，你可以遵循。他们导入到您的供稿阅读器，你需要到<strong>右键点击链接</strong>，并选择的<strong>复制链接地址</ strong>。接下来，去你的feed阅读器，添加一个新的Feed，并粘贴地址，feed。"
+        title: "如何导入一个新的feed"
       more_tips: 
-        body_html: "Learn <a href='%{link}'>more ways to access Teambox</a>."
-        title: "More tips"
-      receive_notifications: "By using a Feed Reader on your computer or mobile device, you will receive notifications from activities in your projects."
-      subscribe_to_all: "Activity for All Projects"
-      subscribe_to_project: "Activity for %{project}"
-      title: "Sync your activity feeds"
-      your_feeds: "Your news feeds"
+        body_html: "了解<a href='%{link}'>更多访问teambox的方式</a>."
+        title: "更多建议"
+      receive_notifications: "在您的计算机或移动设备上使用的feed阅读器，您将收到来自您的项目活动的通知。"
+      subscribe_to_all: "所有项目的活动"
+      subscribe_to_project: "项目%{project}的活动"
+      title: "同步您的活动 feeds"
+      your_feeds: "您的新feeds"
     form: 
-      agreement_html: "By signing up, you're accepting our %{terms} and %{privacy} conditions."
-      auto_accept_invites: "Accept invites to projects automatically (recommended)"
-      badges: "Enable Badges and Achievements"
-      betatester: "Use beta features (less stable) before they're released."
+      agreement_html: "通过签约，你接受我们的%{terms} 和%{privacy} 。"
+      auto_accept_invites: "自动接受邀请的项目（推荐）"
+      badges: "启用徽章和成就"
+      betatester: "在使用beta版本前"
       biography: 自我介绍
       change_password: 修改密码
       confirm_password: 确认密码
       delete: 
-        account_deleted: "Your account has been deleted. We will miss you!"
-        couldnt_delete_account: "We can't delete your account because you still have active or archived projects."
-        delete_my_account: "Delete my account now"
+        account_deleted: "您的帐户已被删除。我们会想念你！"
+        couldnt_delete_account: "我们无法删除您的帐户，因为你仍然有积极的或归档的项目。"
+        delete_my_account: "删除我的账户"
         organization: 
-          steps_before_1: "You can't delete your Teambox account if you are the last administrator of a paid organization."
-          steps_before_2: "In order to delete your account you need to give administrator privilege to at least one other member of the organization, or downgrade this organization to a free plan."
-          steps_before_3: "Give administrator to another user or downgrade your organizations and come back to this page to delete your account."
+          steps_before_1: "你不能删除您Teambox的帐户，如果你是最后一个付费的组织管理员。"
+          steps_before_2: "为了删除你的帐户，你需要给管理员权限，这个组织至少有一个组织的其他成员，或降级一个免费的计划。"
+          steps_before_3: "给另一个用户管理员权限或降级您的组织然后回来此页删除您的帐户."
         project: 
-          steps_before_1: "To delete your Teambox account, you first need to leave or delete all your current projects."
-          steps_before_2: "This will ensure that no other users will lose data on their projects when you delete your account."
-          steps_before_3: "Leave or delete your current projects and then come back to this page to delete your account."
-        what_will_happen: "After deleting your account, your Teambox profile will not be accessible anymore."
+          steps_before_1: "删除您Teambox帐户，你首先需要保留或删除当前所有的项目。"
+          steps_before_2: "这将确保当您删除您的帐户时，没有其他用户将失去对他们的项目的数据."
+          steps_before_3: "保留或删除您的当前项目，然后再回到这个页面删除您的帐户."
+        what_will_happen: "删除您的帐户后，您的个人资料Teambox将无法访问了."
       email: 电子邮件
       first_day_of_week: 一周开始于
       first_name: 姓
       invalid_login: 只能使用字母，数字和下划线_
-      keyboard_shortcuts: "Enable keyboard shortcuts. Press 'h' for help when enabled."
+      keyboard_shortcuts: "启用键盘快捷键。按“H”帮助时启用."
       language: 语言
       last_name: 名
       linked_accounts: 
-        find_more_contacts: "Find more contacts by linking your accounts"
-        link_your_accounts: "Link your social network profiles to find your friends!"
-        no_spam_html: "We hate spam! Teambox will <b>not</b> send unsolicited messages to your contacts."
-        teambox_integrates_services: "We integrate with services you already use. Get the most out of Teambox by connecting your accounts."
+        find_more_contacts: "找到更多的接触，通过将您的帐户"
+        link_your_accounts: "链接你的社交网络配置文件，找到你的朋友!"
+        no_spam_html: "我们讨厌垃圾邮件！ ，teambox<b>不会</b>将不请自来的邮件发送到您的联系人。"
+        teambox_integrates_services: "我们与您已经使用的服务整合。连接您的帐户，获取Teambox的最好体验."
       login: 用户名
       monday: 周一
       new: 
         account: 
-          choose_username: "Choose a username so people can find you. You will use it to log in."
-          field_note: "This is what other users will use to refer to you"
-          title: "Your Teambox account"
-          validations: "Must be all lowercase, no spaces allowed. You can use underscores."
+          choose_username: "选择一个用户名，使人们能够找到你。你将用它来登录."
+          field_note: "其他用户指的是您"
+          title: "您的账户"
+          validations: "必须全部小写，不允许有空格。您可以使用下划线."
         organization: 
-          explain1: "Your organization will be a private space for all your projects."
-          explain2: "You can create more workspaces later. Choose a brief name for it."
-          field_note: "We will create a workspace with this name for you"
-          label: "Organization name"
-          title: "Your Organization"
-        use_this_email: "You have invitations to share projects for this email address. If you want to access these projects, don't change this email address. You can change your email address once you've completed the signup process."
-      newsletter: "Notify me about new features and tips!"
+          explain1: "您的组织将是一个私人空间，对于所有的项目而言。"
+          explain2: "你可以创造更多的工作空间。选择一个简短的名称."
+          field_note: "我们将使用这个名字为您创建一个工作区"
+          label: "组织名称"
+          title: "你的组织"
+        use_this_email: "你有这个项目分享的邀请邮件。如果你想访问这些项目，不要改变这个电子邮件地址。一旦你完成注册过程中，您可以更改您的电子邮件地址。"
+      newsletter: "有关新功能和建议时通知我!"
       notifications: 
         clarification: |
-            When someone mentions you (as '@%{login}' or '@all') in conversation or a task,
-            you will be notified and added as a watcher for that item.
-        default: Default
-        digest: "Email delivery mode"
-        digest_delivery_time: "Send task reminder and digest at"
-        digest_option_daily: "Daily digest"
-        digest_option_instant: "Instant notification"
-        digest_option_none: "No email"
-        digest_option_weekly: "Weekly digest"
-        notification_options: "Notification options"
+            当有人在谈话或任务（如 '@%{login}'或者 '@all'）提到你，
+            你将作为一个观察者通知和加入该项目.
+        default: 默认
+        digest: "邮件延迟发送"
+        digest_delivery_time: "发送任务提醒和摘要"
+        digest_option_daily: "每日摘要"
+        digest_option_instant: "即时通知"
+        digest_option_none: "没有邮件"
+        digest_option_weekly: "周报"
+        notification_options: "通知选项"
         notify_conversations: 在我关注的话题变化时通知我
-        notify_on_mention: "Send email instantly when someone @mentions me on a conversation or task I'm following"
-        notify_pages: "Notify me of updates to pages I'm watching"
+        notify_on_mention: "即刻发送电子邮件时，有人可以在下面的谈话或任务@我来提到我"
+        notify_pages: "当前页面更新时通知我"
         notify_tasks: 在我关注的任务变化时通知我
-        project_name: "Project name"
+        project_name: "项目名"
         wants_task_reminder: 发送我的任务每日情况报告
-        watch_new_conversation: Conversation
-        watch_new_item: "Watch new item"
-        watch_new_page: Page
-        watch_new_task: Task
-      old_password: "Old password"
+        watch_new_conversation: 会话
+        watch_new_item: "查看新的对象"
+        watch_new_page: 页
+        watch_new_task: 任务
+      old_password: "旧密码"
       password: 密码
       password_confirmation: 确认密码
-      phone: "Phone Number"
-      phone_for_integration: "Optional. For future SMS integration"
+      phone: "手机号码"
+      phone_for_integration: "可选的。对于未来的短信集成"
       picture: 
-        destroy: "Delete avatar"
+        destroy: "删除头像"
         field: 您的头像
-        gravatar_in_use_html: "We don't have a picture of you, so we're using %{gravatar}."
+        gravatar_in_use_html: "我们没有你的照片，所以我们使用%{的gravatar}。"
         max_size: "文件大小不能超过%{mb}"
         presence: 您不能上传空文件
         upload_here_or_at_gravatar: "您可以在这里上传新的头像，或上传到%{gravatar}作为一个通用的头像，用于Teambox或其它网站。"
         upload_here_or_at_gravatar_html: "You can either upload a picture here or set one on %{gravatar}."
         we_have_this_avatar: 当前您的头像：
-        we_have_this_avatar_html: "This is the picture we currently have of you:"
-      privacy: privacy
+        we_have_this_avatar_html: "这是目前你的照片:"
+      privacy: 私人
       subscription: 
-        card_expiration: "Expires on"
-        card_number: "Card number"
-        coupon: "Coupon code"
-        coupon_question: "Do you have a coupon code?"
-        info_price: "You are going to be charged monthly %{price}."
-        info_unsubscribe: "You can cancel your subscription at any moment."
-        new_org_name: "Organization name"
+        card_expiration: "到期"
+        card_number: "卡号"
+        coupon: "优惠券代码"
+        coupon_question: "您有优惠券代码吗?"
+        info_price: "你能每月收取 %{price}."
+        info_unsubscribe: "您可以随时取消您的订阅."
+        new_org_name: "组织名称"
       sunday: 周日
-      terms: "terms of use"
+      terms: "使用条款"
       time_zone: 时区
       tooltips: 
         email: 请输入真实的Email地址，你的队友可以通过邮件联系您。
@@ -2373,41 +2373,41 @@ zh:
         password: 组合字母，数字，大小写混合是个好注意。
     help_box: 
       feedback: 
-        link: "Send us your feedback and ideas"
-        text: "to help us improve"
+        link: "您的意见和想法发送给我们"
+        text: "以帮助我们改进"
       guide: 
-        link: "Read the User Guide"
-        text: "to get started"
+        link: "阅读用户指南"
+        text: "来开始"
       support: 
-        link: "Contact support"
-        text: "if you need help"
+        link: "联系支持"
+        text: "如果你需要帮助"
       tips: 
-        link: "Learn our staff's tips"
-        text: "to master your Teambox"
+        link: "了解我们的工作人员的提示"
+        text: "掌握您Teambox"
       videos: 
-        link: "Watch the tutorial videos"
-        text: "if it's your first time here"
+        link: "观看视频教程"
+        text: "如果这是你第一次来这里"
     link_profiles: 
-      connected: Connected!
-      expired: Expired!
+      connected: 联系!
+      expired: 过期!
       facebook: 
-        connect: "Connect Facebook"
-        reason1: "Find your friends"
-        reason2: "Import your Address Book"
-        reason3: "Log in with one click"
+        connect: "链接到facebook"
+        reason1: "寻找你的好友"
+        reason2: "导入您的通讯簿"
+        reason3: "一键登录"
         title: Facebook
       google: 
-        connect: "Connect Google"
-        reason1: "Google Docs"
-        reason2: "Google Contacts"
-        reason3: "Future integrations"
-        title: "Google Account"
-      renew: "Renew now"
+        connect: "链接到google"
+        reason1: "google 文档"
+        reason2: "Google 联系人"
+        reason3: "未来的集成"
+        title: "Google 账户"
+      renew: "现在续订"
       twitter: 
-        connect: "Connect Twitter"
-        reason1: "Connect to your contacts"
-        reason2: "Log in with one click"
-        reason3: "Future integrations"
+        connect: "链接到 Twitter"
+        reason1: "连接到您的联系人"
+        reason2: "一键登录"
+        reason3: "未来的集成"
         title: Twitter
     new: 
       existing_user_html: "如果您已经有一个帐号，请<a href='%{login_url}'>登录</a>或者<a href='%{forgot_url}'>找回密码</a>。"
@@ -2420,10 +2420,10 @@ zh:
       pending_invite: "%{name}当前已经有一个您的项目的未受理邀请。在此邀请被接受前，您不允许操作任何信息。"
       profile: 个性设置
       projects: 项目
-      projects_in_common_with: "Projects you share with %{user_name}"
+      projects_in_common_with: "同 %{user_name}分享项目"
       recent_activity_for: "%{user_name}的近期活动"
     text_styles: 
-      block_of_code: "Paste your code indented (4 spaces or tabs) to paste it as a block of code."
+      block_of_code: "粘贴你的代码缩进（4空格或制表符）作为一个代码块粘贴."
       enter_this: 
         bold_text: "**bold** text"
         header: |
