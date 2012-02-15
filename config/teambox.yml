@@ -57,7 +57,7 @@ defaults: &defaults
   #   $ heroku addons:add sendgrid:free
   smtp_settings:
     :domain:         gmail.com         # the domain your emails will come from
-    :address:        smtp.gmailnet  # SMTP server used to send emails
+    :address:        smtp.gmail.com  # SMTP server used to send emails
     :port:           25
     :authentication: :login
     :user_name:      liwenjingabc@gmail.com
