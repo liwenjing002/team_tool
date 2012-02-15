@@ -204,8 +204,8 @@ zh:
       option_3: "3: 通过导入CVS联系人文件来邀请你的好友"
       over_100: "当你拥有超过$100,"
       plan_for: "计划"
-      premium_plan: "奖金账户
-      refer_info: "在%{plan}账户中邀请用户: %{users},可以每个月获得$%{credit}"
+      premium_plan: "奖金账户"
+      refer_info: "在%{plan}账户中邀请用户:%{users},可以每个月获得$%{credit}"
       referred_users: "你的邀请好友 "
       send_invites: "邀请到teambox"
       send_money: "然后我们就会将您赚的的金额转给您"
@@ -286,7 +286,7 @@ zh:
     attach: 
       tooltip: 附件
     comment: 
-      cannot_edit: "15分钟后留言就无法编辑
+      cannot_edit: "15分钟后留言就无法编辑"
       commented_on: "-"
       commented_on_a_task_list: "-"
       confirm_delete: 您确信要删除这条评论？
@@ -309,7 +309,7 @@ zh:
     hours: 
       add_hours: 添加工时
       hours: "你安排多少工时在这个任务里"
-      time_tracking_docs: 学习如何使用时间追踪"
+      time_tracking_docs: "学习如何使用时间追踪"
       tooltip: "为该任务添加工时"
     new: 
       assigned_to: "分配给:"
